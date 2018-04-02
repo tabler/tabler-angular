@@ -10,8 +10,10 @@ import { Component, Input } from '@angular/core'
         <h3 class="mb-1">{{ title}}</h3>
         <div class="text-muted">{{ description }}</div>
       </div>
-      <div class="card-img" style="height: 270px">
-          <canvas baseChart class="chart"
+      <div class="card-img">
+          <canvas baseChart 
+                  class="pt-5"
+                  height="160"
                   [datasets]="datasets"
                   [labels]="labels"
                   [options]="options"
@@ -75,7 +77,7 @@ export class DashboardChartBgComponent {
   }
   public colors: Array<any> = [
     {
-      backgroundColor: 'rgba(70,127,207,0.5)',
+      backgroundColor: 'rgba(70,127,207,0.1)',
       borderColor: 'rgba(70,127,207)',
     }
   ]

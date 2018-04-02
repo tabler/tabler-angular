@@ -5,10 +5,11 @@ import { Component, Input, OnInit } from '@angular/core'
   template: `
     <div style="display: block;">
       <canvas baseChart
-              height="100"
+              height="160"
               [datasets]="datasets"
               [labels]="labels"
               [options]="options"
+              [colors]="colors"
               chartType="line"></canvas>
     </div>
   `,
@@ -36,7 +37,8 @@ export class DevelopmentChartComponent implements OnInit {
     },
     elements: {
       line: {
-        borderWidth: 2
+        borderWidth: 2,
+        tension: 0,
       },
       point: {
         radius: 0,
@@ -51,25 +53,14 @@ export class DevelopmentChartComponent implements OnInit {
       duration: 0, // general animation time
     },
     responsive: true,
-    // scales: {
-    //   ticks: {
-    //     display: false,
-    //   },
-    //   xAxes: [ {
-    //     display: false,
-    //   } ],
-    //   yAxes: [ {
-    //     display: false,
-    //   } ],
-    // },
-    elements: {
-      line: {
-        tension: 0, // disables bezier curves
-      }
-    },
   }
 
-  constructor() { }
+  public colors: Array<any> = [
+    {
+      backgroundColor: 'rgba(70,127,207,0.1)',
+      borderColor: 'rgba(70,127,207)',
+    }
+  ]
 
   ngOnInit() {
     this.datasets = [

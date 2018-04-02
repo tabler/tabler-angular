@@ -16,7 +16,7 @@ import { Component, Input } from '@angular/core'
             [legend]="showLegend"
             [labels]="showLabels"
             [doughnut]="doughnut"
-            [gradient]="gradient">
+            [gradient]="false">
           </ngx-charts-pie-chart>
         </div>
       </div>
