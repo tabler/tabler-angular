@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { DemoService } from '../../../demo/services/demo.service'
 
 @Component({
   selector: 'app-home-index',
@@ -10,16 +11,13 @@ import { Component } from '@angular/core'
       <div class="row row-cards">
 
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number=43
-          title="New Tickets" percentage=6></app-dashboard-stats>
+          <app-dashboard-stats number="43" title="New Tickets" percentage=6></app-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number=17
-          title="Closed Today" percentage=-3></app-dashboard-stats>
+          <app-dashboard-stats number="17" title="Closed Today" percentage=-3></app-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number=7
-          title="New Replies" percentage=9></app-dashboard-stats>
+          <app-dashboard-stats number="7" title="New Replies" percentage=9></app-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
           <app-dashboard-stats number="27.3K" title="Followers" percentage=3></app-dashboard-stats>
@@ -28,13 +26,13 @@ import { Component } from '@angular/core'
           <app-dashboard-stats number="$95" title="Daily Earnings" percentage=-2></app-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number=621
-          title="Products" percentage=-1></app-dashboard-stats>
+          <app-dashboard-stats number="621" title="Products" percentage=-1></app-dashboard-stats>
         </div>
         <div class="col-lg-6">
-          <app-development-activity></app-development-activity>
-          <!--{% include cards/development-activity.html %}-->
-          <!--{% comment %}{% include cards/tasks.html %}{% endcomment %}-->
+          <app-development-activity
+            [purchases]="demoService.purchases"
+            [users]="demoService.users">
+          </app-development-activity>
         </div>
 
         <div class="col-md-6">
@@ -45,10 +43,10 @@ import { Component } from '@angular/core'
 
           <div class="row">
             <div class="col-sm-6">
-              <app-dashboard-chart title="Chart title" [data]="donut" [doughnut]="true"></app-dashboard-chart>
+              <app-dashboard-chart title="Chart title" [data]="demoService.donut" [doughnut]="true"></app-dashboard-chart>
             </div>
             <div class="col-sm-6">
-              <app-dashboard-chart title="Chart title" [data]="pie"></app-dashboard-chart>
+              <app-dashboard-chart title="Chart title" [data]="demoService.pie"></app-dashboard-chart>
             </div>
             <div class="col-sm-4">
               <app-dashboard-digit color="red" title="New fedbacks" digit="62" width="28%"></app-dashboard-digit>
@@ -108,37 +106,38 @@ import { Component } from '@angular/core'
       <div class="row row-cards row-deck">
 
         <div class="col-12">
-          <!--{% include cards/table-users.html %}-->
+          <app-table-users [users]="demoService.users"></app-table-users>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <!--{% include cards/browsers.html %}-->
+          <app-card-browser-stats></app-card-browser-stats>
         </div>
         <div class="col-sm-6 col-lg-4">
-          <!--{% include cards/projects-list.html %}-->
+          <app-card-projects></app-card-projects>
         </div>
         <div class="col-md-6 col-lg-4">
-          <!--{% include cards/members.html %}-->
+          <app-card-members [users]="demoService.users"></app-card-members>
         </div>
 
         <div class="col-md-6 col-lg-12">
           <div class="row">
             <div class="col-sm-6 col-lg-3">
-              <!--{% include cards/chart-bg.html id="chart-bg-users-1" %}-->
+              <app-dashboard-chart-bg title="423" description="Users online" color="blue" rate="+5%"></app-dashboard-chart-bg>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <!--{% include cards/chart-bg.html id="chart-bg-users-2" offset=60 aggregate=true color="red" rate="-3%" %}-->
+              <app-dashboard-chart-bg title="423" description="Users online" color="red" rate="-3%"></app-dashboard-chart-bg>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <!--{% include cards/chart-bg.html id="chart-bg-users-3" offset=50 color="green" rate="-3%" %}-->
+              <app-dashboard-chart-bg title="423" description="Users online" color="green" rate="-3%"></app-dashboard-chart-bg>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <!--{% include cards/chart-bg.html id="chart-bg-users-4" offset=40 color="yellow" rate="9%" %}-->
+              <app-dashboard-chart-bg title="423" description="Users online" color="yellow" rate="9%"></app-dashboard-chart-bg>
             </div>
           </div>
         </div>
 
         <div class="col-12">
+          <app-table-invoices [invoices]="demoService.invoices"></app-table-invoices>
           <!--{% include cards/invoices.html %}-->
         </div>
       </div>
@@ -149,35 +148,5 @@ import { Component } from '@angular/core'
 })
 export class HomeIndexComponent {
 
-  public donut = [
-    {
-      name: 'Maximum',
-      value: 63
-    },
-    {
-      name: 'Minimum',
-      value: 37
-    }
-  ]
-
-
-  public pie = [
-    {
-      name: 'A',
-      value: 63
-    },
-    {
-      name: 'B',
-      value: 44
-    },
-    {
-      name: 'C',
-      value: 12
-    },
-    {
-      name: 'D',
-      value: 14
-    }
-  ]
-
+  constructor(public demoService: DemoService) {}
 }

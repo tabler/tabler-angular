@@ -63,3 +63,6 @@
 @import 'selectize';
 
 @import 'fonts/feather';
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";

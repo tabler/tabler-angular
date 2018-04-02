@@ -1,18 +1,11 @@
 import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
 import { AppSharedModule } from '../app-shared.module'
-import { IndexComponent } from './containers/index/index.component'
+import { DemoService } from './services/demo.service'
 
-const routes: Routes = [
-  // { path: '', component: HomeIndexComponent }
-]
 
 @NgModule({
-  imports: [
-    AppSharedModule,
-    RouterModule.forChild(routes),
-  ],
-  declarations: [ IndexComponent ]
+  imports: [ AppSharedModule ],
+  providers: [ DemoService ]
 })
 export class DemoModule {
 }
