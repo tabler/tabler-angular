@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
 import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { ChartsModule } from 'ng2-charts'
+import { NgPipesModule } from 'angular-pipes'
 
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
@@ -38,7 +39,13 @@ const exported = [
 
 @NgModule({
   imports: [
-    CommonModule, RouterModule, FormsModule, ReactiveFormsModule, NgxChartsModule, ChartsModule
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxChartsModule,
+    ChartsModule,
+    NgPipesModule,
   ],
   declarations: [
     HeaderComponent,
@@ -56,7 +63,12 @@ const exported = [
     CardComponent,
     CardBodyComponent,
   ],
-  exports: [ ...exported, NgxChartsModule, ChartsModule ]
+  exports: [
+    ...exported,
+    NgxChartsModule,
+    ChartsModule,
+    NgPipesModule,
+  ]
 })
 export class UiModule {
 }

@@ -1,19 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-components-blog',
   template: `
-    <p>
-      components-blog works!
-    </p>
+    <app-page-title title="Blog components"></app-page-title>
   `,
-  styles: []
 })
-export class ComponentsBlogComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class ComponentsBlogComponent {
 }

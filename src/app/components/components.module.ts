@@ -8,7 +8,9 @@ import { ComponentsIconsComponent } from './components/components-icons/componen
 import { ComponentsMapsComponent } from './components/components-maps/components-maps.component'
 import { ComponentsStoreComponent } from './components/components-store/components-store.component'
 import { ComponentsBlogComponent } from './components/components-blog/components-blog.component';
-import { ComponentsIconMapComponent } from './components/components-icon-map/components-icon-map.component'
+import { ComponentsIconMapComponent } from './components/components-icon-map/components-icon-map.component';
+import { ComponentsStoreListComponent } from './components/components-store-list/components-store-list.component';
+import { ComponentsStoreProductComponent } from './components/components-store-product/components-store-product.component'
 
 const routes: Routes = [
   {
@@ -34,6 +36,8 @@ const routes: Routes = [
     ComponentsStoreComponent,
     ComponentsBlogComponent,
     ComponentsIconMapComponent,
+    ComponentsStoreListComponent,
+    ComponentsStoreProductComponent,
   ]
 })
 export class ComponentsModule {

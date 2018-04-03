@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 
-import { donut, pie, invoices, users, purchases } from './data'
+import { donut, pie, invoices, users, products, purchases } from './data'
 import { icons } from './icons'
 
 @Injectable()
@@ -15,6 +15,8 @@ export class DemoService {
   public invoices = invoices
 
   public users = users
+
+  public products = products
 
   public icons = icons
 }
