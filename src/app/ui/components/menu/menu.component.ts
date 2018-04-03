@@ -4,18 +4,21 @@ import { Component, OnInit } from '@angular/core'
   selector: 'app-menu',
   template: `
     <ul class="nav nav-tabs">
-      <li class="nav-item" *ngFor="let item of items">
-        <a href="#" [routerLink]="item.url" class="nav-link" routerLinkActive="active">
-          <i class="{{ item.icon }}" *ngIf="item.icon"></i>
-          {{item.name}}
-        </a>
-        <div class="nav-submenu nav" *ngIf="item.subpages">
-          <a href="#" [routerLink]="subitem.url" class="nav-item" *ngFor="let subitem of item.subpages">
-            {{subitem.name}}
+      <ng-container *ngFor="let item of items">
+        <li class="nav-item">
+          <a href="#" [routerLink]="item.url" class="nav-link" routerLinkActive="active">
+            <i class="{{ item.icon }}" *ngIf="item.icon"></i>
+            {{item.name}}
           </a>
-        </div>
-      </li>
-
+          <div class="nav-submenu nav" *ngIf="item.subpages">
+            <ng-container *ngFor="let subitem of item.subpages">
+              <a href="#" class="nav-item" [routerLink]="subitem.url" routerLinkActive="active">
+                {{subitem.name}}
+              </a>
+            </ng-container>
+          </div>
+        </li>
+      </ng-container>
     </ul>
   `,
   styles: []

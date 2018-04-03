@@ -5,7 +5,8 @@ import { AppSharedModule } from '../app-shared.module'
 import { InterfaceIndexComponent } from './containers/interface-index/interface-index.component'
 import { InterfacePricingComponent } from './components/interface-pricing/interface-pricing.component'
 import { InterfaceCardsComponent } from './components/interface-cards/interface-cards.component'
-import { InterfaceChartsComponent } from './components/interface-charts/interface-charts.component'
+import { InterfaceChartsComponent } from './components/interface-charts/interface-charts.component';
+import { InterfacePricingListComponent } from './components/interface-pricing-list/interface-pricing-list.component'
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'cards', pathMatch: 'full' },
       { path: 'cards', component: InterfaceCardsComponent },
       { path: 'charts', component: InterfaceChartsComponent },
-      { path: 'pricing-cards', component: InterfacePricingComponent },
+      { path: 'pricing-cards', component: InterfacePricingListComponent },
     ]
   }
 ]
@@ -23,7 +24,7 @@ const routes: Routes = [
     AppSharedModule,
     RouterModule.forChild(routes),
   ],
-  declarations: [ InterfaceIndexComponent, InterfacePricingComponent, InterfaceCardsComponent, InterfaceChartsComponent ]
+  declarations: [ InterfaceIndexComponent, InterfacePricingComponent, InterfaceCardsComponent, InterfaceChartsComponent, InterfacePricingListComponent ]
 })
 export class InterfaceModule {
 }
