@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
 import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { ChartsModule } from 'ng2-charts'
@@ -18,6 +19,8 @@ import { DashboardIconBoxComponent } from './components/dashboard-icon-box/dashb
 import { DashboardStatsComponent } from './components/dashboard-stats/dashboard-stats.component'
 
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { CardComponent } from './components/card/card.component';
+import { CardBodyComponent } from './components/card-body/card-body.component';
 
 const exported = [
   LayoutComponent,
@@ -29,11 +32,13 @@ const exported = [
   DashboardChartComponent,
   DashboardChartBgComponent,
   AvatarComponent,
+  CardComponent,
+  CardBodyComponent,
 ]
 
 @NgModule({
   imports: [
-    CommonModule, RouterModule, NgxChartsModule, ChartsModule
+    CommonModule, RouterModule, FormsModule, ReactiveFormsModule, NgxChartsModule, ChartsModule
   ],
   declarations: [
     HeaderComponent,
@@ -48,6 +53,8 @@ const exported = [
     DashboardChartComponent,
     AvatarComponent,
     DashboardChartBgComponent,
+    CardComponent,
+    CardBodyComponent,
   ],
   exports: [ ...exported, NgxChartsModule, ChartsModule ]
 })
