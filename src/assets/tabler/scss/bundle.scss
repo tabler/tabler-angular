@@ -3,5 +3,6 @@ Dashboard UI
  */
 
 @import 'variables';
-@import 'dashboard/bootstrap/bootstrap';
+@import "~bootstrap/scss/bootstrap.scss";
+//@import 'dashboard/bootstrap/bootstrap';
 @import 'dashboard/dashboard';
