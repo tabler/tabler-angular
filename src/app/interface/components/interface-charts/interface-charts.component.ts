@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-interface-charts',
   template: `
-    <p>
-      interface-charts works!
-    </p>
+    <app-page-title title="Charts"></app-page-title>
   `,
   styles: []
 })

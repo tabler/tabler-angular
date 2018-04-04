@@ -10,7 +10,8 @@ import { ComponentsStoreComponent } from './components/components-store/componen
 import { ComponentsBlogComponent } from './components/components-blog/components-blog.component';
 import { ComponentsIconMapComponent } from './components/components-icon-map/components-icon-map.component';
 import { ComponentsStoreListComponent } from './components/components-store-list/components-store-list.component';
-import { ComponentsStoreProductComponent } from './components/components-store-product/components-store-product.component'
+import { ComponentsStoreProductComponent } from './components/components-store-product/components-store-product.component';
+import { ComponentsBlogSingleComponent } from './components/components-blog-single/components-blog-single.component'
 
 const routes: Routes = [
   {
@@ -38,6 +39,7 @@ const routes: Routes = [
     ComponentsIconMapComponent,
     ComponentsStoreListComponent,
     ComponentsStoreProductComponent,
+    ComponentsBlogSingleComponent,
   ]
 })
 export class ComponentsModule {

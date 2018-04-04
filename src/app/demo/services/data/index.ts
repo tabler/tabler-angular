@@ -1,4 +1,6 @@
+export * from './articles'
 export * from './charts'
 export * from './invoices'
+export * from './photos'
 export * from './products'
 export * from './users'

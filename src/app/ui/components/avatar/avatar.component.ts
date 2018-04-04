@@ -3,10 +3,7 @@ import { Component, Input } from '@angular/core'
 @Component({
   selector: 'app-avatar',
   template: `
-    <span class="avatar" *ngIf="image" [style.background-image]="'url(' + image + ')'">
-      <span *ngIf="status" class="avatar-status bg-{{status}}"></span>
-    </span>
-    <span class="avatar" *ngIf="text">
+    <span class="avatar avatar-{{size}}" [style.background-image]="backgroundImage()">
       {{text}}
       <span *ngIf="status" class="avatar-status bg-{{status}}"></span>
     </span>
@@ -14,7 +11,11 @@ import { Component, Input } from '@angular/core'
   styles: []
 })
 export class AvatarComponent {
-  @Input() image
+  @Input() image: string
+  @Input() size: 'sm'|'md'|'lg'|'xl'|'xxl'
   @Input() status
-  @Input() text
+  @Input() text: string
+  backgroundImage() {
+    return this.image ? `url(${this.image})` : ''
+  }
 }
