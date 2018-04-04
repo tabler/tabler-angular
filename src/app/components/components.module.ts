@@ -11,7 +11,11 @@ import { ComponentsBlogComponent } from './components/components-blog/components
 import { ComponentsIconMapComponent } from './components/components-icon-map/components-icon-map.component';
 import { ComponentsStoreListComponent } from './components/components-store-list/components-store-list.component';
 import { ComponentsStoreProductComponent } from './components/components-store-product/components-store-product.component';
-import { ComponentsBlogSingleComponent } from './components/components-blog-single/components-blog-single.component'
+import { ComponentsBlogSingleComponent } from './components/components-blog-single/components-blog-single.component';
+import { ComponentsMapsClientComponent } from './components/components-maps-client/components-maps-client.component';
+import { ComponentsMapsGermanyComponent } from './components/components-maps-germany/components-maps-germany.component';
+import { ComponentsMapsWorldComponent } from './components/components-maps-world/components-maps-world.component';
+import { ComponentsMapsMetroComponent } from './components/components-maps-metro/components-maps-metro.component'
 
 const routes: Routes = [
   {
@@ -40,6 +44,10 @@ const routes: Routes = [
     ComponentsStoreListComponent,
     ComponentsStoreProductComponent,
     ComponentsBlogSingleComponent,
+    ComponentsMapsClientComponent,
+    ComponentsMapsGermanyComponent,
+    ComponentsMapsWorldComponent,
+    ComponentsMapsMetroComponent,
   ]
 })
 export class ComponentsModule {
