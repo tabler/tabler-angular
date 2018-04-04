@@ -566,6 +566,10 @@ SOFTWARE.
 MIT
 MIT
 
+angular-pipes@7.1.0
+MIT
+MIT
+
 @angular/platform-browser@5.2.9
 MIT
 MIT
