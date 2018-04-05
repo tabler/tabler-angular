@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc/spec",
+    "baseUrl": "./",
+    "module": "commonjs",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "test.js"
+  ],
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "**/e2e/*.ts",
+    "**/*.e2e-spec.ts",
+    "**/*.po.ts",
+    "node_modules",
+    "tmp"
+  ]
+}
