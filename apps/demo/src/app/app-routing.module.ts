@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router'
 import { ModuleWithProviders } from '@angular/core'
-import { LayoutComponent } from './ui/containers/layout/layout.component'
+import { LayoutComponent } from '../../../../libs/angular-ui/'
 
 const routes: Routes = [
   {

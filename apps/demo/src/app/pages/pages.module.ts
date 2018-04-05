@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { LayoutBaseComponent, LayoutComponent } from '../../../../../libs/angular-ui'
 import { AppSharedModule } from '../app-shared.module'
-import { LayoutBaseComponent } from '../ui/containers/layout-base/layout-base.component'
-
-import { LayoutComponent } from '../ui/containers/layout/layout.component'
 
 import { PagesAuthComponent } from './containers/pages-auth/pages-auth.component'
 import { AuthRoutes } from './containers/pages-auth/auth-routing.module'

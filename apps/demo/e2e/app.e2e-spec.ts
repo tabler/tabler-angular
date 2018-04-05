@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('angular-tabler App', () => {
+describe('tabler-tabler App', () => {
   let page: AppPage;
 
   beforeEach(() => {

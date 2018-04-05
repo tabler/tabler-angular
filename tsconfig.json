@@ -16,7 +16,7 @@
       "dom"
     ],
     "paths": {
-      "@demo/*": [
+      "@tabler/*": [
         "libs/*"
       ]
     },

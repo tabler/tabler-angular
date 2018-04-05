@@ -1,0 +1,26 @@
+/**
+ * Combination of the Tabler SCSS and NPM packges
+ *
+ * The goal is maximum flexibility (eg: possible overrides) and reuse (eg: npm packages)
+ */
+
+// Tabler variables
+@import 'variables';
+
+// Bootstrap package from NPM
+@import "~bootstrap/scss/bootstrap.scss";
+
+// Tabler dashboard styles
+@import 'dashboard/dashboard';
+
+// Feather
+$fe-font-path: $tabler-base + "/fonts" !default;
+@import "../fonts/feather";
+
+// Font Awesome from NPM
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+
+// Simple Line Icons from NPM
+$simple-line-font-path: "~simple-line-icons/fonts/";
+@import "~simple-line-icons/scss/simple-line-icons.scss";

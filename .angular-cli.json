@@ -1,8 +1,8 @@
 {
   "$schema": "./node_modules/@nrwl/schematics/src/schema.json",
   "project": {
-    "name": "angular-tabler",
-    "npmScope": "demo",
+    "name": "tabler-angular",
+    "npmScope": "@tabler",
     "latestMigration": "20180328-add-nx-lint"
   },
   "apps": [
@@ -33,6 +33,20 @@
         "prod": "environments/environment.prod.ts"
       },
       "name": "demo",
+      "tags": []
+    },
+    {
+      "name": "angular-ui",
+      "root": "libs/angular-ui/src",
+      "test": "../../../test.js",
+      "appRoot": "",
+      "tags": []
+    },
+    {
+      "name": "styles",
+      "root": "libs/styles/src",
+      "test": "../../../test.js",
+      "appRoot": "",
       "tags": []
     }
   ],
