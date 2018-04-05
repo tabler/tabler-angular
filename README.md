@@ -2,30 +2,31 @@
 
 > WIP: Implementation of [tabler](https://github.com/tabler/tabler) using Angular.
 
-<strong><a href="https://goo.gl/zJP2dT">Join us on Slack</a></strong>
+<strong><a href="https://develop-tabler-angular-tabler.buddy.show">Live Demo</a></strong> | <strong><a href="https://goo.gl/zJP2dT">Join us on Slack</a></strong>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+# Installation
 
-## Development server
+This project is built with [Angular CLI](https://github.com/angular/angular-cli) & [nrwl/nx](https://github.com/nrwl/nx).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Install dependencies
+ 
+  - Run `npm install`.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Applications
 
-## Build
+You can start one of the following applications:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Demo
 
-## Running unit tests
+- Run `npm run demo`.
+- Navigate to `http://localhost:4200/`.
+- Update code in `apps/demo`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Docs
 
-## Running end-to-end tests
+- Run `npm run docs`.
+- Navigate to `http://localhost:4201/`.
+- Update code in `apps/docs`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# License: MIT
