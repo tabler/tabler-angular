@@ -2,6 +2,8 @@ import { fa } from './fa'
 import { fe } from './fe'
 import { flags } from './flags'
 import { payments } from './payments'
+import { simpleLineIcons } from './simple-line-icons'
+
 
 export const icons = [
   {
@@ -17,6 +19,13 @@ export const icons = [
     iconClass: 'fa',
     url: 'http://fontawesome.io',
     description: 'Powered by Font Awesome set.',
+  },
+  {
+    title: 'Simple Line Icons',
+    icons: simpleLineIcons,
+    iconClass: 'icon',
+    url: 'http://simplelineicons.com/',
+    description: 'Simple and Minimal Line Icons',
   },
   {
     title: 'Flags',
