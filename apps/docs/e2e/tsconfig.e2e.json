@@ -1,7 +1,7 @@
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist/out-tsc/e2e/apidocs",
+    "outDir": "../../../dist/out-tsc/e2e/docs",
     "module": "commonjs",
     "target": "es5",
     "types": [

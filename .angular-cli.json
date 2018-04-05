@@ -7,32 +7,6 @@
   },
   "apps": [
     {
-      "name": "apidocs",
-      "root": "apps/apidocs/src",
-      "outDir": "dist/apps/apidocs",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "polyfills": "polyfills.ts",
-      "test": "../../../test.js",
-      "tsconfig": "tsconfig.app.json",
-      "testTsconfig": "../../../tsconfig.spec.json",
-      "prefix": "app",
-      "styles": [
-        "styles.scss"
-      ],
-      "scripts": [],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      },
-      "tags": []
-    },
-    {
       "root": "apps/demo/src",
       "outDir": "dist/apps/demo",
       "assets": [
@@ -59,6 +33,32 @@
         "prod": "environments/environment.prod.ts"
       },
       "name": "demo",
+      "tags": []
+    },
+    {
+      "name": "docs",
+      "root": "apps/docs/src",
+      "outDir": "dist/apps/docs",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
       "tags": []
     },
     {
@@ -102,11 +102,11 @@
       "exclude": "**/node_modules/**"
     },
     {
-      "project": "apps/apidocs/src/tsconfig.app.json",
+      "project": "apps/docs/src/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },
     {
-      "project": "apps/apidocs/e2e/tsconfig.e2e.json",
+      "project": "apps/docs/e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
     }
   ],
