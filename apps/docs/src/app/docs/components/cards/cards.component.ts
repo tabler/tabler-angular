@@ -15,11 +15,24 @@ import { Component, OnInit } from '@angular/core';
         flexbox, they offer easy alignment and mix well with other Bootstrap components.
       </p>
     </div>
+    <ui-highlight [code]="code" name="highlight.component.ts" icon="fe fe-typescript"></ui-highlight>
   `,
   styles: []
 })
 export class CardsComponent implements OnInit {
+  public code = `import { Component, Input } from '@angular/core'
 
+@Component({
+  selector: 'app-highlight',
+  template: \`
+    <pre>{{code | json}}</pre>
+  \`,
+  styles: []
+})
+export class HighlightComponent {
+  @Input() code
+}
+  `
   constructor() { }
 
   ngOnInit() {

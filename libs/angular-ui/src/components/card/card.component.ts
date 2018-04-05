@@ -6,7 +6,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
     <div class="card" [class.hide]="hidden" [class.card-fullscreen]="fullScreen">
       <div *ngIf="status" class="card-status bg-{{ status }}" [class.card-status-left]="statusLeft"></div>
       <div class="card-header">
-        <h3 class="card-title" *ngIf="header">
+        <h3 class="card-title">
+          <i *ngIf="icon" class="{{ icon }}"></i>
           {{header}}
         </h3>
         <div class="card-options">
@@ -98,6 +99,7 @@ export class CardComponent {
   @Input() public fullScreen = false
   @Input() public header: string
   @Input() public hidden = false
+  @Input() public icon: string
   @Input() public loader = false
   @Input() public search: any
   @Input() public status: string

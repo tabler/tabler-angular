@@ -6,6 +6,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { ChartsModule } from 'ng2-charts'
 import { NgPipesModule } from 'angular-pipes'
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
+import { HighlightModule } from 'ngx-highlightjs'
 
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
@@ -24,7 +25,8 @@ import { DashboardStatsComponent } from './components/dashboard-stats/dashboard-
 import { AvatarComponent } from './components/avatar/avatar.component'
 import { CardComponent } from './components/card/card.component'
 import { CardBodyComponent } from './components/card-body/card-body.component'
-import { FooterLinksComponent } from './components/footer-links/footer-links.component'
+import { FooterLinksComponent } from './components/footer-links/footer-links.component';
+import { HighlightComponent } from './components/highlight/highlight.component'
 
 const exported = [
   LayoutComponent,
@@ -39,6 +41,7 @@ const exported = [
   AvatarComponent,
   CardComponent,
   CardBodyComponent,
+  HighlightComponent,
 ]
 
 @NgModule({
@@ -51,6 +54,9 @@ const exported = [
     ChartsModule,
     NgPipesModule,
     BsDropdownModule.forRoot(),
+    HighlightModule.forRoot({
+      theme: 'atom-one-light',
+    }),
   ],
   declarations: [
     HeaderComponent,
@@ -69,6 +75,7 @@ const exported = [
     DashboardChartBgComponent,
     CardComponent,
     CardBodyComponent,
+    HighlightComponent,
   ],
   exports: [
     ...exported,
