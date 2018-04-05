@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
+import { DemoService } from '../../../demo/services/demo.service'
 
 @Component({
   selector: 'app-header',
@@ -11,56 +12,66 @@ import { Component } from '@angular/core'
           </a>
           <div class="ml-auto d-flex order-lg-2">
             <div class="nav-item">
-              <a href="https://github.com/tabler/tabler-angular" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
+              <a href="https://github.com/tabler/tabler-angular" class="btn btn-sm btn-outline-primary" target="_blank">
+                Source code</a>
             </div>
-            <div class="dropdown d-none d-md-flex">
-              <a class="nav-link icon" data-toggle="dropdown">
-                <i class="fe fe-message-square"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow px-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Accusantium architecto asperiores dolorem, est fugiat in maxime natus
-                officia velit voluptas! Ab asperiores
-                delectus dolore dolores maxime nesciunt qui quia totam.
-              </div>
-            </div>
-            <div class="dropdown d-none d-md-flex">
-              <a class="nav-link icon" data-toggle="dropdown">
+            <div class="dropdown d-none d-md-flex" dropdown>
+              <a dropdownToggle class="nav-link icon" data-toggle="dropdown">
                 <i class="fe fe-bell"></i>
                 <span class="nav-unread"></span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow px-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                architecto asperiores dolorem, est fugiat in maxime natus officia velit
-                voluptas! Ab asperiores
-                delectus dolore dolores maxime nesciunt qui quia totam.
+              <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown-menu-arrow px-4">
+                <a href="#" class="dropdown-item d-flex">
+                  <app-avatar [image]="users[1].photo" class="mr-3"></app-avatar>
+                  <div>
+                    <strong>{{ users[ 1 ].name }}</strong> pushed new commit: Fix page load performance issue.
+                    <div class="small text-muted">10 minutes ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item d-flex">
+                  <app-avatar [image]="users[2].photo" class="mr-3"></app-avatar>
+                  <div>
+                    <strong>{{ users[ 2 ].name }}</strong> started new task: Tabler UI design.
+                    <div class="small text-muted">1 hour ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item d-flex">
+                  <app-avatar [image]="users[3].photo" class="mr-3"></app-avatar>
+                  <div>
+                    <strong>{{ users[ 3 ].name }}</strong> deployed new version of NodeJS REST Api V3
+                    <div class="small text-muted">2 hours ago</div>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item text-center text-muted-dark">Mark all as read</a>
               </div>
             </div>
-            <div class="dropdown">
-              <a href="#" class="nav-link pr-0" data-toggle="dropdown">
+
+            <div class="dropdown" dropdown>
+              <a class="nav-link pr-0" data-toggle="dropdown" dropdownToggle>
                 <app-avatar [image]="user.avatar"></app-avatar>
                 <span class="ml-2 d-none d-lg-block">
-							<span class="text-default">{{ user.name }} {{ user.surname }}</span>
-							<small class="text-muted d-block mt-1">Administrator</small>
-						</span>
+                  <span class="text-default">{{ user.name }} {{ user.surname }}</span>
+                  <small class="text-muted d-block mt-1">Administrator</small>
+                </span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                <a class="dropdown-item" href="#">
+              <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                <a class="dropdown-item" routerLink="/profile">
                   <span>Profile</span>
                 </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" routerLink="">
                   <span>Settings</span>
                 </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" routerLink="/pages/email">
                   <span class="float-right"><span class="badge badge-primary">6</span></span>
                   <span>Inbox</span>
                 </a>
-                <a class="dropdown-item" href="#">
-                  <span>Message</span>
+                <a class="dropdown-item" routerLink="/pages/email/compose">
+                  <span>New message</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Need help? </a>
-                <a class="dropdown-item" href="#">Sign out</a>
+                <a class="dropdown-item" routerLink="">Need help?</a>
+                <a class="dropdown-item" routerLink="/login">Sign out</a>
               </div>
             </div>
           </div>
@@ -87,11 +98,8 @@ import { Component } from '@angular/core'
       <div class="container">
         <div class="row align-items-center">
           <div class="col">
-
             <app-menu></app-menu>
-
           </div>
-
           <div class="col-3 ml-auto">
             <form class="input-icon">
               <input type="search" class="form-control header-search" placeholder="Search&hellip;" tabindex="1">
@@ -103,14 +111,19 @@ import { Component } from '@angular/core'
         </div>
       </div>
     </div>
-
   `,
   styles: []
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   public user = {
     name: 'Jane',
     surname: 'Pearson',
     avatar: 'assets/demo/faces/female/25.jpg',
+  }
+  public users = []
+  constructor(private demoService: DemoService) {
+  }
+  public ngOnInit() {
+    this.users = this.demoService.users
   }
 }

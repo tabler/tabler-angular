@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router'
 import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { ChartsModule } from 'ng2-charts'
 import { NgPipesModule } from 'angular-pipes'
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
@@ -48,6 +49,7 @@ const exported = [
     NgxChartsModule,
     ChartsModule,
     NgPipesModule,
+    BsDropdownModule.forRoot(),
   ],
   declarations: [
     HeaderComponent,
