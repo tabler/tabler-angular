@@ -9,6 +9,7 @@ import { NgPipesModule } from 'angular-pipes'
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { LayoutComponent } from './containers/layout/layout.component'
+import { LayoutBaseComponent } from './containers/layout-base/layout-base.component'
 import { MenuComponent } from './components/menu/menu.component'
 import { PageComponent } from './components/page/page.component'
 import { PageTitleComponent } from './components/page-title/page-title.component'
@@ -25,6 +26,7 @@ import { CardBodyComponent } from './components/card-body/card-body.component';
 
 const exported = [
   LayoutComponent,
+  LayoutBaseComponent,
   PageComponent,
   PageTitleComponent,
   DashboardStatsComponent,
@@ -51,6 +53,7 @@ const exported = [
     HeaderComponent,
     FooterComponent,
     LayoutComponent,
+    LayoutBaseComponent,
     MenuComponent,
     PageTitleComponent,
     PageComponent,

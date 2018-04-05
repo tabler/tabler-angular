@@ -3,17 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-pages-auth',
   template: `
-    <div class="page">
-      <div class="page-single">
-        <div class="container">
-          <div class="row">
-            <div class="col {{ colClass }} mx-auto">
-              <div class="text-center mb-6">
-                <img src="./assets/demo/brand/tabler.svg" class="h-6" alt="">
-              </div>
-
-              <router-outlet></router-outlet>
+    <div class="page-single">
+      <div class="container">
+        <div class="row">
+          <div class="col {{ colClass }} mx-auto">
+            <div class="text-center mb-6">
+              <img src="./assets/demo/brand/tabler.svg" class="h-6" alt="">
             </div>
+
+            <router-outlet></router-outlet>
           </div>
         </div>
       </div>

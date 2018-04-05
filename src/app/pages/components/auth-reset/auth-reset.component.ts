@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-auth-reset',
@@ -12,7 +13,7 @@ import { Component } from '@angular/core'
           <input type="password" class="form-control" placeholder="Password">
         </div>
         <div class="form-footer">
-          <button type="submit" class="btn btn-primary btn-block">Save new password</button>
+          <button type="button" class="btn btn-primary btn-block" (click)="submit()">Save new password</button>
         </div>
       </div>
     </form>
@@ -22,4 +23,10 @@ import { Component } from '@angular/core'
   `,
 })
 export class AuthResetComponent {
+
+  constructor(private router: Router) { }
+
+  submit() {
+    this.router.navigate(['/'])
+  }
 }

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-pages-index',
+  selector: 'app-page-profile',
   template: `
     <p>
-      pages-index works!
+      page-profile works!
     </p>
   `,
   styles: []
 })
-export class PagesIndexComponent implements OnInit {
+export class PageProfileComponent implements OnInit {
 
   constructor() { }
 

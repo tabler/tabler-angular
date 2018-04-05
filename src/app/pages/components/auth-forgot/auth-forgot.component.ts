@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-auth-forgot',
   template: `
-    <form class="card" action="">
+    <form class="card">
 
       <div class="card-body p-6">
         <div class="card-title">Forgot password</div>
@@ -15,7 +16,7 @@ import { Component, OnInit } from '@angular/core'
                  placeholder="Enter email">
         </div>
         <div class="form-footer">
-          <button type="submit" class="btn btn-primary btn-block">Send me new password</button>
+          <button type="button" class="btn btn-primary btn-block" (click)="submit()">Send me new password</button>
         </div>
       </div>
     </form>
@@ -25,12 +26,11 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class AuthForgotComponent implements OnInit {
+export class AuthForgotComponent {
 
-  constructor() {
+  constructor(private router: Router) { }
+
+  submit() {
+    this.router.navigate(['/'])
   }
-
-  ngOnInit() {
-  }
-
 }

@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-auth-login',
   template: `
-    <form class="card" action="" method="post">
+    <form class="card">
       <div class="card-body p-6">
         <div class="card-title">Login to your account</div>
 
         <div class="form-group">
           <label class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                 placeholder="Enter email">
         </div>
         <div class="form-group">
           <label class="form-label">
@@ -20,12 +22,12 @@ import { Component, OnInit } from '@angular/core';
         </div>
         <div class="form-group">
           <label class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" />
+            <input type="checkbox" class="custom-control-input"/>
             <span class="custom-control-label">Remember me</span>
           </label>
         </div>
         <div class="form-footer">
-          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+          <button type="button" class="btn btn-primary btn-block" (click)="submit()">Sign in</button>
         </div>
       </div>
     </form>
@@ -35,11 +37,12 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class AuthLoginComponent implements OnInit {
+export class AuthLoginComponent {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router) {
   }
 
+  submit() {
+    this.router.navigate([ '/' ])
+  }
 }

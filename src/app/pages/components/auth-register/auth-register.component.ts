@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-auth-register',
   template: `
-    <form class="card" action="" method="post">
+    <form class="card">
       <div class="card-body p-6">
         <div class="card-title">Create new account</div>
 
@@ -27,7 +28,7 @@ import { Component, OnInit } from '@angular/core'
         </div>
 
         <div class="form-footer">
-          <button type="submit" class="btn btn-primary btn-block">Create new account</button>
+          <button type="button" class="btn btn-primary btn-block" (click)="submit()">Create new account</button>
         </div>
       </div>
     </form>
@@ -38,12 +39,12 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class AuthRegisterComponent implements OnInit {
+export class AuthRegisterComponent {
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
-  ngOnInit() {
+  submit() {
+    this.router.navigate([ '/' ])
   }
-
 }

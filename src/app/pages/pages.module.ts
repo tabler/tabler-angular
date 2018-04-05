@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { AppSharedModule } from '../app-shared.module'
+import { LayoutBaseComponent } from '../ui/containers/layout-base/layout-base.component'
 
 import { LayoutComponent } from '../ui/containers/layout/layout.component'
 
@@ -15,18 +16,23 @@ import { PagesErrorComponent } from './containers/pages-error/pages-error.compon
 import { ErrorRoutes } from './containers/pages-error/error-routing.module'
 import { ErrorPageComponent } from './components/error-page/error-page.component'
 
-import { PagesIndexComponent } from './containers/pages-index/pages-index.component'
-
+import { PageEmailComponent } from './containers/page-email/page-email.component'
+import { PageEmptyComponent } from './containers/page-empty/page-empty.component'
+import { PageProfileComponent } from './containers/page-profile/page-profile.component'
 
 
 const routes: Routes = [
-  ...AuthRoutes,
-  ...ErrorRoutes,
+  {
+    path: '', component: LayoutBaseComponent, children: [
+      ...AuthRoutes,
+      ...ErrorRoutes,
+    ]
+  },
   {
     path: 'pages', component: LayoutComponent, children: [
-      { path: 'email' },
-      { path: 'empty' },
-      { path: 'profile' },
+      { path: 'email', component: PageEmailComponent },
+      { path: 'empty', component: PageEmptyComponent },
+      { path: 'profile', component: PageProfileComponent },
     ]
   },
 ]
@@ -37,7 +43,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ],
   declarations: [
-    PagesIndexComponent,
     PagesErrorComponent,
     PagesAuthComponent,
     AuthLoginComponent,
@@ -45,6 +50,9 @@ const routes: Routes = [
     AuthForgotComponent,
     AuthResetComponent,
     ErrorPageComponent,
+    PageEmailComponent,
+    PageEmptyComponent,
+    PageProfileComponent,
   ]
 })
 export class PagesModule {
