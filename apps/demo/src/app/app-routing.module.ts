@@ -1,10 +1,14 @@
 import { RouterModule, Routes } from '@angular/router'
 import { ModuleWithProviders } from '@angular/core'
-import { LayoutComponent } from '../../../../libs/angular-ui/'
+import { LayoutComponent } from '@tabler/angular-ui'
+import { AppConfig } from './app.config'
 
 const routes: Routes = [
   {
-    path: '', component: LayoutComponent, children: [
+    path: '',
+    component: LayoutComponent,
+    data: { config: AppConfig },
+    children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
       { path: 'docs', loadChildren: './docs/docs.module#DocsModule' },

@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router'
 import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { ChartsModule } from 'ng2-charts'
 import { NgPipesModule } from 'angular-pipes'
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
 
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
@@ -21,9 +21,10 @@ import { DashboardDigitComponent } from './components/dashboard-digit/dashboard-
 import { DashboardIconBoxComponent } from './components/dashboard-icon-box/dashboard-icon-box.component'
 import { DashboardStatsComponent } from './components/dashboard-stats/dashboard-stats.component'
 
-import { AvatarComponent } from './components/avatar/avatar.component';
-import { CardComponent } from './components/card/card.component';
-import { CardBodyComponent } from './components/card-body/card-body.component';
+import { AvatarComponent } from './components/avatar/avatar.component'
+import { CardComponent } from './components/card/card.component'
+import { CardBodyComponent } from './components/card-body/card-body.component'
+import { FooterLinksComponent } from './components/footer-links/footer-links.component'
 
 const exported = [
   LayoutComponent,
@@ -54,6 +55,7 @@ const exported = [
   declarations: [
     HeaderComponent,
     FooterComponent,
+    FooterLinksComponent,
     LayoutComponent,
     LayoutBaseComponent,
     MenuComponent,

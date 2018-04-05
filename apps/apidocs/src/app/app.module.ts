@@ -5,7 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CoreModule, SharedModule } from '@tabler/angular-core'
 
 import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component'
+import { AppComponent } from './app.component';
+import { FooterLinksComponent } from './ui/components/footer-links/footer-links.component'
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { AppComponent } from './app.component'
     SharedModule,
     AppRoutingModule
   ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, FooterLinksComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

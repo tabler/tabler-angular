@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { SharedModule } from '../../../../../libs/angular-core'
+import { SharedModule } from '@tabler/angular-core'
 
 import { ProfileIndexComponent } from './containers/profile-index/profile-index.component'
 import { ProfileCardComponent } from './components/profile-card/profile-card.component'

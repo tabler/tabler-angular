@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, Input, OnInit } from '@angular/core'
 // import { DemoService } from '../../../demo/services/demo.service'
 
 @Component({
@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core'
               <a href="https://github.com/tabler/tabler-angular" class="btn btn-sm btn-outline-primary" target="_blank">
                 Source code</a>
             </div>
-            <div class="dropdown d-none d-md-flex" dropdown>
+            <div class="dropdown d-none d-md-flex" dropdown *ngIf="notifications">
               <a dropdownToggle class="nav-link icon" data-toggle="dropdown">
                 <i class="fe fe-bell"></i>
                 <span class="nav-unread"></span>
@@ -47,7 +47,7 @@ import { Component, OnInit } from '@angular/core'
               </div>
             </div>
 
-            <div class="dropdown" dropdown>
+            <div class="dropdown" dropdown *ngIf="user">
               <a class="nav-link pr-0" data-toggle="dropdown" dropdownToggle>
                 <ui-avatar [image]="user.avatar"></ui-avatar>
                 <span class="ml-2 d-none d-lg-block">
@@ -98,7 +98,7 @@ import { Component, OnInit } from '@angular/core'
       <div class="container">
         <div class="row align-items-center">
           <div class="col">
-            <ui-menu></ui-menu>
+            <ui-menu [links]="config?.links"></ui-menu>
           </div>
           <div class="col-3 ml-auto">
             <form class="input-icon">
@@ -115,15 +115,16 @@ import { Component, OnInit } from '@angular/core'
   styles: []
 })
 export class HeaderComponent implements OnInit {
-  public user = {
-    name: 'Jane',
-    surname: 'Pearson',
-    avatar: 'assets/faces/female/25.jpg',
-  }
+  @Input() public config
+  @Input() public user
+  @Input() public notifications
+
   public users = []
   constructor() {
   }
   public ngOnInit() {
+    this.user = this.config.user
+    this.notifications = this.config.notifications
     // this.users = this.demoService.users
   }
 }

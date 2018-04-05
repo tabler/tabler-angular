@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
-
-import { UiModule } from '../../angular-ui'
+import { UiModule } from '@tabler/angular-ui'
 
 @NgModule({
   imports: [

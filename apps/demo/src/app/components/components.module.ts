@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { SharedModule } from '../../../../../libs/angular-core'
+import { SharedModule } from '@tabler/angular-core'
 
 import { ComponentsIndexComponent } from './containers/components-index/components-index.component'
 import { ComponentsIconsComponent } from './components/components-icons/components-icons.component'

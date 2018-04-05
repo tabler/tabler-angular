@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { ModalModule } from 'ngx-bootstrap'
-import { SharedModule } from '../../../../../libs/angular-core'
+import { SharedModule } from '@tabler/angular-core'
 import { GalleryIndexComponent } from './containers/gallery-index/gallery-index.component'
 import { GalleryItemComponent } from './components/gallery-item/gallery-item.component'
 import { GalleryListComponent } from './components/gallery-list/gallery-list.component'

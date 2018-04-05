@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core'
-import { SharedModule } from '../../../../../libs/angular-core'
+import { SharedModule } from '@tabler/angular-core'
 import { DemoService } from './services/demo.service'
-
 
 @NgModule({
   imports: [ SharedModule ],
