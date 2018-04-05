@@ -11,8 +11,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
         <p class="h4 text-muted font-weight-normal mb-7">{{ message }}&hellip;</p>
 
         <a class="btn btn-primary" href="#" (click)="back($event)">
-          <i class="fe fe-arrow-left mr-2"></i>Go back
+          <i class="fe fe-arrow-left mx-2"></i> Go back
         </a>
+        <a class="btn btn-secondary" [routerLink]="['/']">
+          <i class="fe fe-home mx-2"></i> Go home
+        </a>
+
       </app-page>
   `,
   styles: []

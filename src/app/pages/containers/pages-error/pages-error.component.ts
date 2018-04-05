@@ -10,23 +10,17 @@ import { ActivatedRoute } from '@angular/router'
   styles: []
 })
 export class PagesErrorComponent implements OnInit {
-  public code
-  public message
-  public messages = {
-    400: 'We are sorry but your request contains bad syntax and cannot be fulfilled',
-    401: 'We are sorry but you are not authorized to access this page',
-    403: 'We are sorry but you do not have permission to access this page',
-    404: 'We are sorry but our service is currently not available',
-    500: 'We are sorry but your request contains bad syntax and cannot be fulfilled',
-    503: 'We are sorry but our service is currently not available',
-  }
+  public code: number | string
+  public message: string
 
   constructor(private location: Location, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
     this.code = this.route.snapshot.data.code || 500
-    this.message = this.route.snapshot.queryParams.message || this.messages[this.code]
+    this.message = this.route.snapshot.data.message
+      || this.route.snapshot.queryParams.message
+      || 'Unknown error...'
   }
 
   public handleAction() {

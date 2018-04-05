@@ -1,30 +1,33 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { AppSharedModule } from '../app-shared.module'
-import { PagesIndexComponent } from './containers/pages-index/pages-index.component';
-import { PagesErrorComponent } from './containers/pages-error/pages-error.component';
-import { PagesAuthComponent } from './containers/pages-auth/pages-auth.component';
-import { AuthLoginComponent } from './components/auth-login/auth-login.component';
-import { AuthRegisterComponent } from './components/auth-register/auth-register.component';
-import { AuthForgotComponent } from './components/auth-forgot/auth-forgot.component';
-import { AuthResetComponent } from './components/auth-reset/auth-reset.component';
-import { ErrorPageComponent } from './components/error-page/error-page.component';
+
+import { LayoutComponent } from '../ui/containers/layout/layout.component'
+
+import { PagesAuthComponent } from './containers/pages-auth/pages-auth.component'
+import { AuthRoutes } from './containers/pages-auth/auth-routing.module'
+import { AuthLoginComponent } from './components/auth-login/auth-login.component'
+import { AuthRegisterComponent } from './components/auth-register/auth-register.component'
+import { AuthForgotComponent } from './components/auth-forgot/auth-forgot.component'
+import { AuthResetComponent } from './components/auth-reset/auth-reset.component'
+
+import { PagesErrorComponent } from './containers/pages-error/pages-error.component'
+import { ErrorRoutes } from './containers/pages-error/error-routing.module'
+import { ErrorPageComponent } from './components/error-page/error-page.component'
+
+import { PagesIndexComponent } from './containers/pages-index/pages-index.component'
+
+
 
 const routes: Routes = [
-  { path: '', component: PagesIndexComponent },
-  { path: '400', component: PagesErrorComponent, data: { code: '400' } },
-  { path: '401', component: PagesErrorComponent, data: { code: '401' } },
-  { path: '403', component: PagesErrorComponent, data: { code: '403' } },
-  { path: '404', component: PagesErrorComponent, data: { code: '404' } },
-  { path: '500', component: PagesErrorComponent, data: { code: '500' } },
-  { path: '503', component: PagesErrorComponent, data: { code: '503' } },
+  ...AuthRoutes,
+  ...ErrorRoutes,
   {
-    path: '', component: PagesAuthComponent, children: [
-      { path: 'login', component: AuthLoginComponent },
-      { path: 'register', component: AuthRegisterComponent },
-      { path: 'forgot-password', component: AuthForgotComponent },
-      { path: 'reset-password', component: AuthResetComponent },
-    ],
+    path: 'pages', component: LayoutComponent, children: [
+      { path: 'email' },
+      { path: 'empty' },
+      { path: 'profile' },
+    ]
   },
 ]
 
@@ -44,4 +47,5 @@ const routes: Routes = [
     ErrorPageComponent,
   ]
 })
-export class PagesModule { }
+export class PagesModule {
+}
