@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { AppSharedModule } from '../app-shared.module'
+import { SharedModule } from '../../../../../libs/angular-core'
 
 import { ProfileIndexComponent } from './containers/profile-index/profile-index.component'
 import { ProfileCardComponent } from './components/profile-card/profile-card.component'
@@ -15,7 +15,7 @@ export const routes: Routes = [
 
 @NgModule({
   imports: [
-    AppSharedModule,
+    SharedModule,
     RouterModule.forChild(routes)
   ],
   declarations: [

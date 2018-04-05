@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { AppSharedModule } from '../app-shared.module'
+import { SharedModule } from '../../../../../libs/angular-core'
 import { HomeIndexComponent } from './containers/home-index/home-index.component';
 import { DevelopmentActivityComponent } from './components/development-activity/development-activity.component';
 import { TableUsersComponent } from './components/table-users/table-users.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    AppSharedModule,
+    SharedModule,
     RouterModule.forChild(routes),
   ],
   declarations: [ HomeIndexComponent, DevelopmentActivityComponent, TableUsersComponent, CardBrowserStatsComponent, CardProjectsComponent, CardMembersComponent, DevelopmentChartComponent, TableInvoicesComponent ]

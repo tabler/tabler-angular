@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve --host 0.0.0.0 --aot",
+    "dev": "ng serve --app demo --host 0.0.0.0 --aot",
+    "apidocs": "ng serve --app apidocs --port=4201 --host 0.0.0.0 --aot",
     "build": "ng build --prod",
     "predist": "ng build --prod --base-href 'https://tabler.github.io/tabler-angular/'",
     "dist": "angular-cli-ghpages",

@@ -73,6 +73,7 @@ const exported = [
     NgxChartsModule,
     ChartsModule,
     NgPipesModule,
+    RouterModule,
   ]
 })
 export class UiModule {

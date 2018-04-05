@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { SharedModule } from '../../../../../libs/angular-core'
+import { SharedModule } from '@tabler/angular-core'
 
 import { IntroductionComponent } from './components/introduction/introduction.component'
 import { AlertsComponent } from './components/alerts/alerts.component'

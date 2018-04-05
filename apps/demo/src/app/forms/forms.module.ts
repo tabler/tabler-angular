@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { AppSharedModule } from '../app-shared.module'
+import { SharedModule } from '../../../../../libs/angular-core'
 import { FormsIndexComponent } from './containers/forms-index/forms-index.component';
 import { FormsInputImageComponent } from './components/forms-input-image/forms-input-image.component';
 import { FormsInputColorComponent } from './components/forms-input-color/forms-input-color.component';
@@ -14,7 +14,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    AppSharedModule,
+    SharedModule,
     RouterModule.forChild(routes),
   ],
   declarations: [ FormsIndexComponent, FormsInputImageComponent, FormsInputColorComponent, FormsInputIconComponent, FormsInputToggleComponent, FormsFormFieldsetComponent ]

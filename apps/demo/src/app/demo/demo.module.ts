@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core'
-import { AppSharedModule } from '../app-shared.module'
+import { SharedModule } from '../../../../../libs/angular-core'
 import { DemoService } from './services/demo.service'
 
 
 @NgModule({
-  imports: [ AppSharedModule ],
+  imports: [ SharedModule ],
   providers: [ DemoService ]
 })
 export class DemoModule {

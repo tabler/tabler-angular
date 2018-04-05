@@ -1,0 +1,16 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc/apps/apidocs",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": []
+  },
+  "include": [
+    "**/*.ts"
+    /* add all lazy-loaded libraries here: "../../../libs/my-lib/index.ts" */
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
+}

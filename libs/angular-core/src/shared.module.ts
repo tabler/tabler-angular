@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
-import { UiModule } from '../../../../libs/angular-ui'
+import { UiModule } from '../../angular-ui'
 
 @NgModule({
   imports: [
@@ -13,5 +13,5 @@ import { UiModule } from '../../../../libs/angular-ui'
     UiModule,
   ],
 })
-export class AppSharedModule {
+export class SharedModule {
 }
