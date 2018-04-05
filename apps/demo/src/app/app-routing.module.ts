@@ -17,6 +17,7 @@ const routes: Routes = [
       { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
       { path: 'forms', loadChildren: './forms/forms.module#FormsModule' },
       { path: 'gallery', loadChildren: './gallery/gallery.module#GalleryModule' },
+      { path: 'messages', loadChildren: './messages/messages.module#MessagesModule' },
     ],
   },
   { path: '', loadChildren: './pages/pages.module#PagesModule' },

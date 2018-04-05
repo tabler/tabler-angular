@@ -26,16 +26,16 @@ import { DemoService } from '../../../demo/services/demo.service'
               <ui-avatar [image]="message.from.photo" status="green"></ui-avatar>
             </td>
             <td>
-              <a href="" [routerLink]="[ message.id ]">
+              <a class="text-default" href="" [routerLink]="[ message.id ]">
                 <div>{{ message.from.name }} {{ message.from.surname }}</div>
               </a>
             </td>
             <td>
-              <a href="" [routerLink]="[ message.id ]">
+              <a class="text-default" href="" [routerLink]="[ message.id ]">
                 {{message.subject}}  
               </a>
             </td>
-            <td class="text-right">
+            <td class="text-right text-muted">
               {{message.datetime | date: 'medium'}}
             </td>
           </tr>

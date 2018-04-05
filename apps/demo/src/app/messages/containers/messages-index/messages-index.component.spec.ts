@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageEmailComponent } from './page-email.component';
+import { MessagesIndexComponent } from './messages-index.component';
 
-describe('PageEmailComponent', () => {
-  let component: PageEmailComponent;
-  let fixture: ComponentFixture<PageEmailComponent>;
+describe('MessagesIndexComponent', () => {
+  let component: MessagesIndexComponent;
+  let fixture: ComponentFixture<MessagesIndexComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageEmailComponent ]
+      declarations: [ MessagesIndexComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageEmailComponent);
+    fixture = TestBed.createComponent(MessagesIndexComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -66,11 +66,11 @@ import { Component, Input, OnInit } from '@angular/core'
                 <a class="dropdown-item" routerLink="">
                   <span>Settings</span>
                 </a>
-                <a class="dropdown-item" routerLink="/pages/email">
+                <a class="dropdown-item" routerLink="/messages">
                   <span class="float-right"><span class="badge badge-primary">6</span></span>
                   <span>Inbox</span>
                 </a>
-                <a class="dropdown-item" routerLink="/pages/email/compose">
+                <a class="dropdown-item" routerLink="/messages/compose">
                   <span>New message</span>
                 </a>
                 <div class="dropdown-divider"></div>
@@ -127,7 +127,9 @@ export class HeaderComponent implements OnInit {
   constructor() {
   }
   public ngOnInit() {
-    this.user = this.config.user
-    this.notifications = this.config.notifications
+    if (this.config) {
+      this.user = this.config.user || {}
+      this.notifications = this.config.notifications || []
+    }
   }
 }

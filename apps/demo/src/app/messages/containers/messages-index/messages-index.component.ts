@@ -19,7 +19,7 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class PageEmailComponent {
+export class MessagesIndexComponent {
 
   public folders = [
     {

@@ -107,7 +107,7 @@ const headerMenu = [
       },
       {
         name: 'Email',
-        url: '/pages/email'
+        url: '/messages'
       },
       {
         name: 'Empty page',
