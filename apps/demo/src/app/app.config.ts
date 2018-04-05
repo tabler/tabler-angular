@@ -1,3 +1,6 @@
+import { environment } from '../environments/environment'
+const urls = environment.urls
+
 const headerLinks = [
   {
     name: 'Home',
@@ -143,6 +146,17 @@ export const AppConfig = {
     links: headerLinks,
     user,
     notifications,
+    subLinks: [ {
+      label: 'Source Code',
+      link: urls.repo,
+      class: 'btn btn-sm btn-outline-primary ml-2',
+      icon: 'fe fe-github',
+    }, {
+      label: 'Documentation',
+      link: urls.docs,
+      class: 'btn btn-sm btn-outline-info ml-2',
+      icon: 'fe fe-info',
+    } ],
   },
   subfooter: {
     links: [],
@@ -150,7 +164,7 @@ export const AppConfig = {
   },
   footer: {
     disclaimer: `
-      Copyright © 2018 <a href="https://github.com/tabler/tabler-angular">tabler-angular</a>. 
+      Copyright © 2018 <a [href]="https://github.com/tabler/tabler-angular">tabler-angular</a>. 
       Theme by <a href="https://github.com/codecalm" target="_blank">@codecalm</a>. 
       Angular by <a href="https://github.com/beeman" target="_blank">@beeman</a>.
       MIT Licensed

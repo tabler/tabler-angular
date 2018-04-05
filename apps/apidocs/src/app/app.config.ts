@@ -1,4 +1,6 @@
-const headerLinks = [
+import { environment } from '../environments/environment'
+
+const headerMenu = [
   {
     name: 'Documentation',
     icon: 'fe fe-file-text',
@@ -34,7 +36,18 @@ const headerLinks = [
 
 export const AppConfig = {
   header: {
-    links: headerLinks,
+    menu: headerMenu,
+    links: [ {
+      label: 'Source Code',
+      link: environment.urls.repo,
+      class: 'btn btn-sm btn-outline-primary ml-2',
+      icon: 'fe fe-github',
+    }, {
+      label: 'Live Demo',
+      link: environment.urls.demo,
+      class: 'btn btn-sm btn-outline-success ml-2',
+      icon: 'fe fe-globe',
+    } ],
   },
   footer: {
     disclaimer: `
@@ -43,6 +56,14 @@ export const AppConfig = {
       Angular by <a href="https://github.com/beeman" target="_blank">@beeman</a>.
       MIT Licensed
     `,
-    links: [],
+    links: [
+      { link: '/docs', label: 'Documentation'},
+      { link: '/faq', label: 'FAQ'},
+      {
+        label: 'Source Code',
+        link: environment.urls.repo,
+        class: 'btn btn-sm btn-outline-primary ml-2',
+        icon: 'fe fe-github',
+      } ],
   }
 }

@@ -4,5 +4,10 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urls: {
+    docs: 'http://localhost:4201',
+    demo: 'http://localhost:4200',
+    repo: 'https://github.com/tabler/tabler-angular',
+  }
 };

@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core'
-// import { DemoService } from '../../../demo/services/demo.service'
 
 @Component({
   selector: 'ui-header',
@@ -9,11 +8,16 @@ import { Component, Input, OnInit } from '@angular/core'
         <div class="d-flex">
           <a class="navbar-brand" routerLink="/">
             <img src="assets/brand/tabler.svg" class="navbar-brand-img" alt="tabler.io">
+            Documentation
           </a>
           <div class="ml-auto d-flex order-lg-2">
             <div class="nav-item">
-              <a href="https://github.com/tabler/tabler-angular" class="btn btn-sm btn-outline-primary" target="_blank">
-                Source code</a>
+              <ng-container *ngFor="let link of config?.links">
+                <a [href]="link.link" [class]="link.class" target="_blank">
+                  <i [class]="link.icon"></i>
+                  {{ link.label }}
+                </a>
+              </ng-container>
             </div>
             <div class="dropdown d-none d-md-flex" dropdown *ngIf="notifications">
               <a dropdownToggle class="nav-link icon" data-toggle="dropdown">
@@ -98,7 +102,7 @@ import { Component, Input, OnInit } from '@angular/core'
       <div class="container">
         <div class="row align-items-center">
           <div class="col">
-            <ui-menu [links]="config?.links"></ui-menu>
+            <ui-menu [links]="config?.menu"></ui-menu>
           </div>
           <div class="col-3 ml-auto">
             <form class="input-icon">
@@ -125,6 +129,5 @@ export class HeaderComponent implements OnInit {
   public ngOnInit() {
     this.user = this.config.user
     this.notifications = this.config.notifications
-    // this.users = this.demoService.users
   }
 }

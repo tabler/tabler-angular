@@ -10,16 +10,15 @@ import { Component, Input } from '@angular/core'
             <div class="row align-items-center">
               <div class="col-auto">
                 <ul class="list-inline list-inline-dots mb-0">
-                  <li class="list-inline-item">
-                    <a routerLink="/docs">Documentation</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="/faq">FAQ</a>
-                  </li>
+                  <ng-container *ngFor="let link of config?.links">
+                    <li class="list-inline-item">
+                      <a [href]="link.link" [class]="link.class" target="_blank">
+                        <i [class]="link.icon"></i>
+                        {{ link.label }}
+                      </a>
+                    </li>
+                  </ng-container>
                 </ul>
-              </div>
-              <div class="col-auto">
-                <a href="https://github.com/tabler/tabler-angular" target="_blank" class="btn btn-outline-primary btn-sm">Source code</a>
               </div>
             </div>
           </div>
