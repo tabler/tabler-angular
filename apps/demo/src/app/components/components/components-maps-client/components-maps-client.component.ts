@@ -34,7 +34,7 @@ import { Component, OnInit } from '@angular/core'
       <div class="card-body">
         <div class="media mb-5">
           <img class="d-flex mr-5 rounded"
-               [attr.src]="'assets/demo/placeholder.svg'" alt="Generic placeholder image">
+               [attr.src]="'assets/placeholder.svg'" alt="Generic placeholder image">
           <div class="media-body">
             <h5>Axa Global Group</h5>
             <address class="text-muted small">
@@ -79,6 +79,6 @@ export class ComponentsMapsClientComponent {
   }
 
   backgroundImage() {
-    return 'url(assets/demo/staticmap.png)'
+    return 'url(assets/staticmap.png)'
   }
 }

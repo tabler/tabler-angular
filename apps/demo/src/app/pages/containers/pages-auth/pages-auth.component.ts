@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
         <div class="row">
           <div class="col {{ colClass }} mx-auto">
             <div class="text-center mb-6">
-              <img src="./assets/demo/brand/tabler.svg" class="h-6" alt="">
+              <img src="./assets/brand/tabler.svg" class="h-6" alt="">
             </div>
 
             <router-outlet></router-outlet>

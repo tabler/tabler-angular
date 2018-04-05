@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core'
       <div class="container">
         <div class="d-flex">
           <a class="navbar-brand" routerLink="/">
-            <img src="assets/demo/brand/tabler.svg" class="navbar-brand-img" alt="tabler.io">
+            <img src="assets/brand/tabler.svg" class="navbar-brand-img" alt="tabler.io">
           </a>
           <div class="ml-auto d-flex order-lg-2">
             <div class="nav-item">
@@ -118,7 +118,7 @@ export class HeaderComponent implements OnInit {
   public user = {
     name: 'Jane',
     surname: 'Pearson',
-    avatar: 'assets/demo/faces/female/25.jpg',
+    avatar: 'assets/faces/female/25.jpg',
   }
   public users = []
   constructor() {

@@ -21,7 +21,7 @@ export const users = [
       pin: 6832,
       security: 811
     },
-    photo: 'assets/demo/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg'
   },
   {
     name: 'Nathan',
@@ -45,7 +45,7 @@ export const users = [
       pin: 6607,
       security: 162
     },
-    photo: 'assets/demo/faces/male/41.jpg'
+    photo: 'assets/faces/male/41.jpg'
   },
   {
     name: 'Alice',
@@ -69,7 +69,7 @@ export const users = [
       pin: 8205,
       security: 313
     },
-    photo: 'assets/demo/faces/female/1.jpg'
+    photo: 'assets/faces/female/1.jpg'
   },
   {
     name: 'Rose',
@@ -93,7 +93,7 @@ export const users = [
       pin: 6576,
       security: 945
     },
-    photo: 'assets/demo/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg'
   },
   {
     name: 'Peter',
@@ -117,7 +117,7 @@ export const users = [
       pin: 2651,
       security: 836
     },
-    photo: 'assets/demo/faces/male/16.jpg'
+    photo: 'assets/faces/male/16.jpg'
   },
   {
     name: 'Wayne',
@@ -141,7 +141,7 @@ export const users = [
       pin: 2474,
       security: 853
     },
-    photo: 'assets/demo/faces/male/26.jpg'
+    photo: 'assets/faces/male/26.jpg'
   },
   {
     name: 'Michelle',
@@ -165,7 +165,7 @@ export const users = [
       pin: 2353,
       security: 729
     },
-    photo: 'assets/demo/faces/female/7.jpg'
+    photo: 'assets/faces/female/7.jpg'
   },
   {
     name: 'Debra',
@@ -189,7 +189,7 @@ export const users = [
       pin: 9022,
       security: 225
     },
-    photo: 'assets/demo/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg'
   },
   {
     name: 'Phillip',
@@ -213,7 +213,7 @@ export const users = [
       pin: 7680,
       security: 258
     },
-    photo: 'assets/demo/faces/male/30.jpg'
+    photo: 'assets/faces/male/30.jpg'
   },
   {
     name: 'Jack',
@@ -237,7 +237,7 @@ export const users = [
       pin: 4360,
       security: 510
     },
-    photo: 'assets/demo/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg'
   },
   {
     name: 'Ronald',
@@ -261,7 +261,7 @@ export const users = [
       pin: 3412,
       security: 173
     },
-    photo: 'assets/demo/faces/male/9.jpg'
+    photo: 'assets/faces/male/9.jpg'
   },
   {
     name: 'Kathleen',
@@ -285,7 +285,7 @@ export const users = [
       pin: 3600,
       security: 208
     },
-    photo: 'assets/demo/faces/female/8.jpg'
+    photo: 'assets/faces/female/8.jpg'
   },
   {
     name: 'Bobby',
@@ -309,7 +309,7 @@ export const users = [
       pin: 7115,
       security: 812
     },
-    photo: 'assets/demo/faces/male/4.jpg'
+    photo: 'assets/faces/male/4.jpg'
   },
   {
     name: 'Craig',
@@ -333,7 +333,7 @@ export const users = [
       pin: 1635,
       security: 560
     },
-    photo: 'assets/demo/faces/male/35.jpg'
+    photo: 'assets/faces/male/35.jpg'
   },
   {
     name: 'Crystal',
@@ -357,7 +357,7 @@ export const users = [
       pin: 5762,
       security: 883
     },
-    photo: 'assets/demo/faces/female/29.jpg'
+    photo: 'assets/faces/female/29.jpg'
   },
   {
     name: 'Vincent',
@@ -381,7 +381,7 @@ export const users = [
       pin: 6471,
       security: 207
     },
-    photo: 'assets/demo/faces/male/2.jpg'
+    photo: 'assets/faces/male/2.jpg'
   },
   {
     name: 'Beverly',
@@ -405,7 +405,7 @@ export const users = [
       pin: 8665,
       security: 246
     },
-    photo: 'assets/demo/faces/female/1.jpg'
+    photo: 'assets/faces/female/1.jpg'
   },
   {
     name: 'Russell',
@@ -429,7 +429,7 @@ export const users = [
       pin: 2848,
       security: 719
     },
-    photo: 'assets/demo/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg'
   },
   {
     name: 'Tyler',
@@ -453,7 +453,7 @@ export const users = [
       pin: 9498,
       security: 541
     },
-    photo: 'assets/demo/faces/male/7.jpg'
+    photo: 'assets/faces/male/7.jpg'
   },
   {
     name: 'Sharon',
@@ -477,7 +477,7 @@ export const users = [
       pin: 7433,
       security: 822
     },
-    photo: 'assets/demo/faces/female/11.jpg'
+    photo: 'assets/faces/female/11.jpg'
   },
   {
     name: 'Juan',
@@ -501,7 +501,7 @@ export const users = [
       pin: 8943,
       security: 412
     },
-    photo: 'assets/demo/faces/male/21.jpg'
+    photo: 'assets/faces/male/21.jpg'
   },
   {
     name: 'Dylan',
@@ -525,7 +525,7 @@ export const users = [
       pin: 4427,
       security: 131
     },
-    photo: 'assets/demo/faces/male/25.jpg'
+    photo: 'assets/faces/male/25.jpg'
   },
   {
     name: 'Kathryn',
@@ -549,7 +549,7 @@ export const users = [
       pin: 5201,
       security: 948
     },
-    photo: 'assets/demo/faces/female/5.jpg'
+    photo: 'assets/faces/female/5.jpg'
   },
   {
     name: 'Cynthia',
@@ -573,7 +573,7 @@ export const users = [
       pin: 7703,
       security: 395
     },
-    photo: 'assets/demo/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg'
   },
   {
     name: 'Michael',
@@ -597,7 +597,7 @@ export const users = [
       pin: 6286,
       security: 773
     },
-    photo: 'assets/demo/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg'
   },
   {
     name: 'Billy',
@@ -621,7 +621,7 @@ export const users = [
       pin: 1959,
       security: 223
     },
-    photo: 'assets/demo/faces/male/33.jpg'
+    photo: 'assets/faces/male/33.jpg'
   },
   {
     name: 'Larry',
@@ -645,7 +645,7 @@ export const users = [
       pin: 2258,
       security: 866
     },
-    photo: 'assets/demo/faces/male/6.jpg'
+    photo: 'assets/faces/male/6.jpg'
   },
   {
     name: 'Terry',
@@ -669,7 +669,7 @@ export const users = [
       pin: 3263,
       security: 832
     },
-    photo: 'assets/demo/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg'
   },
   {
     name: 'Ruth',
@@ -693,7 +693,7 @@ export const users = [
       pin: 5710,
       security: 537
     },
-    photo: 'assets/demo/faces/female/10.jpg'
+    photo: 'assets/faces/female/10.jpg'
   },
   {
     name: 'Julia',
@@ -717,7 +717,7 @@ export const users = [
       pin: 6421,
       security: 928
     },
-    photo: 'assets/demo/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg'
   },
   {
     name: 'Amanda',
@@ -741,7 +741,7 @@ export const users = [
       pin: 8726,
       security: 679
     },
-    photo: 'assets/demo/faces/female/12.jpg'
+    photo: 'assets/faces/female/12.jpg'
   },
   {
     name: 'Laura',
@@ -765,7 +765,7 @@ export const users = [
       pin: 2256,
       security: 372
     },
-    photo: 'assets/demo/faces/female/21.jpg'
+    photo: 'assets/faces/female/21.jpg'
   },
   {
     name: 'Margaret',
@@ -789,7 +789,7 @@ export const users = [
       pin: 1921,
       security: 790
     },
-    photo: 'assets/demo/faces/female/29.jpg'
+    photo: 'assets/faces/female/29.jpg'
   },
   {
     name: 'Nancy',
@@ -813,7 +813,7 @@ export const users = [
       pin: 9913,
       security: 793
     },
-    photo: 'assets/demo/faces/female/2.jpg'
+    photo: 'assets/faces/female/2.jpg'
   },
   {
     name: 'Edward',
@@ -837,7 +837,7 @@ export const users = [
       pin: 9281,
       security: 331
     },
-    photo: 'assets/demo/faces/male/34.jpg'
+    photo: 'assets/faces/male/34.jpg'
   },
   {
     name: 'Joan',
@@ -861,7 +861,7 @@ export const users = [
       pin: 4939,
       security: 546
     },
-    photo: 'assets/demo/faces/female/11.jpg'
+    photo: 'assets/faces/female/11.jpg'
   },
   {
     name: 'Janet',
@@ -885,7 +885,7 @@ export const users = [
       pin: 4753,
       security: 139
     },
-    photo: 'assets/demo/faces/female/30.jpg'
+    photo: 'assets/faces/female/30.jpg'
   },
   {
     name: 'Johnny',
@@ -909,7 +909,7 @@ export const users = [
       pin: 3603,
       security: 812
     },
-    photo: 'assets/demo/faces/male/31.jpg'
+    photo: 'assets/faces/male/31.jpg'
   },
   {
     name: 'Ethan',
@@ -933,7 +933,7 @@ export const users = [
       pin: 1771,
       security: 452
     },
-    photo: 'assets/demo/faces/male/42.jpg'
+    photo: 'assets/faces/male/42.jpg'
   },
   {
     name: 'Albert',
@@ -957,7 +957,7 @@ export const users = [
       pin: 9433,
       security: 546
     },
-    photo: 'assets/demo/faces/male/2.jpg'
+    photo: 'assets/faces/male/2.jpg'
   },
   {
     name: 'Jane',
@@ -981,7 +981,7 @@ export const users = [
       pin: 8205,
       security: 568
     },
-    photo: 'assets/demo/faces/female/25.jpg'
+    photo: 'assets/faces/female/25.jpg'
   },
   {
     name: 'Jason',
@@ -1005,7 +1005,7 @@ export const users = [
       pin: 3894,
       security: 440
     },
-    photo: 'assets/demo/faces/male/9.jpg'
+    photo: 'assets/faces/male/9.jpg'
   },
   {
     name: 'Teresa',
@@ -1029,7 +1029,7 @@ export const users = [
       pin: 7094,
       security: 433
     },
-    photo: 'assets/demo/faces/female/25.jpg'
+    photo: 'assets/faces/female/25.jpg'
   },
   {
     name: 'Mary',
@@ -1053,7 +1053,7 @@ export const users = [
       pin: 4775,
       security: 544
     },
-    photo: 'assets/demo/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg'
   },
   {
     name: 'Janice',
@@ -1077,7 +1077,7 @@ export const users = [
       pin: 8052,
       security: 920
     },
-    photo: 'assets/demo/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg'
   },
   {
     name: 'Anthony',
@@ -1101,7 +1101,7 @@ export const users = [
       pin: 3796,
       security: 271
     },
-    photo: 'assets/demo/faces/male/26.jpg'
+    photo: 'assets/faces/male/26.jpg'
   },
   {
     name: 'Denise',
@@ -1125,7 +1125,7 @@ export const users = [
       pin: 1260,
       security: 599
     },
-    photo: 'assets/demo/faces/female/9.jpg'
+    photo: 'assets/faces/female/9.jpg'
   },
   {
     name: 'Rose',
@@ -1149,7 +1149,7 @@ export const users = [
       pin: 4532,
       security: 582
     },
-    photo: 'assets/demo/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg'
   },
   {
     name: 'Terry',
@@ -1173,7 +1173,7 @@ export const users = [
       pin: 3867,
       security: 547
     },
-    photo: 'assets/demo/faces/male/17.jpg'
+    photo: 'assets/faces/male/17.jpg'
   },
   {
     name: 'Grace',
@@ -1197,7 +1197,7 @@ export const users = [
       pin: 1180,
       security: 462
     },
-    photo: 'assets/demo/faces/female/6.jpg'
+    photo: 'assets/faces/female/6.jpg'
   },
   {
     name: 'Elizabeth',
@@ -1221,7 +1221,7 @@ export const users = [
       pin: 7658,
       security: 203
     },
-    photo: 'assets/demo/faces/female/26.jpg'
+    photo: 'assets/faces/female/26.jpg'
   },
   {
     name: 'Michelle',
@@ -1245,7 +1245,7 @@ export const users = [
       pin: 2296,
       security: 583
     },
-    photo: 'assets/demo/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg'
   },
   {
     name: 'Crystal',
@@ -1269,7 +1269,7 @@ export const users = [
       pin: 9458,
       security: 565
     },
-    photo: 'assets/demo/faces/female/21.jpg'
+    photo: 'assets/faces/female/21.jpg'
   },
   {
     name: 'Douglas',
@@ -1293,7 +1293,7 @@ export const users = [
       pin: 8416,
       security: 800
     },
-    photo: 'assets/demo/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg'
   },
   {
     name: 'Teresa',
@@ -1317,7 +1317,7 @@ export const users = [
       pin: 2780,
       security: 910
     },
-    photo: 'assets/demo/faces/female/12.jpg'
+    photo: 'assets/faces/female/12.jpg'
   },
   {
     name: 'Emma',
@@ -1341,7 +1341,7 @@ export const users = [
       pin: 2434,
       security: 768
     },
-    photo: 'assets/demo/faces/female/4.jpg'
+    photo: 'assets/faces/female/4.jpg'
   },
   {
     name: 'Carol',
@@ -1365,7 +1365,7 @@ export const users = [
       pin: 2015,
       security: 842
     },
-    photo: 'assets/demo/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg'
   },
   {
     name: 'Christopher',
@@ -1389,7 +1389,7 @@ export const users = [
       pin: 8472,
       security: 192
     },
-    photo: 'assets/demo/faces/male/20.jpg'
+    photo: 'assets/faces/male/20.jpg'
   },
   {
     name: 'Deborah',
@@ -1413,7 +1413,7 @@ export const users = [
       pin: 4117,
       security: 525
     },
-    photo: 'assets/demo/faces/female/5.jpg'
+    photo: 'assets/faces/female/5.jpg'
   },
   {
     name: 'Gregory',
@@ -1437,7 +1437,7 @@ export const users = [
       pin: 4601,
       security: 969
     },
-    photo: 'assets/demo/faces/male/10.jpg'
+    photo: 'assets/faces/male/10.jpg'
   },
   {
     name: 'Jesse',
@@ -1461,7 +1461,7 @@ export const users = [
       pin: 8301,
       security: 749
     },
-    photo: 'assets/demo/faces/male/14.jpg'
+    photo: 'assets/faces/male/14.jpg'
   },
   {
     name: 'Joan',
@@ -1485,7 +1485,7 @@ export const users = [
       pin: 6409,
       security: 124
     },
-    photo: 'assets/demo/faces/female/22.jpg'
+    photo: 'assets/faces/female/22.jpg'
   },
   {
     name: 'Carl',
@@ -1509,7 +1509,7 @@ export const users = [
       pin: 6955,
       security: 857
     },
-    photo: 'assets/demo/faces/male/20.jpg'
+    photo: 'assets/faces/male/20.jpg'
   },
   {
     name: 'Frank',
@@ -1533,7 +1533,7 @@ export const users = [
       pin: 3134,
       security: 690
     },
-    photo: 'assets/demo/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg'
   },
   {
     name: 'Kathleen',
@@ -1557,7 +1557,7 @@ export const users = [
       pin: 8982,
       security: 361
     },
-    photo: 'assets/demo/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg'
   },
   {
     name: 'Michelle',
@@ -1581,7 +1581,7 @@ export const users = [
       pin: 2606,
       security: 291
     },
-    photo: 'assets/demo/faces/female/6.jpg'
+    photo: 'assets/faces/female/6.jpg'
   },
   {
     name: 'Nancy',
@@ -1605,7 +1605,7 @@ export const users = [
       pin: 4974,
       security: 932
     },
-    photo: 'assets/demo/faces/female/5.jpg'
+    photo: 'assets/faces/female/5.jpg'
   },
   {
     name: 'Tyler',
@@ -1629,7 +1629,7 @@ export const users = [
       pin: 4254,
       security: 429
     },
-    photo: 'assets/demo/faces/male/1.jpg'
+    photo: 'assets/faces/male/1.jpg'
   },
   {
     name: 'Jordan',
@@ -1653,7 +1653,7 @@ export const users = [
       pin: 7743,
       security: 726
     },
-    photo: 'assets/demo/faces/male/5.jpg'
+    photo: 'assets/faces/male/5.jpg'
   },
   {
     name: 'Wayne',
@@ -1677,7 +1677,7 @@ export const users = [
       pin: 2734,
       security: 537
     },
-    photo: 'assets/demo/faces/male/27.jpg'
+    photo: 'assets/faces/male/27.jpg'
   },
   {
     name: 'Johnny',
@@ -1701,7 +1701,7 @@ export const users = [
       pin: 3408,
       security: 823
     },
-    photo: 'assets/demo/faces/male/10.jpg'
+    photo: 'assets/faces/male/10.jpg'
   },
   {
     name: 'Tyler',
@@ -1725,7 +1725,7 @@ export const users = [
       pin: 3289,
       security: 721
     },
-    photo: 'assets/demo/faces/male/31.jpg'
+    photo: 'assets/faces/male/31.jpg'
   },
   {
     name: 'Debra',
@@ -1749,7 +1749,7 @@ export const users = [
       pin: 5621,
       security: 311
     },
-    photo: 'assets/demo/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg'
   },
   {
     name: 'Beverly',
@@ -1773,7 +1773,7 @@ export const users = [
       pin: 5931,
       security: 119
     },
-    photo: 'assets/demo/faces/female/21.jpg'
+    photo: 'assets/faces/female/21.jpg'
   },
   {
     name: 'Sean',
@@ -1797,7 +1797,7 @@ export const users = [
       pin: 4647,
       security: 823
     },
-    photo: 'assets/demo/faces/male/42.jpg'
+    photo: 'assets/faces/male/42.jpg'
   },
   {
     name: 'Diane',
@@ -1821,7 +1821,7 @@ export const users = [
       pin: 6081,
       security: 248
     },
-    photo: 'assets/demo/faces/female/32.jpg'
+    photo: 'assets/faces/female/32.jpg'
   },
   {
     name: 'Robert',
@@ -1845,7 +1845,7 @@ export const users = [
       pin: 5587,
       security: 663
     },
-    photo: 'assets/demo/faces/male/35.jpg'
+    photo: 'assets/faces/male/35.jpg'
   },
   {
     name: 'Olivia',
@@ -1869,7 +1869,7 @@ export const users = [
       pin: 2059,
       security: 222
     },
-    photo: 'assets/demo/faces/female/26.jpg'
+    photo: 'assets/faces/female/26.jpg'
   },
   {
     name: 'Lori',
@@ -1893,7 +1893,7 @@ export const users = [
       pin: 8584,
       security: 440
     },
-    photo: 'assets/demo/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg'
   },
   {
     name: 'Madison',
@@ -1917,7 +1917,7 @@ export const users = [
       pin: 7150,
       security: 718
     },
-    photo: 'assets/demo/faces/female/13.jpg'
+    photo: 'assets/faces/female/13.jpg'
   },
   {
     name: 'Joan',
@@ -1941,7 +1941,7 @@ export const users = [
       pin: 3248,
       security: 783
     },
-    photo: 'assets/demo/faces/female/4.jpg'
+    photo: 'assets/faces/female/4.jpg'
   },
   {
     name: 'Helen',
@@ -1965,7 +1965,7 @@ export const users = [
       pin: 9643,
       security: 979
     },
-    photo: 'assets/demo/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg'
   },
   {
     name: 'Bryan',
@@ -1989,7 +1989,7 @@ export const users = [
       pin: 4561,
       security: 967
     },
-    photo: 'assets/demo/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg'
   },
   {
     name: 'Joan',
@@ -2013,7 +2013,7 @@ export const users = [
       pin: 1283,
       security: 276
     },
-    photo: 'assets/demo/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg'
   },
   {
     name: 'Douglas',
@@ -2037,7 +2037,7 @@ export const users = [
       pin: 8096,
       security: 609
     },
-    photo: 'assets/demo/faces/male/33.jpg'
+    photo: 'assets/faces/male/33.jpg'
   },
   {
     name: 'Ethan',
@@ -2061,7 +2061,7 @@ export const users = [
       pin: 9459,
       security: 477
     },
-    photo: 'assets/demo/faces/male/24.jpg'
+    photo: 'assets/faces/male/24.jpg'
   },
   {
     name: 'Frances',
@@ -2085,7 +2085,7 @@ export const users = [
       pin: 1638,
       security: 273
     },
-    photo: 'assets/demo/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg'
   },
   {
     name: 'Amanda',
@@ -2109,7 +2109,7 @@ export const users = [
       pin: 8405,
       security: 375
     },
-    photo: 'assets/demo/faces/female/26.jpg'
+    photo: 'assets/faces/female/26.jpg'
   },
   {
     name: 'Emma',
@@ -2133,7 +2133,7 @@ export const users = [
       pin: 4504,
       security: 572
     },
-    photo: 'assets/demo/faces/female/7.jpg'
+    photo: 'assets/faces/female/7.jpg'
   },
   {
     name: 'Anna',
@@ -2157,7 +2157,7 @@ export const users = [
       pin: 9937,
       security: 891
     },
-    photo: 'assets/demo/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg'
   },
   {
     name: 'Daniel',
@@ -2181,7 +2181,7 @@ export const users = [
       pin: 4255,
       security: 399
     },
-    photo: 'assets/demo/faces/male/12.jpg'
+    photo: 'assets/faces/male/12.jpg'
   },
   {
     name: 'Rachel',
@@ -2205,7 +2205,7 @@ export const users = [
       pin: 3418,
       security: 403
     },
-    photo: 'assets/demo/faces/female/23.jpg'
+    photo: 'assets/faces/female/23.jpg'
   },
   {
     name: 'Virginia',
@@ -2229,7 +2229,7 @@ export const users = [
       pin: 1408,
       security: 445
     },
-    photo: 'assets/demo/faces/female/15.jpg'
+    photo: 'assets/faces/female/15.jpg'
   },
   {
     name: 'Joe',
@@ -2253,7 +2253,7 @@ export const users = [
       pin: 5860,
       security: 343
     },
-    photo: 'assets/demo/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg'
   },
   {
     name: 'Megan',
@@ -2277,7 +2277,7 @@ export const users = [
       pin: 1602,
       security: 739
     },
-    photo: 'assets/demo/faces/female/9.jpg'
+    photo: 'assets/faces/female/9.jpg'
   },
   {
     name: 'Joshua',
@@ -2301,7 +2301,7 @@ export const users = [
       pin: 5831,
       security: 848
     },
-    photo: 'assets/demo/faces/male/28.jpg'
+    photo: 'assets/faces/male/28.jpg'
   },
   {
     name: 'Aaron',
@@ -2325,7 +2325,7 @@ export const users = [
       pin: 4111,
       security: 339
     },
-    photo: 'assets/demo/faces/male/9.jpg'
+    photo: 'assets/faces/male/9.jpg'
   },
   {
     name: 'Kathy',
@@ -2349,7 +2349,7 @@ export const users = [
       pin: 8777,
       security: 188
     },
-    photo: 'assets/demo/faces/female/10.jpg'
+    photo: 'assets/faces/female/10.jpg'
   },
   {
     name: 'Zachary',
@@ -2373,7 +2373,7 @@ export const users = [
       pin: 4527,
       security: 579
     },
-    photo: 'assets/demo/faces/male/14.jpg'
+    photo: 'assets/faces/male/14.jpg'
   },
   {
     name: 'Richard',
@@ -2397,6 +2397,6 @@ export const users = [
       pin: 4843,
       security: 976
     },
-    photo: 'assets/demo/faces/male/11.jpg'
+    photo: 'assets/faces/male/11.jpg'
   }
 ]
