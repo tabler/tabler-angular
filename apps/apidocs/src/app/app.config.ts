@@ -36,6 +36,7 @@ const headerMenu = [
 
 export const AppConfig = {
   header: {
+    title: 'Documentation',
     menu: headerMenu,
     links: [ {
       label: 'Source Code',

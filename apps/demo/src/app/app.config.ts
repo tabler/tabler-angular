@@ -1,7 +1,6 @@
 import { environment } from '../environments/environment'
-const urls = environment.urls
 
-const headerLinks = [
+const headerMenu = [
   {
     name: 'Home',
     icon: 'fe fe-home',
@@ -143,17 +142,18 @@ const notifications = []
 
 export const AppConfig = {
   header: {
-    links: headerLinks,
+    title: 'Demo',
+    menu: headerMenu,
     user,
     notifications,
-    subLinks: [ {
+    links: [ {
       label: 'Source Code',
-      link: urls.repo,
+      link: environment.urls.repo,
       class: 'btn btn-sm btn-outline-primary ml-2',
       icon: 'fe fe-github',
     }, {
       label: 'Documentation',
-      link: urls.docs,
+      link: environment.urls.docs,
       class: 'btn btn-sm btn-outline-info ml-2',
       icon: 'fe fe-info',
     } ],
