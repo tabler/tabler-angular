@@ -22,8 +22,8 @@ const routes: Routes = [
     path: '', component: PagesAuthComponent, children: [
       { path: 'login', component: AuthLoginComponent },
       { path: 'register', component: AuthRegisterComponent },
-      { path: 'forgot', component: AuthForgotComponent },
-      { path: 'reset', component: AuthResetComponent },
+      { path: 'forgot-password', component: AuthForgotComponent },
+      { path: 'reset-password', component: AuthResetComponent },
     ],
   },
 ]

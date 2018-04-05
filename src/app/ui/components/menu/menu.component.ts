@@ -91,39 +91,43 @@ export class MenuComponent implements OnInit {
         },
         {
           name: 'Login',
-          url: '/pages/login'
+          url: '/login'
         },
         {
           name: 'Register',
-          url: '/pages/register'
+          url: '/register'
         },
         {
           name: 'Forgot password',
-          url: '/pages/forgot-password'
+          url: '/forgot-password'
+        },
+        {
+          name: 'Reset password',
+          url: '/reset-password'
         },
         {
           name: '400 error',
-          url: '/pages/400'
+          url: '/400'
         },
         {
           name: '401 error',
-          url: '/pages/401'
+          url: '/401'
         },
         {
           name: '403 error',
-          url: '/pages/403'
+          url: '/403'
         },
         {
           name: '404 error',
-          url: '/pages/404'
+          url: '/404'
         },
         {
           name: '500 error',
-          url: '/pages/500'
+          url: '/500'
         },
         {
           name: '503 error',
-          url: '/pages/503'
+          url: '/503'
         },
         {
           name: 'Email',
