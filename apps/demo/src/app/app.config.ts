@@ -111,7 +111,7 @@ const headerMenu = [
       },
       {
         name: 'Empty page',
-        url: '/pages/empty'
+        url: '/empty'
       }
     ],
   },

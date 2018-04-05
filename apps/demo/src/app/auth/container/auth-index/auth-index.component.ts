@@ -19,7 +19,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class PagesAuthComponent implements OnInit {
+export class AuthIndexComponent implements OnInit {
   public colClass = 'col-login'
   constructor() { }
 
