@@ -1,4 +1,8 @@
-# AngularTabler
+# Tabler Angular
+
+> WIP: Implementation of [tabler](https://github.com/tabler/tabler) using Angular.
+
+<strong><a href="https://goo.gl/zJP2dT">Join us on Slack</a></strong>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
