@@ -2,11 +2,11 @@
 MIT
 MIT
 
-@angular/common@5.2.9
+@angular/router@5.2.9
 MIT
 MIT
 
-@angular/router@5.2.9
+@angular/common@5.2.9
 MIT
 MIT
 
