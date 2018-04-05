@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 @Component({
-  selector: 'app-dashboard-icon-box',
+  selector: 'ui-dashboard-icon-box',
   template: `
     <div class="card p-3">
       <div class="d-flex align-items-center">

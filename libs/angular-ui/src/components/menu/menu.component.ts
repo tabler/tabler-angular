@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-menu',
+  selector: 'ui-menu',
   template: `
     <ul class="nav nav-tabs">
       <ng-container *ngFor="let item of items">

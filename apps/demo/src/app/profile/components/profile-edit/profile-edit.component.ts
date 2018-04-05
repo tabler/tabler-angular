@@ -11,7 +11,7 @@ import { Component, Input } from '@angular/core'
         <form>
           <div class="row">
             <div class="col-auto">
-              <app-avatar size="xl" [image]="user.photo"></app-avatar>
+              <ui-avatar size="xl" [image]="user.photo"></ui-avatar>
             </div>
             <div class="col">
               <div class="form-group">

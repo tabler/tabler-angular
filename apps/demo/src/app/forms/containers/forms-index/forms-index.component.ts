@@ -4,8 +4,8 @@ import { DemoService } from '../../../demo/services/demo.service'
 @Component({
   selector: 'app-forms-index',
   template: `
-    <app-page>
-      <app-page-title title="Forms" icon="fe fe-check-square"></app-page-title>
+    <ui-page>
+      <ui-page-title title="Forms" icon="fe fe-check-square"></ui-page-title>
 
       <form action="https://httpbin.org/post" method="post" class="card">
         <div class="card-header">
@@ -634,7 +634,7 @@ determine address more accurately.</p><p class='mb-0'><a href=''>USP ZIP codes l
           </div>
         </div>
       </form>
-    </app-page>
+    </ui-page>
   `
 })
 export class FormsIndexComponent implements OnInit {

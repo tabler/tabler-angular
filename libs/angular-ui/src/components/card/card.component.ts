@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component({
-  selector: 'app-card',
+  selector: 'ui-card',
   template: `
     <div class="card" [class.hide]="hidden" [class.card-fullscreen]="fullScreen">
       <div *ngIf="status" class="card-status bg-{{ status }}" [class.card-status-left]="statusLeft"></div>

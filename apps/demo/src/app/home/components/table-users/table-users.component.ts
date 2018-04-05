@@ -26,7 +26,7 @@ import { until } from 'selenium-webdriver'
           <!--{% assign register_offset = forloop.index | random_number: 0, 8000000 %}-->
           <tr *ngFor="let user of getUsers()">
             <td class="text-center">
-              <app-avatar [image]="user.photo" status="green"></app-avatar>
+              <ui-avatar [image]="user.photo" status="green"></ui-avatar>
             </td>
             <td>
               <div>{{ user.name }} {{ user.surname }}</div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-card-browser-stats',
+  selector: 'ui-card-browser-stats',
   template: `
     <div class="card">
       <div class="card-header">

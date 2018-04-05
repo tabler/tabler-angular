@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-layout-base',
+  selector: 'ui-layout-base',
   template: `
     <div class="page">
       <router-outlet></router-outlet>

@@ -3,7 +3,7 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-components-maps',
   template: `
-    <app-page-title title="Maps" badge="WIP" badgeStyle="info"></app-page-title>
+    <ui-page-title title="Maps" badge="WIP" badgeStyle="info"></ui-page-title>
     <div class="map-header">
       <div class="map-header-layer" id="map-background"></div>
     </div>

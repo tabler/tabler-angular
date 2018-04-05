@@ -17,7 +17,7 @@ import { Component, Input, OnInit } from '@angular/core'
       <ul class="list-group card-list-group">
         <li class="list-group-item py-5">
           <div class="media">
-            <app-avatar size="md" [image]="timeline[4].photo" class="m-3 p-4"></app-avatar>
+            <ui-avatar size="md" [image]="timeline[4].photo" class="m-3 p-4"></ui-avatar>
             <div class="media-body">
               <div class="media-heading">
                 <small class="float-right text-muted">4 min</small>
@@ -34,7 +34,7 @@ import { Component, Input, OnInit } from '@angular/core'
 
               <ul class="media-list">
                 <li class="media m-3 p-4">
-                  <app-avatar size="md" [image]="timeline[7].photo" class="p-4"></app-avatar>
+                  <ui-avatar size="md" [image]="timeline[7].photo" class="p-4"></ui-avatar>
                   <div class="media-body">
                     <strong>{{ timeline[ 7 ].name }} {{ timeline[ 7 ].surname }}: </strong>
                     Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum
@@ -44,7 +44,7 @@ import { Component, Input, OnInit } from '@angular/core'
                   </div>
                 </li>
                 <li class="media m-3 p-4">
-                  <app-avatar size="md" [image]="timeline[9].photo" class="p-4"></app-avatar>
+                  <ui-avatar size="md" [image]="timeline[9].photo" class="p-4"></ui-avatar>
                   <div class="media-body">
                     <strong>{{ timeline[ 9 ].name }} {{ timeline[ 9 ].surname }}: </strong>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo,
@@ -59,7 +59,7 @@ import { Component, Input, OnInit } from '@angular/core'
         </li>
         <li class="list-group-item py-5">
           <div class="media">
-            <app-avatar size="md" [image]="timeline[4].photo" class="m-3 p-4"></app-avatar>
+            <ui-avatar size="md" [image]="timeline[4].photo" class="m-3 p-4"></ui-avatar>
             <div class="media-body">
               <div class="media-heading">
                 <small class="float-right text-muted">12 min</small>
@@ -76,7 +76,7 @@ import { Component, Input, OnInit } from '@angular/core'
         </li>
         <li class="list-group-item py-5">
           <div class="media">
-            <app-avatar size="md" [image]="timeline[4].photo" class="m-3 p-4"></app-avatar>
+            <ui-avatar size="md" [image]="timeline[4].photo" class="m-3 p-4"></ui-avatar>
             <div class="media-body">
               <div class="media-heading">
                 <small class="float-right text-muted">34 min</small>
@@ -91,7 +91,7 @@ import { Component, Input, OnInit } from '@angular/core'
 
               <ul class="media-list">
                 <li class="media m-3 p-4">
-                  <app-avatar size="sm" [image]="timeline[5].photo" class="p-4"></app-avatar>
+                  <ui-avatar size="sm" [image]="timeline[5].photo" class="p-4"></ui-avatar>
                   <div class="media-body">
                     <strong>{{ timeline[ 5 ].name }} {{ timeline[ 5 ].surname }}: </strong>
                     Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum

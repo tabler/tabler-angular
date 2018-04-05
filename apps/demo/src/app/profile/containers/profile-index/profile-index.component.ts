@@ -4,10 +4,10 @@ import { DemoService } from '../../../demo/services/demo.service'
 @Component({
   selector: 'app-profile-index',
   template: `
-    <app-page>
-      <app-page-title
+    <ui-page>
+      <ui-page-title
         title="Profile"
-        icon="fe fe-user"></app-page-title>
+        icon="fe fe-user"></ui-page-title>
       <div class="row">
         <div class="col-lg-4">
 
@@ -22,7 +22,7 @@ import { DemoService } from '../../../demo/services/demo.service'
           <app-profile-edit-big></app-profile-edit-big>
         </div>
       </div>
-    </app-page>
+    </ui-page>
   `,
 })
 export class ProfileIndexComponent implements OnInit {

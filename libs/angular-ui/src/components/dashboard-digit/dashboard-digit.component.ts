@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 @Component({
-  selector: 'app-dashboard-digit',
+  selector: 'ui-dashboard-digit',
   template: `
     <div class="card">
       <div class="card-body text-center">

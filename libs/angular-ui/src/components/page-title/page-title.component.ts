@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 @Component({
-  selector: 'app-page-title',
+  selector: 'ui-page-title',
   template: `
     <div [class.page-header]="header">
       <h1 class="page-title">

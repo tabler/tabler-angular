@@ -3,9 +3,9 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-interface-index',
   template: `
-    <app-page>
+    <ui-page>
       <router-outlet></router-outlet>
-    </app-page>
+    </ui-page>
   `,
 })
 export class InterfaceIndexComponent {

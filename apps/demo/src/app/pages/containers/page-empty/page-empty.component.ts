@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-page-empty',
+  selector: 'ui-page-empty',
   template: `
-    <app-page>
+    <ui-page>
       <!-- Page intentionally left blank -->
-    </app-page>
+    </ui-page>
   `,
   styles: [`
-    app-page {
+    ui-page {
       display: block;
       min-height: 120px;
     }

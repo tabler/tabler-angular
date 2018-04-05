@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 @Component({
-  selector: 'app-avatar',
+  selector: 'ui-avatar',
   template: `
     <span class="avatar avatar-{{size}}" [style.background-image]="backgroundImage()">
       {{text}}

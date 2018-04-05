@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cards',
+  selector: 'ui-cards',
   template: `
     <div class="text-wrap p-lg-6">
       <h2 class="mt-0 mb-4">Cards</h2>

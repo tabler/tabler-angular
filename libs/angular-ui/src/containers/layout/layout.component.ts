@@ -1,15 +1,15 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-layout',
+  selector: 'ui-layout',
   template: `
     <div class="page">
       <div class="page-main">
-        <app-header></app-header>
+        <ui-header></ui-header>
         <div class="page-content">
           <router-outlet></router-outlet>
         </div>
-        <app-footer></app-footer>
+        <ui-footer></ui-footer>
       </div>
     </div>
   `,

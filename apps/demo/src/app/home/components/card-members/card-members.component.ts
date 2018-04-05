@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 @Component({
-  selector: 'app-card-members',
+  selector: 'ui-card-members',
   template: `
     <div class="card">
       <div class="card-header">
@@ -15,7 +15,7 @@ import { Component, Input } from '@angular/core'
           <li class="list-separated-item" *ngFor="let user of users">
             <div class="row align-items-center">
               <div class="col-auto">
-                <app-avatar [image]="user.photo"></app-avatar>
+                <ui-avatar [image]="user.photo"></ui-avatar>
               </div>
               <div class="col">
                 <div>

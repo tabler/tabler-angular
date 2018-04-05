@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-card-projects',
+  selector: 'ui-card-projects',
   template: `
     <div class="card">
       <div class="card-header">

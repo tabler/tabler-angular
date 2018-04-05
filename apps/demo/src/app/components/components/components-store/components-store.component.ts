@@ -4,7 +4,7 @@ import { DemoService } from '../../../demo/services/demo.service'
 @Component({
   selector: 'app-components-store',
   template: `
-    <app-page-title title="Store Components"></app-page-title>
+    <ui-page-title title="Store Components"></ui-page-title>
 
 
     <div class="row row-cards">

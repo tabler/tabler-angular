@@ -4,7 +4,7 @@ import { DemoService } from '../../../demo/services/demo.service'
 @Component({
   selector: 'app-components-icons',
   template: `
-    <app-page-title title="Icons"></app-page-title>
+    <ui-page-title title="Icons"></ui-page-title>
     <div *ngFor="let set of iconSets">
       <app-components-icon-map
         [description]="set.description"

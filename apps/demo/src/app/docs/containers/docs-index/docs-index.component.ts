@@ -3,13 +3,12 @@ import { Component, OnInit } from '@angular/core'
 @Component({
   selector: 'app-docs-index',
   template: `
-    <app-page>
-      <app-page-title
+    <ui-page>
+      <ui-page-title
         title="Documentation"
         icon="fe fe-file-text"
         badge="WIP"
-        badgeStyle="info"
-      ></app-page-title>
+        badgeStyle="info"></ui-page-title>
 
       <div class="row">
         <div class="col-lg-3 order-lg-1 mb-4">
@@ -23,7 +22,7 @@ import { Component, OnInit } from '@angular/core'
           </div>
         </div>
       </div>
-    </app-page>
+    </ui-page>
   `,
   styles: []
 })

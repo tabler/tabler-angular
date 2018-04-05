@@ -3,10 +3,10 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-interface-pricing-list',
   template: `
-    <app-page>
-      <app-page-title
+    <ui-page>
+      <ui-page-title
         icon="fe fe-dollar-sign"
-        title="Pricing cards"></app-page-title>
+        title="Pricing cards"></ui-page-title>
       <div class="row">
         <div class="col-3" *ngFor="let price of prices">
           <app-interface-pricing
@@ -19,7 +19,7 @@ import { Component } from '@angular/core'
           </app-interface-pricing>
         </div>
       </div>
-    </app-page>
+    </ui-page>
   `,
   styles: []
 })

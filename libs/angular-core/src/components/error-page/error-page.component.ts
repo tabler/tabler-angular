@@ -4,7 +4,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
   selector: 'app-error-page',
   template: `
     <div class="page">
-      <app-page class="container text-center">
+      <ui-page class="container text-center">
         <div class="display-1 text-muted mb-5"><i class="si si-exclamation"></i> {{ code }}</div>
 
         <h1 class="h2 mb-3">Oops.. You just found an error page..</h1>
@@ -17,7 +17,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
           <i class="fe fe-home mx-2"></i> Go home
         </a>
 
-      </app-page>
+      </ui-page>
     </div>
   `,
   styles: []

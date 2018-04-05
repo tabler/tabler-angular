@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-page',
+  selector: 'ui-page',
   template: `
      <div class="container">
       <ng-content></ng-content>

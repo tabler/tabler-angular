@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core'
     <div class="card">
       <div class="card-body">
         <div class="media">
-          <app-avatar size="xxl" [image]="user.photo" class="mr-5"></app-avatar>
+          <ui-avatar size="xxl" [image]="user.photo" class="mr-5"></ui-avatar>
           <div class="media-body">
             <h4 class="m-0">{{ user.name }} {{ user.surname }}</h4>
             <p class="text-muted mb-0">Webdeveloper</p>

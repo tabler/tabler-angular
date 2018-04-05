@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'ui-footer',
   template: `
     <div class="footer">
       <div class="container">

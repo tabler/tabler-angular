@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-pages-auth',
+  selector: 'ui-pages-auth',
   template: `
     <div class="page-single">
       <div class="container">

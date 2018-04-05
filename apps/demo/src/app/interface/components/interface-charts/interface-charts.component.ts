@@ -3,14 +3,14 @@ import { Component, OnInit } from '@angular/core'
 @Component({
   selector: 'app-interface-charts',
   template: `
-    <app-page>
-      <app-page-title
+    <ui-page>
+      <ui-page-title
         title="Charts"
         icon="fe fe-pie-chart"
         badge="TBD"
         badgeStyle="info">
-      </app-page-title>
-    </app-page>
+      </ui-page-title>
+    </ui-page>
   `,
   styles: []
 })

@@ -4,29 +4,29 @@ import { DemoService } from '../../../demo/services/demo.service'
 @Component({
   selector: 'app-home-index',
   template: `
-    <app-page>
-      <app-page-title title="Dashboard"></app-page-title>
+    <ui-page>
+      <ui-page-title title="Dashboard"></ui-page-title>
 
 
       <div class="row row-cards">
 
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number="43" title="New Tickets" percentage=6></app-dashboard-stats>
+          <ui-dashboard-stats number="43" title="New Tickets" percentage=6></ui-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number="17" title="Closed Today" percentage=-3></app-dashboard-stats>
+          <ui-dashboard-stats number="17" title="Closed Today" percentage=-3></ui-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number="7" title="New Replies" percentage=9></app-dashboard-stats>
+          <ui-dashboard-stats number="7" title="New Replies" percentage=9></ui-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number="27.3K" title="Followers" percentage=3></app-dashboard-stats>
+          <ui-dashboard-stats number="27.3K" title="Followers" percentage=3></ui-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number="$95" title="Daily Earnings" percentage=-2></app-dashboard-stats>
+          <ui-dashboard-stats number="$95" title="Daily Earnings" percentage=-2></ui-dashboard-stats>
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-          <app-dashboard-stats number="621" title="Products" percentage=-1></app-dashboard-stats>
+          <ui-dashboard-stats number="621" title="Products" percentage=-1></ui-dashboard-stats>
         </div>
         <div class="col-lg-6">
           <app-development-activity
@@ -43,55 +43,55 @@ import { DemoService } from '../../../demo/services/demo.service'
 
           <div class="row">
             <div class="col-sm-6">
-              <app-dashboard-chart title="Chart title" [data]="demoService.donut" [doughnut]="true"></app-dashboard-chart>
+              <ui-dashboard-chart title="Chart title" [data]="demoService.donut" [doughnut]="true"></ui-dashboard-chart>
             </div>
             <div class="col-sm-6">
-              <app-dashboard-chart title="Chart title" [data]="demoService.pie"></app-dashboard-chart>
+              <ui-dashboard-chart title="Chart title" [data]="demoService.pie"></ui-dashboard-chart>
             </div>
             <div class="col-sm-4">
-              <app-dashboard-digit color="red" title="New fedbacks" digit="62" width="28%"></app-dashboard-digit>
+              <ui-dashboard-digit color="red" title="New fedbacks" digit="62" width="28%"></ui-dashboard-digit>
             </div>
             <div class="col-sm-4">
-              <app-dashboard-digit color="green" title="Today profit" digit="$652" width="84%"></app-dashboard-digit>
+              <ui-dashboard-digit color="green" title="Today profit" digit="$652" width="84%"></ui-dashboard-digit>
             </div>
             <div class="col-sm-4">
-              <app-dashboard-digit color="yellow" title="Users online" digit="76" width="34%"></app-dashboard-digit>
+              <ui-dashboard-digit color="yellow" title="Users online" digit="76" width="34%"></ui-dashboard-digit>
             </div>
           </div>
         </div>
 
 
         <div class="col-sm-6 col-lg-3">
-          <app-dashboard-icon-box
+          <ui-dashboard-icon-box
             color="blue"
             icon="fe fe-dollar-sign"
             value="132"
             description="Sales"
-            subtitle="12 waiting payments"></app-dashboard-icon-box>
+            subtitle="12 waiting payments"></ui-dashboard-icon-box>
         </div>
         <div class="col-sm-6 col-lg-3">
-          <app-dashboard-icon-box
+          <ui-dashboard-icon-box
             color="green"
             icon="fe fe-shopping-cart"
             value="78"
             description="Orders"
-            subtitle="32 shipped"></app-dashboard-icon-box>
+            subtitle="32 shipped"></ui-dashboard-icon-box>
         </div>
         <div class="col-sm-6 col-lg-3">
-          <app-dashboard-icon-box
+          <ui-dashboard-icon-box
             color="red"
             icon="fe fe-users"
             value="1,352"
             description="Members"
-            subtitle="163 registered today"></app-dashboard-icon-box>
+            subtitle="163 registered today"></ui-dashboard-icon-box>
         </div>
         <div class="col-sm-6 col-lg-3">
-          <app-dashboard-icon-box
+          <ui-dashboard-icon-box
             color="yellow"
             icon="fe fe-message-square"
             value="132"
             description="Comments"
-            subtitle="16 waiting"></app-dashboard-icon-box>
+            subtitle="16 waiting"></ui-dashboard-icon-box>
         </div>
       </div>
 
@@ -110,28 +110,28 @@ import { DemoService } from '../../../demo/services/demo.service'
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <app-card-browser-stats></app-card-browser-stats>
+          <ui-card-browser-stats></ui-card-browser-stats>
         </div>
         <div class="col-sm-6 col-lg-4">
-          <app-card-projects></app-card-projects>
+          <ui-card-projects></ui-card-projects>
         </div>
         <div class="col-md-6 col-lg-4">
-          <app-card-members [users]="demoService.users"></app-card-members>
+          <ui-card-members [users]="demoService.users"></ui-card-members>
         </div>
 
         <div class="col-md-6 col-lg-12">
           <div class="row">
             <div class="col-sm-6 col-lg-3">
-              <app-dashboard-chart-bg title="423" description="Users online" color="blue" rate="+5%"></app-dashboard-chart-bg>
+              <ui-dashboard-chart-bg title="423" description="Users online" color="blue" rate="+5%"></ui-dashboard-chart-bg>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <app-dashboard-chart-bg title="423" description="Users online" color="red" rate="-3%"></app-dashboard-chart-bg>
+              <ui-dashboard-chart-bg title="423" description="Users online" color="red" rate="-3%"></ui-dashboard-chart-bg>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <app-dashboard-chart-bg title="423" description="Users online" color="green" rate="-3%"></app-dashboard-chart-bg>
+              <ui-dashboard-chart-bg title="423" description="Users online" color="green" rate="-3%"></ui-dashboard-chart-bg>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <app-dashboard-chart-bg title="423" description="Users online" color="yellow" rate="9%"></app-dashboard-chart-bg>
+              <ui-dashboard-chart-bg title="423" description="Users online" color="yellow" rate="9%"></ui-dashboard-chart-bg>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ import { DemoService } from '../../../demo/services/demo.service'
         </div>
       </div>
 
-    </app-page>
+    </ui-page>
   `,
   styles: []
 })

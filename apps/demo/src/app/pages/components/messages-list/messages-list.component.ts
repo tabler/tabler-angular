@@ -5,7 +5,7 @@ import { DemoService } from '../../../demo/services/demo.service'
   selector: 'app-messages-list',
   template: `
     <div class="mb-5">
-      <app-page-title title="Inbox" [header]="false"></app-page-title>
+      <ui-page-title title="Inbox" [header]="false"></ui-page-title>
     </div>
 
     <div class="card">
@@ -23,7 +23,7 @@ import { DemoService } from '../../../demo/services/demo.service'
 
           <tr *ngFor="let message of getMessages()">
             <td class="text-center">
-              <app-avatar [image]="message.from.photo" status="green"></app-avatar>
+              <ui-avatar [image]="message.from.photo" status="green"></ui-avatar>
             </td>
             <td>
               <a href="" [routerLink]="[ message.id ]">

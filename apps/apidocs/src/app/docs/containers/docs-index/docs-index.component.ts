@@ -3,11 +3,11 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-docs-index',
   template: `
-    <app-page>
-      <app-page-title
+    <ui-page>
+      <ui-page-title
         title="Documentation"
         icon="fe fe-file-text"
-        badge="develop"></app-page-title>
+        badge="develop"></ui-page-title>
       <div class="row">
         <div class="col-lg-3 order-lg-0 mb-4">
           <app-docs-sidebar></app-docs-sidebar>
@@ -20,7 +20,7 @@ import { Component } from '@angular/core'
           </div>
         </div>
       </div>
-    </app-page>
+    </ui-page>
   `,
   styles: []
 })

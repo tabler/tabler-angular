@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-page-email',
+  selector: 'ui-page-email',
   template: `
-    <app-page>
+    <ui-page>
       <div class="row">
         <div class="col-md-3">
           <div class="mb-5">
-            <app-page-title title="Messages" [header]="false"></app-page-title>
+            <ui-page-title title="Messages" [header]="false"></ui-page-title>
           </div>
           <app-messages-folders [folders]="folders"></app-messages-folders>
         </div>
@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core'
           <router-outlet></router-outlet>
         </div>
       </div>
-    </app-page>
+    </ui-page>
   `,
   styles: []
 })

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 // import { DemoService } from '../../../demo/services/demo.service'
 
 @Component({
-  selector: 'app-header',
+  selector: 'ui-header',
   template: `
     <div class="header">
       <div class="container">
@@ -22,21 +22,21 @@ import { Component, OnInit } from '@angular/core'
               </a>
               <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown-menu-arrow px-4">
                 <a href="#" class="dropdown-item d-flex">
-                  <app-avatar [image]="users[1].photo" class="mr-3"></app-avatar>
+                  <ui-avatar [image]="users[1].photo" class="mr-3"></ui-avatar>
                   <div>
                     <strong>{{ users[ 1 ].name }}</strong> pushed new commit: Fix page load performance issue.
                     <div class="small text-muted">10 minutes ago</div>
                   </div>
                 </a>
                 <a href="#" class="dropdown-item d-flex">
-                  <app-avatar [image]="users[2].photo" class="mr-3"></app-avatar>
+                  <ui-avatar [image]="users[2].photo" class="mr-3"></ui-avatar>
                   <div>
                     <strong>{{ users[ 2 ].name }}</strong> started new task: Tabler UI design.
                     <div class="small text-muted">1 hour ago</div>
                   </div>
                 </a>
                 <a href="#" class="dropdown-item d-flex">
-                  <app-avatar [image]="users[3].photo" class="mr-3"></app-avatar>
+                  <ui-avatar [image]="users[3].photo" class="mr-3"></ui-avatar>
                   <div>
                     <strong>{{ users[ 3 ].name }}</strong> deployed new version of NodeJS REST Api V3
                     <div class="small text-muted">2 hours ago</div>
@@ -49,7 +49,7 @@ import { Component, OnInit } from '@angular/core'
 
             <div class="dropdown" dropdown>
               <a class="nav-link pr-0" data-toggle="dropdown" dropdownToggle>
-                <app-avatar [image]="user.avatar"></app-avatar>
+                <ui-avatar [image]="user.avatar"></ui-avatar>
                 <span class="ml-2 d-none d-lg-block">
                   <span class="text-default">{{ user.name }} {{ user.surname }}</span>
                   <small class="text-muted d-block mt-1">Administrator</small>
@@ -98,7 +98,7 @@ import { Component, OnInit } from '@angular/core'
       <div class="container">
         <div class="row align-items-center">
           <div class="col">
-            <app-menu></app-menu>
+            <ui-menu></ui-menu>
           </div>
           <div class="col-3 ml-auto">
             <form class="input-icon">

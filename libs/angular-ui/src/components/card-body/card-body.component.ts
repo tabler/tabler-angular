@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 @Component({
-  selector: 'app-card-body',
+  selector: 'ui-card-body',
   template: `
     <div class="card-body">
       <ng-container *ngIf="loader">

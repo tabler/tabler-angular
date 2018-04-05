@@ -3,57 +3,57 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-interface-cards',
   template: `
-    <app-page>
-      <app-page-title
+    <ui-page>
+      <ui-page-title
         title="Cards"
         icon="fe fe-box">
-      </app-page-title>
+      </ui-page-title>
 
       <div class="row">
         <div class="col-md-6 col-xl-4" *ngFor="let card of cards">
-          <app-card
+          <ui-card
             [allowFullScreen]="card.allowFullScreen"
             [collapsed]="card.collapsed"
             [header]="card.header"
             [footer]="card.footer"
             [status]="card.status"
             [statusLeft]="card.statusLeft">
-            <app-card-body>
+            <ui-card-body>
               {{ bodyText }}
-            </app-card-body>
-          </app-card>
+            </ui-card-body>
+          </ui-card>
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-6" *ngFor="let card of formCards">
-          <app-card
+          <ui-card
             (action)="handleAction($event)"
             [header]="card.header"
             [buttons]="card.buttons"
             [search]="card.search">
-            <app-card-body>
+            <ui-card-body>
               {{ bodyText }}
-            </app-card-body>
-          </app-card>
+            </ui-card-body>
+          </ui-card>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-6 col-xl-4" *ngFor="let card of moreCards">
-          <app-card
+          <ui-card
             (action)="handleAction($event)"
             [alert]="card.alert"
             [buttons]="card.buttons"
             [header]="card.header">
-            <app-card-body
+            <ui-card-body
               [loader]="card.loader">
               {{ bodyText }}
-            </app-card-body>
-          </app-card>
+            </ui-card-body>
+          </ui-card>
         </div>
       </div>
-    </app-page>
+    </ui-page>
   `,
   styles: []
 })

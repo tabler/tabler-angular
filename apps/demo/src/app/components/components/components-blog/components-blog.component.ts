@@ -4,7 +4,7 @@ import { DemoService } from '../../../demo/services/demo.service'
 @Component({
   selector: 'app-components-blog',
   template: `
-    <app-page-title title="Blog components"></app-page-title>
+    <ui-page-title title="Blog components"></ui-page-title>
     <div class="row row-cards row-deck">
 
       <div class="col-sm-6 col-xl-3" *ngFor="let article of demoService.articles.slice(0, 4)">

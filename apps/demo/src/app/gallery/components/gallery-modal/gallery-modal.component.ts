@@ -16,7 +16,7 @@ import { BsModalRef } from 'ngx-bootstrap'
     <div class="card-footer">
 
       <div class="d-flex align-items-center px-2">
-        <app-avatar size="md" [image]="user.photo" class="mr-3"></app-avatar>
+        <ui-avatar size="md" [image]="user.photo" class="mr-3"></ui-avatar>
         <div>
           <div>{{ user.name }} {{ user.surname }}</div>
           <small class="d-block text-muted">{{ index | random: 3: 20 | round }} days ago</small>

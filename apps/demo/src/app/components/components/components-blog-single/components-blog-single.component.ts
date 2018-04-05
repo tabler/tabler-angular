@@ -20,7 +20,7 @@ import { Component, Input } from '@angular/core'
         <div class="text-muted">{{ article.description | truncate: truncate }}</div>
 
         <div class="d-flex align-items-center pt-5 mt-auto">
-          <app-avatar class="mr-3" size="md" [image]="author.photo"></app-avatar>
+          <ui-avatar class="mr-3" size="md" [image]="author.photo"></ui-avatar>
           <div>
             <a href="profile.html" class="text-default">{{ author.name }} {{ author.surname }}</a>
             <small class="d-block text-muted">3 days ago</small>

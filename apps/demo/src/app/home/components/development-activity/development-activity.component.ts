@@ -21,7 +21,7 @@ import { Component, Input } from '@angular/core'
           <tbody>
           <tr>
             <td class="w-1">
-              <app-avatar [image]="users[10].photo"></app-avatar>
+              <ui-avatar [image]="users[10].photo"></ui-avatar>
             </td>
             <td>{{ users[ 10 ].name }} {{ users[ 10 ].surname }}</td>
             <td>Initial commit</td>
@@ -30,7 +30,7 @@ import { Component, Input } from '@angular/core'
           </tr>
           <tr>
             <td>
-              <app-avatar text="BM"></app-avatar>
+              <ui-avatar text="BM"></ui-avatar>
             </td>
             <td>{{ users[ 17 ].name }} {{ users[ 17 ].surname }}</td>
             <td>Main structure</td>
@@ -39,7 +39,7 @@ import { Component, Input } from '@angular/core'
           </tr>
           <tr>
             <td>
-              <app-avatar [image]="users[16].photo"></app-avatar>
+              <ui-avatar [image]="users[16].photo"></ui-avatar>
             </td>
             <td>{{ users[ 16 ].name }} {{ users[ 16 ].surname }}</td>
             <td>Left sidebar adjustments</td>
@@ -48,7 +48,7 @@ import { Component, Input } from '@angular/core'
           </tr>
           <tr>
             <td>
-              <app-avatar [image]="users[12].photo"></app-avatar>
+              <ui-avatar [image]="users[12].photo"></ui-avatar>
             </td>
             <td>{{ users[ 12 ].name }} {{ users[ 12 ].surname }}</td>
             <td>Topbar dropdown style</td>
@@ -57,7 +57,7 @@ import { Component, Input } from '@angular/core'
           </tr>
           <tr>
             <td>
-              <app-avatar [image]="users[19].photo"></app-avatar>
+              <ui-avatar [image]="users[19].photo"></ui-avatar>
             </td>
             <td>{{ users[ 19 ].name }} {{ users[ 19 ].surname }}</td>
             <td>Fixes #625</td>

@@ -3,7 +3,7 @@ import { Location } from '@angular/common'
 import { ActivatedRoute } from '@angular/router'
 
 @Component({
-  selector: 'app-pages-error',
+  selector: 'ui-pages-error',
   template: `
     <app-error-page [code]="code" [message]="message" (action)="handleAction()"></app-error-page>
   `,

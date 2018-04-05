@@ -5,14 +5,14 @@ import { DemoService } from '../../../demo/services/demo.service'
 @Component({
   selector: 'app-messages-read',
   template: `
-    <app-card [header]="message.subject" [buttons]="buttons">
+    <ui-card [header]="message.subject" [buttons]="buttons">
       <div class="card-body">
         <div class="mb-5">
           <div class="float-right text-muted">
             {{message.datetime | date: 'medium' }}
           </div>
           <div class="float-left mr-3">
-            <app-avatar [image]="message.from.photo" status="green" size="lg"></app-avatar>
+            <ui-avatar [image]="message.from.photo" status="green" size="lg"></ui-avatar>
           </div>
           <div class="d-none d-lg-block">
             <span class="text-default">
@@ -25,7 +25,7 @@ import { DemoService } from '../../../demo/services/demo.service'
         </div>
         <div class="message" [innerHtml]="message.body"></div>
       </div>
-    </app-card>
+    </ui-card>
   `,
   styles: [ `
     .message {

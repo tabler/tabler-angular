@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 @Component({
-  selector: 'app-dashboard-chart',
+  selector: 'ui-dashboard-chart',
   template: `
     <div class="card">
       <div class="card-header">
