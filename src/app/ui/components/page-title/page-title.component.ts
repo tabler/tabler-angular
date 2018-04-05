@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core'
 @Component({
   selector: 'app-page-title',
   template: `
-    <div class="page-header">
+    <div [class.page-header]="header">
       <h1 class="page-title">
         
         <i *ngIf="icon" class="{{ icon }} page-title-icon"></i>
@@ -31,6 +31,7 @@ import { Component, Input } from '@angular/core'
   styles: []
 })
 export class PageTitleComponent {
+  @Input() header = true
   @Input() icon
   @Input() title
   @Input() subTitle

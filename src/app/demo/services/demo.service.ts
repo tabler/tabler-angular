@@ -1,6 +1,16 @@
 import { Injectable } from '@angular/core'
 
-import { articles, donut, pie, invoices, users, photos, products, purchases } from './data'
+import {
+  articles,
+  donut,
+  pie,
+  invoices,
+  users,
+  photos,
+  products,
+  purchases,
+  messages,
+} from './data'
 import { icons } from './icons'
 
 @Injectable()
@@ -23,4 +33,9 @@ export class DemoService {
   public icons = icons
 
   public articles = articles
+
+  public messages = messages
+    .map((message, id) => Object
+      .assign({}, message, { id, from: users[ message.from ] })
+    )
 }

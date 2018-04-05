@@ -3,12 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-page-empty',
   template: `
-    <div class="empty">
+    <app-page>
       <!-- Page intentionally left blank -->
-    </div>
+    </app-page>
   `,
   styles: [`
-    .empty {
+    app-page {
+      display: block;
       min-height: 120px;
     }
   `]

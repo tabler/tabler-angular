@@ -17,8 +17,14 @@ import { ErrorRoutes } from './containers/pages-error/error-routing.module'
 import { ErrorPageComponent } from './components/error-page/error-page.component'
 
 import { PageEmailComponent } from './containers/page-email/page-email.component'
+import { EmailRoutes } from './containers/page-email/email-routing.module'
+import { MessagesComposeComponent } from './components/messages-compose/messages-compose.component';
+import { MessagesFoldersComponent } from './components/messages-folders/messages-folders.component'
+
 import { PageEmptyComponent } from './containers/page-empty/page-empty.component'
-import { PageProfileComponent } from './containers/page-profile/page-profile.component'
+import { PageProfileComponent } from './containers/page-profile/page-profile.component';
+import { MessagesListComponent } from './components/messages-list/messages-list.component';
+import { MessagesReadComponent } from './components/messages-read/messages-read.component';
 
 
 const routes: Routes = [
@@ -30,7 +36,7 @@ const routes: Routes = [
   },
   {
     path: 'pages', component: LayoutComponent, children: [
-      { path: 'email', component: PageEmailComponent },
+      ...EmailRoutes,
       { path: 'empty', component: PageEmptyComponent },
       { path: 'profile', component: PageProfileComponent },
     ]
@@ -53,6 +59,10 @@ const routes: Routes = [
     PageEmailComponent,
     PageEmptyComponent,
     PageProfileComponent,
+    MessagesComposeComponent,
+    MessagesFoldersComponent,
+    MessagesListComponent,
+    MessagesReadComponent,
   ]
 })
 export class PagesModule {
