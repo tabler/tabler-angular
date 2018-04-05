@@ -6,9 +6,13 @@ import { Component, Input } from '@angular/core'
     <div [class.page-header]="header">
       <h1 class="page-title">
         
-        <i *ngIf="icon" class="{{ icon }} page-title-icon"></i>
+        <i *ngIf="icon" class="{{ icon }} page-title-icon m-3"></i>
 
         {{ title }}
+
+        <small *ngIf="badge" class="badge badge-{{badgeStyle}} m-3">
+          {{badge}}
+        </small>
       </h1>
 
       <div *ngIf="subTitle" class="page-subtitle">
@@ -31,6 +35,8 @@ import { Component, Input } from '@angular/core'
   styles: []
 })
 export class PageTitleComponent {
+  @Input() badge
+  @Input() badgeStyle = 'default'
   @Input() header = true
   @Input() icon
   @Input() title

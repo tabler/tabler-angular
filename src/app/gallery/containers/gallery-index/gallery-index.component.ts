@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-interface-charts',
+  selector: 'app-gallery-index',
   template: `
     <app-page>
       <app-page-title
-        title="Charts"
-        icon="fe fe-pie-chart"
+        title="Gallery"
+        icon="fe fe-image"
         badge="TBD"
         badgeStyle="info">
       </app-page-title>
@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class InterfaceChartsComponent implements OnInit {
+export class GalleryIndexComponent implements OnInit {
 
   constructor() {
   }

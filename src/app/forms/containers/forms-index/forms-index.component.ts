@@ -1,19 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-forms-index',
   template: `
-    <p>
-      forms-index works!
-    </p>
+    <app-page>
+      <app-page-title
+        title="Forms"
+        icon="fe fe-check-square"
+        badge="TBD"
+        badgeStyle="info">
+      </app-page-title>
+    </app-page>
   `,
-  styles: []
 })
-export class FormsIndexComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class FormsIndexComponent {
 
 }

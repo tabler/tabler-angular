@@ -4,7 +4,9 @@ import { Component } from '@angular/core'
   selector: 'app-interface-pricing-list',
   template: `
     <app-page>
-      <app-page-title title="Pricing cards"></app-page-title>
+      <app-page-title
+        icon="fe fe-dollar-sign"
+        title="Pricing cards"></app-page-title>
       <div class="row">
         <div class="col-3" *ngFor="let price of prices">
           <app-interface-pricing

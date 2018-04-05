@@ -3,50 +3,57 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-interface-cards',
   template: `
-    <div class="row">
-      <div class="col-md-6 col-xl-4" *ngFor="let card of cards">
-        <app-card
-          [allowFullScreen]="card.allowFullScreen"
-          [collapsed]="card.collapsed"
-          [header]="card.header"
-          [footer]="card.footer"
-          [status]="card.status"
-          [statusLeft]="card.statusLeft">
-          <app-card-body>
-            {{ bodyText }}
-          </app-card-body>
-        </app-card>
-      </div>
-    </div>
+    <app-page>
+      <app-page-title
+        title="Cards"
+        icon="fe fe-box">
+      </app-page-title>
 
-    <div class="row">
-      <div class="col-lg-6" *ngFor="let card of formCards">
-        <app-card
-          (action)="handleAction($event)"
-          [header]="card.header"
-          [buttons]="card.buttons"
-          [search]="card.search">
-          <app-card-body>
-            {{ bodyText }}
-          </app-card-body>
-        </app-card>
+      <div class="row">
+        <div class="col-md-6 col-xl-4" *ngFor="let card of cards">
+          <app-card
+            [allowFullScreen]="card.allowFullScreen"
+            [collapsed]="card.collapsed"
+            [header]="card.header"
+            [footer]="card.footer"
+            [status]="card.status"
+            [statusLeft]="card.statusLeft">
+            <app-card-body>
+              {{ bodyText }}
+            </app-card-body>
+          </app-card>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-6 col-xl-4" *ngFor="let card of moreCards">
-        <app-card
-          (action)="handleAction($event)"
-          [alert]="card.alert"
-          [buttons]="card.buttons"
-          [header]="card.header">
-          <app-card-body
-            [loader]="card.loader">
-            {{ bodyText }}
-          </app-card-body>
-        </app-card>
+      <div class="row">
+        <div class="col-lg-6" *ngFor="let card of formCards">
+          <app-card
+            (action)="handleAction($event)"
+            [header]="card.header"
+            [buttons]="card.buttons"
+            [search]="card.search">
+            <app-card-body>
+              {{ bodyText }}
+            </app-card-body>
+          </app-card>
+        </div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xl-4" *ngFor="let card of moreCards">
+          <app-card
+            (action)="handleAction($event)"
+            [alert]="card.alert"
+            [buttons]="card.buttons"
+            [header]="card.header">
+            <app-card-body
+              [loader]="card.loader">
+              {{ bodyText }}
+            </app-card-body>
+          </app-card>
+        </div>
+      </div>
+    </app-page>
   `,
   styles: []
 })
@@ -97,7 +104,7 @@ export class InterfaceCardsComponent {
 
   public formCards = [ {
     header: 'Panel with custom buttons',
-    buttons: [{
+    buttons: [ {
       text: 'Action 1',
       type: 'button',
       action: 'ACTION_1',
@@ -107,7 +114,7 @@ export class InterfaceCardsComponent {
       type: 'button',
       action: 'ACTION_2',
       payload: 'ACTION_2_PAYLOAD',
-    }]
+    } ]
   }, {
     header: 'Card with search form\n',
     search: {
@@ -117,7 +124,7 @@ export class InterfaceCardsComponent {
     buttons: []
   } ]
 
-  public moreCards = [{
+  public moreCards = [ {
     header: 'Card with alert',
     alert: {
       type: 'success',
@@ -131,11 +138,11 @@ export class InterfaceCardsComponent {
     },
   }, {
     header: 'Card with switch',
-    buttons: [{
+    buttons: [ {
       type: 'switch',
       checked: true,
       payload: 'MY_SWITCH'
-    }]
+    } ]
   }, {
     header: 'Card with loader',
     loader: true,

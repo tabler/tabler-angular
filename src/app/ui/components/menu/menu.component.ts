@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core'
           <div class="nav-submenu nav" *ngIf="item.subpages">
             <ng-container *ngFor="let subitem of item.subpages">
               <a href="#" class="nav-item" [routerLink]="subitem.url" routerLinkActive="active">
+                <i class="{{ subitem.icon }}" *ngIf="subitem.icon"></i>
                 {{subitem.name}}
               </a>
             </ng-container>
@@ -48,6 +49,7 @@ export class MenuComponent implements OnInit {
         },
         {
           name: 'Pricing cards',
+          icon: 'fe fe-dollar-sign',
           url: '/interface/pricing-cards'
         }
       ]
@@ -82,12 +84,12 @@ export class MenuComponent implements OnInit {
     {
       name: 'Pages',
       icon: 'fe fe-file',
-      url: '/pages',
+      url: '/profile',
       subpages: [
         {
           name: 'Profile',
           icon: 'fe fe-user',
-          url: '/pages/profile'
+          url: '/profile'
         },
         {
           name: 'Login',

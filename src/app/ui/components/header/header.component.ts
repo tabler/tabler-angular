@@ -11,7 +11,7 @@ import { Component } from '@angular/core'
           </a>
           <div class="ml-auto d-flex order-lg-2">
             <div class="nav-item">
-              <a href="" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
+              <a href="https://github.com/tabler/tabler-angular" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
             </div>
             <div class="dropdown d-none d-md-flex">
               <a class="nav-link icon" data-toggle="dropdown">

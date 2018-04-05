@@ -22,7 +22,6 @@ import { MessagesComposeComponent } from './components/messages-compose/messages
 import { MessagesFoldersComponent } from './components/messages-folders/messages-folders.component'
 
 import { PageEmptyComponent } from './containers/page-empty/page-empty.component'
-import { PageProfileComponent } from './containers/page-profile/page-profile.component';
 import { MessagesListComponent } from './components/messages-list/messages-list.component';
 import { MessagesReadComponent } from './components/messages-read/messages-read.component';
 
@@ -38,7 +37,6 @@ const routes: Routes = [
     path: 'pages', component: LayoutComponent, children: [
       ...EmailRoutes,
       { path: 'empty', component: PageEmptyComponent },
-      { path: 'profile', component: PageProfileComponent },
     ]
   },
 ]
@@ -58,7 +56,6 @@ const routes: Routes = [
     ErrorPageComponent,
     PageEmailComponent,
     PageEmptyComponent,
-    PageProfileComponent,
     MessagesComposeComponent,
     MessagesFoldersComponent,
     MessagesListComponent,
