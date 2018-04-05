@@ -18,6 +18,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
         </a>
 
       </app-page>
+    </div>
   `,
   styles: []
 })
