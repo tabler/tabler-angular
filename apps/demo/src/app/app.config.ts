@@ -140,23 +140,27 @@ const user = {
 
 const notifications = []
 
+const sourceCode = {
+  label: 'Source Code',
+  link: environment.urls.repo,
+  class: 'btn btn-sm btn-outline-primary ml-2',
+  icon: 'fe fe-github',
+  target: '_blank',
+}
+const documentation = {
+  label: 'Documentation',
+  link: environment.urls.docs,
+  class: 'btn btn-sm btn-outline-success ml-2',
+  icon: 'fe fe-info',
+}
+
 export const AppConfig = {
   header: {
     title: 'Demo',
     menu: headerMenu,
     user,
     notifications,
-    links: [ {
-      label: 'Source Code',
-      link: environment.urls.repo,
-      class: 'btn btn-sm btn-outline-primary ml-2',
-      icon: 'fe fe-github',
-    }, {
-      label: 'Documentation',
-      link: environment.urls.docs,
-      class: 'btn btn-sm btn-outline-info ml-2',
-      icon: 'fe fe-info',
-    } ],
+    links: [ documentation, sourceCode ],
   },
   subfooter: {
     links: [],
@@ -169,6 +173,6 @@ export const AppConfig = {
       Angular by <a href="https://github.com/beeman" target="_blank">@beeman</a>.
       MIT Licensed
     `,
-    links: [],
+    links: [ documentation, sourceCode ],
   }
 }

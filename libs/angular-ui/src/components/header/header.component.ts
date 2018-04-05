@@ -13,7 +13,7 @@ import { Component, Input, OnInit } from '@angular/core'
           <div class="ml-auto d-flex order-lg-2">
             <div class="nav-item">
               <ng-container *ngFor="let link of config?.links">
-                <a [href]="link.link" [class]="link.class" target="_blank">
+                <a [href]="link.link" [class]="link.class" [target]="link.target">
                   <i [class]="link.icon"></i>
                   {{ link.label }}
                 </a>

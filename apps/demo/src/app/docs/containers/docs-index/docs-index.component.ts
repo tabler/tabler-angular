@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { environment } from '../../../../environments/environment'
 
 @Component({
   selector: 'app-docs-index',
@@ -6,32 +7,18 @@ import { Component, OnInit } from '@angular/core'
     <ui-page>
       <ui-page-title
         title="Documentation"
-        icon="fe fe-file-text"
-        badge="WIP"
-        badgeStyle="info"></ui-page-title>
-
-      <div class="row">
-        <div class="col-lg-3 order-lg-1 mb-4">
-          <app-docs-sidebar></app-docs-sidebar>
-        </div>
-        <div class="col-lg-9">
-          <div class="card">
-            <div class="card-body">
-              <router-outlet></router-outlet>
-            </div>
-          </div>
-        </div>
-      </div>
+        subTitle="You are being redirected..."
+        icon="fe fe-file-text"></ui-page-title>
     </ui-page>
   `,
   styles: []
 })
 export class DocsIndexComponent implements OnInit {
 
-  constructor() {
-  }
-
   ngOnInit() {
+    setTimeout(() => {
+      window.location.href = environment.urls.docs
+    }, 5000)
   }
 
 }

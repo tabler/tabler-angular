@@ -34,21 +34,26 @@ const headerMenu = [
   },
 ]
 
+const sourceCode = {
+  label: 'Source Code',
+  link: environment.urls.repo,
+  class: 'btn btn-sm btn-outline-primary ml-2',
+  icon: 'fe fe-github',
+  target: '_blank',
+}
+
+const liveDemo = {
+  label: 'Live Demo',
+  link: environment.urls.demo,
+  class: 'btn btn-sm btn-outline-success ml-2',
+  icon: 'fe fe-globe',
+}
+
 export const AppConfig = {
   header: {
     title: 'Documentation',
     menu: headerMenu,
-    links: [ {
-      label: 'Source Code',
-      link: environment.urls.repo,
-      class: 'btn btn-sm btn-outline-primary ml-2',
-      icon: 'fe fe-github',
-    }, {
-      label: 'Live Demo',
-      link: environment.urls.demo,
-      class: 'btn btn-sm btn-outline-success ml-2',
-      icon: 'fe fe-globe',
-    } ],
+    links: [ liveDemo , sourceCode],
   },
   footer: {
     disclaimer: `
@@ -60,11 +65,7 @@ export const AppConfig = {
     links: [
       { link: '/docs', label: 'Documentation'},
       { link: '/faq', label: 'FAQ'},
-      {
-        label: 'Source Code',
-        link: environment.urls.repo,
-        class: 'btn btn-sm btn-outline-primary ml-2',
-        icon: 'fe fe-github',
-      } ],
+      sourceCode,
+    ],
   }
 }

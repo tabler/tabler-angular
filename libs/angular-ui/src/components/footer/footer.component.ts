@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core'
                 <ul class="list-inline list-inline-dots mb-0">
                   <ng-container *ngFor="let link of config?.links">
                     <li class="list-inline-item">
-                      <a [href]="link.link" [class]="link.class" target="_blank">
+                      <a [href]="link.link" [class]="link.class" [target]="link.target">
                         <i [class]="link.icon"></i>
                         {{ link.label }}
                       </a>
