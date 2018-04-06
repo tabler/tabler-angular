@@ -76,8 +76,8 @@
       "tags": []
     },
     {
-      "name": "styles",
-      "root": "libs/styles/src",
+      "name": "angular-styles",
+      "root": "libs/angular-styles/src",
       "test": "../../../test.js",
       "appRoot": "",
       "tags": []
