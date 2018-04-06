@@ -138,7 +138,24 @@ const user = {
   avatar: 'assets/faces/female/25.jpg',
 }
 
-const notifications = []
+const now = new Date().getTime()
+
+const notifications = [ {
+  avatarText: 'AB',
+  from: 'AB',
+  text: 'pushed new commit: Fix page load performance issue.',
+  date: now - 10000
+}, {
+  avatarText: 'AB',
+  from: 'AB',
+  text: 'started new task: Tabler UI design.',
+  date: now - 100000
+}, {
+  avatarText: 'AB',
+  from: 'AB',
+  text: 'deployed new version of NodeJS REST Api V3',
+  date: now - 1000000
+} ]
 
 const sourceCode = {
   label: 'Source Code',
@@ -154,6 +171,46 @@ const documentation = {
   icon: 'fe fe-info',
 }
 
+const profileLinks = [
+  {
+    link: '/profile',
+    label: 'Profile',
+    icon: 'fe fe-user',
+  },
+  {
+    link: '/',
+    label: 'Settings',
+    icon: 'fe fe-settings',
+  },
+  {
+    link: '/messages',
+    label: 'Inbox',
+    icon: 'fe fe-mail',
+    badge: {
+      label: '6',
+      type: 'primary',
+    }
+  },
+  {
+    link: '/messages/compose',
+    label: 'New message',
+    icon: 'fe fe-send',
+  },
+  {
+    divider: true
+  },
+  {
+    link: '/',
+    label: 'Need help?',
+    icon: 'fe fe-help-circle',
+  },
+  {
+    link: '/login',
+    label: 'Sign out',
+    icon: 'fe fe-log-out',
+  },
+]
+
 export const AppConfig = {
   header: {
     title: 'Demo',
@@ -161,6 +218,7 @@ export const AppConfig = {
     user,
     notifications,
     links: [ documentation, sourceCode ],
+    profileLinks,
   },
   subfooter: {
     links: [],

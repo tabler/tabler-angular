@@ -31,6 +31,6 @@ export class AuthForgotComponent {
   constructor(private router: Router) { }
 
   submit() {
-    this.router.navigate(['/'])
+    this.router.navigate(['/reset-password'])
   }
 }

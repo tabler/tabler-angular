@@ -8,6 +8,8 @@ import { NgPipesModule } from 'angular-pipes'
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
 import { HighlightModule } from 'ngx-highlightjs'
 
+import { TimeAgoPipe } from './pipes/time-ago.pipe'
+
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { LayoutComponent } from './containers/layout/layout.component'
@@ -25,8 +27,14 @@ import { DashboardStatsComponent } from './components/dashboard-stats/dashboard-
 import { AvatarComponent } from './components/avatar/avatar.component'
 import { CardComponent } from './components/card/card.component'
 import { CardBodyComponent } from './components/card-body/card-body.component'
-import { FooterLinksComponent } from './components/footer-links/footer-links.component';
+import { FooterLinksComponent } from './components/footer-links/footer-links.component'
 import { HighlightComponent } from './components/highlight/highlight.component'
+import { HeaderNotificationsComponent } from './components/header-notifications/header-notifications.component'
+import { HeaderNotificationItemComponent } from './components/header-notification-item/header-notification-item.component'
+import { HeaderProfileComponent } from './components/header-profile/header-profile.component'
+import { HeaderProfileLinkComponent } from './components/header-profile-link/header-profile-link.component'
+import { BadgeComponent } from './components/badge/badge.component';
+import { HeaderLinksComponent } from './components/header-links/header-links.component'
 
 const exported = [
   LayoutComponent,
@@ -76,6 +84,13 @@ const exported = [
     CardComponent,
     CardBodyComponent,
     HighlightComponent,
+    HeaderNotificationsComponent,
+    HeaderNotificationItemComponent,
+    HeaderProfileComponent,
+    HeaderProfileLinkComponent,
+    BadgeComponent,
+    TimeAgoPipe,
+    HeaderLinksComponent,
   ],
   exports: [
     ...exported,

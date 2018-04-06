@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'ui-header',
@@ -11,88 +11,13 @@ import { Component, Input, OnInit } from '@angular/core'
             {{ config?.title }}
           </a>
           <div class="ml-auto d-flex order-lg-2">
-            <div class="nav-item">
-              <ng-container *ngFor="let link of config?.links">
-                <a [href]="link.link" [class]="link.class" [target]="link.target || '_self' ">
-                  <i [class]="link.icon"></i>
-                  {{ link.label }}
-                </a>
-              </ng-container>
-            </div>
-            <div class="dropdown d-none d-md-flex" dropdown *ngIf="notifications">
-              <a dropdownToggle class="nav-link icon" data-toggle="dropdown">
-                <i class="fe fe-bell"></i>
-                <span class="nav-unread"></span>
-              </a>
-              <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown-menu-arrow px-4">
-                <a href="#" class="dropdown-item d-flex">
-                  <ui-avatar [image]="users[1].photo" class="mr-3"></ui-avatar>
-                  <div>
-                    <strong>{{ users[ 1 ].name }}</strong> pushed new commit: Fix page load performance issue.
-                    <div class="small text-muted">10 minutes ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item d-flex">
-                  <ui-avatar [image]="users[2].photo" class="mr-3"></ui-avatar>
-                  <div>
-                    <strong>{{ users[ 2 ].name }}</strong> started new task: Tabler UI design.
-                    <div class="small text-muted">1 hour ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item d-flex">
-                  <ui-avatar [image]="users[3].photo" class="mr-3"></ui-avatar>
-                  <div>
-                    <strong>{{ users[ 3 ].name }}</strong> deployed new version of NodeJS REST Api V3
-                    <div class="small text-muted">2 hours ago</div>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item text-center text-muted-dark">Mark all as read</a>
-              </div>
-            </div>
 
-            <div class="dropdown" dropdown *ngIf="user">
-              <a class="nav-link pr-0" data-toggle="dropdown" dropdownToggle>
-                <ui-avatar [image]="user.avatar"></ui-avatar>
-                <span class="ml-2 d-none d-lg-block">
-                  <span class="text-default">{{ user.name }} {{ user.surname }}</span>
-                  <small class="text-muted d-block mt-1">Administrator</small>
-                </span>
-              </a>
-              <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                <a class="dropdown-item" routerLink="/profile">
-                  <span>Profile</span>
-                </a>
-                <a class="dropdown-item" routerLink="">
-                  <span>Settings</span>
-                </a>
-                <a class="dropdown-item" routerLink="/messages">
-                  <span class="float-right"><span class="badge badge-primary">6</span></span>
-                  <span>Inbox</span>
-                </a>
-                <a class="dropdown-item" routerLink="/messages/compose">
-                  <span>New message</span>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" routerLink="">Need help?</a>
-                <a class="dropdown-item" routerLink="/login">Sign out</a>
-              </div>
-            </div>
-          </div>
-          <div class="collapse navbar-collapse order-lg-1" id="navbarToggler">
-            <ul class="navbar-nav mt-2 mt-lg-0 mx-0 mx-lg-2">
-              <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
-                <div class="dropdown-menu mt-2 text-color" role="menu">
-                  <a href="#" class="dropdown-item"><i class="dropdown-icon fa fa-tag"></i> Action </a>
-                  <a href="#" class="dropdown-item"><i class="dropdown-icon fa fa-pencil"></i> Another action </a>
-                  <a href="#" class="dropdown-item"><i class="dropdown-icon fa fa-reply"></i> Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item"><i class="dropdown-icon fa fa-ellipsis-h"></i> Separated link</a>
-                </div>
-              </li>
-            </ul>
+            <ui-header-links class="nav-item" [links]="config?.links"></ui-header-links>
+            
+            <ui-header-notifications [notifications]="config?.notifications"
+                                     (action)="handleAction($event)"></ui-header-notifications>
+
+            <ui-header-profile [profile]="config?.user" [links]="config?.profileLinks"></ui-header-profile>
           </div>
         </div>
       </div>
@@ -118,18 +43,13 @@ import { Component, Input, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   @Input() public config
-  @Input() public user
-  @Input() public notifications
 
-  public users = []
-  constructor() {
-  }
-  public ngOnInit() {
-    if (this.config) {
-      this.user = this.config.user || {}
-      this.notifications = this.config.notifications || []
-    }
+  constructor() {}
+
+  handleAction($event) {
+    console.log('Header Event')
+    console.log($event)
   }
 }
