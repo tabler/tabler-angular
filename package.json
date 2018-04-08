@@ -1,17 +1,22 @@
 {
-  "name": "tabler-tabler",
+  "name": "@tabler/tabler-angular",
   "version": "0.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve --app demo --host 0.0.0.0 --aot",
+    "dev": "ng serve --app demo --port=4200 --host 0.0.0.0 --aot",
+    "docs": "ng serve --app docs --port=4201 --host 0.0.0.0 --aot",
     "build": "npm run build:demo && npm run build:docs",
     "build:demo": "ng build --prod --app demo",
     "build:docs": "ng build --prod --app docs",
-    "demo": "ng serve --app demo --port=4200 --host 0.0.0.0 --aot",
-    "docs": "ng serve --app docs --port=4201 --host 0.0.0.0 --aot",
-    "predist:docs": "ng build --prod --app docs --base-href 'https://tabler.github.io/tabler-angular/'",
-    "dist:docs": "angular-cli-ghpages --dir ./dist/apps/docs",
+    "build:libs": "node .bin/build-libs",
+    "link:libs": "node .bin/link-libs",
+    "release": "standard-version --commit-all",
+    "prepublish": "npm run link:libs && npm run build:libs",
+    "publish": "node .bin/publish-libs",
+    "postpublish": "git push --follow-tags origin master",
+    "publish:docs": "angular-cli-ghpages --dir ./dist/apps/docs",
     "test": "ng test",
     "lint": "./node_modules/.bin/nx lint && ng lint",
     "e2e": "ng e2e",
@@ -26,7 +31,11 @@
     "update:skip": "./node_modules/.bin/nx update skip",
     "postinstall": "./node_modules/.bin/nx postinstall"
   },
-  "private": true,
+  "standard-version": {
+    "scripts": {
+      "postbump": "node .bin/release && git add ."
+    }
+  },
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
@@ -43,7 +52,6 @@
     "@ngrx/store-devtools": "5.2.0",
     "@nrwl/nx": "0.10.0",
     "@swimlane/ngx-charts": "^7.1.1",
-    "angular-cli-ghpages": "^0.5.2",
     "angular-pipes": "^7.1.0",
     "bootstrap": "^4.0.0",
     "chart.js": "^2.7.2",
@@ -66,7 +74,9 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "angular-cli-ghpages": "^0.5.2",
     "codelyzer": "^4.0.1",
+    "concurrently": "^3.5.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
@@ -74,8 +84,10 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^2.4.1",
     "prettier": "1.10.2",
     "protractor": "~5.1.2",
+    "standard-version": "^4.3.0",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"

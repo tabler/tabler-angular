@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutComponent } from './layout-base.component';
+import { LayoutBaseComponent } from './layout-base.component';
 
-describe('LayoutComponent', () => {
-  let component: LayoutComponent;
-  let fixture: ComponentFixture<LayoutComponent>;
+describe('LayoutBaseComponent', () => {
+  let component: LayoutBaseComponent;
+  let fixture: ComponentFixture<LayoutBaseComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutComponent ]
+      declarations: [ LayoutBaseComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LayoutComponent);
+    fixture = TestBed.createComponent(LayoutBaseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

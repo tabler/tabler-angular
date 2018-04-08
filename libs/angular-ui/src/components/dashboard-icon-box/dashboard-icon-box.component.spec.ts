@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconBoxComponent } from './dashboard-dashboard-icon-box.component';
+import { DashboardIconBoxComponent } from './dashboard-icon-box.component';
 
 describe('DashboardIconBoxComponent', () => {
-  let component: IconBoxComponent;
-  let fixture: ComponentFixture<IconBoxComponent>;
+  let component: DashboardIconBoxComponent;
+  let fixture: ComponentFixture<DashboardIconBoxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IconBoxComponent ]
+      declarations: [ DashboardIconBoxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IconBoxComponent);
+    fixture = TestBed.createComponent(DashboardIconBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

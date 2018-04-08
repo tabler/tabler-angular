@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@tabler/angular-ui",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "ngPackage": {
+    "lib": {
+      "entryFile": "index.ts"
+    },
+    "dest": "../../dist/libs/angular-ui"
+  }
+}

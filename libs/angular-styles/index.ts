@@ -1,1 +1,1 @@
-export { Styles } from './src/styles'
+export class Styles {}
