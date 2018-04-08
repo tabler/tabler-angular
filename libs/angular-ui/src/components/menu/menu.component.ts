@@ -3,9 +3,9 @@ import { Component, Input } from '@angular/core'
 @Component({
   selector: 'ui-menu',
   template: `
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" style="white-space: nowrap;">
       <ng-container *ngFor="let item of links">
-        <li class="nav-item">
+        <li class="nav-item d-inline-block">
           <a href="#" [routerLink]="item.url" class="nav-link" routerLinkActive="active">
             <i class="{{ item.icon }}" *ngIf="item.icon"></i>
             {{item.name}}

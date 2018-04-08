@@ -125,11 +125,6 @@ const headerMenu = [
     icon: 'fe fe-image',
     url: '/gallery'
   },
-  {
-    name: 'Documentation',
-    icon: 'fe fe-file-text',
-    url: '/docs'
-  }
 ]
 
 const user = {
@@ -169,6 +164,12 @@ const documentation = {
   link: environment.urls.docs,
   class: 'btn btn-sm btn-outline-success ml-2',
   icon: 'fe fe-info',
+}
+const fire = {
+  label: 'Fire',
+  link: environment.urls.fire,
+  class: 'btn btn-sm btn-outline-warning ml-2',
+  icon: 'fa fa-fire',
 }
 
 const profileLinks = [
@@ -217,7 +218,7 @@ export const AppConfig = {
     menu: headerMenu,
     user,
     notifications,
-    links: [ documentation, sourceCode ],
+    links: [ fire, documentation, sourceCode ],
     profileLinks,
   },
   subfooter: {

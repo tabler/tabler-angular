@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core'
     <ng-container *ngFor="let link of links">
       <a [href]="link.link" [class]="link.class" [target]="link.target || '_self' ">
         <i [class]="link.icon"></i>
-        {{ link.label }}
+        <span class="d-none d-lg-inline">{{ link.label }}</span>
       </a>
     </ng-container>
   `,
