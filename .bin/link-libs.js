@@ -13,23 +13,22 @@ const linkLib = (lib) => {
 };
 
 
-const crossLink = (lib) => {
-  const scopedName = `${scope}/${lib}`;
-  const depLibs = libs.filter(dep => dep !== lib);
-  return Promise.all(depLibs.map(dep => {
-    const libPath = `libs/${dep}`;
-    return execInProjectPathPromise(`npm link ${scopedName}`, libPath)
+const linkLibs = (libs) => {
+  return Promise.all(libs.map(lib => {
+
+    const scopedName = `${scope}/${lib}`
+
+    return execInProjectPathPromise(`npm link ${scopedName}`)
       .then(() => {
-        console.log(` [ link ] [${lib}] npm link ${scopedName} in ${libPath}`);
+        console.log(` [ link ] [${lib}] npm link ${scopedName}`);
         return lib;
       })
-
   }))
 
 };
 
 return Promise.all(libs.map(linkLib))
-  .then(items => Promise.all(items.map(crossLink)))
+  .then(linkLibs)
   .catch(err => {
     console.log(` [ link ] An error occurred:`, err);
   });
