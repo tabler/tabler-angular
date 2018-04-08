@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
 import { NgxChartsModule } from '@swimlane/ngx-charts'
+import { AlertModule } from '@tabler/angular-ui/src/modules/alert/alert.module';
 import { ChartsModule } from 'ng2-charts'
 import { NgPipesModule } from 'angular-pipes'
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
@@ -36,7 +37,12 @@ import { HeaderProfileLinkComponent } from './components/header-profile-link/hea
 import { BadgeComponent } from './components/badge/badge.component';
 import { HeaderLinksComponent } from './components/header-links/header-links.component'
 
+const uiModules = [
+  AlertModule,
+]
+
 const exported = [
+  ...uiModules,
   LayoutComponent,
   LayoutBaseComponent,
   PageComponent,
@@ -65,6 +71,7 @@ const exported = [
     HighlightModule.forRoot({
       theme: 'atom-one-light',
     }),
+    ...uiModules
   ],
   declarations: [
     HeaderComponent,
