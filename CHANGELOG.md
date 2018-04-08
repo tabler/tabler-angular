@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/beeman/angular-tabler/compare/v0.2.0...v0.3.0) (2018-04-08)
+
+
+### Bug Fixes
+
+* **angular-ui:** make header profile more dynamic ([8eeb729](https://github.com/beeman/angular-tabler/commit/8eeb729))
+
+
+### Features
+
+* **angular-ui:** implement ui-alert component ([e4a554e](https://github.com/beeman/angular-tabler/commit/e4a554e))
+* **fire:** implement authentication example ([c635816](https://github.com/beeman/angular-tabler/commit/c635816))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/beeman/angular-tabler/compare/v0.1.0...v0.2.0) (2018-04-08)
 
