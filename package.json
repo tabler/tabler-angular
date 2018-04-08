@@ -10,6 +10,7 @@
     "build": "npm run build:demo && npm run build:docs",
     "build:demo": "ng build --prod --app demo",
     "build:docs": "ng build --prod --app docs",
+    "build:fire": "ng build --prod --app fire",
     "build:libs": "node .bin/build-libs",
     "link:libs": "node .bin/link-libs",
     "release": "standard-version --commit-all",
