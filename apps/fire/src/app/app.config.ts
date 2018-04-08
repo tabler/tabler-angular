@@ -5,12 +5,31 @@ const headerMenu = [
     icon: 'fe fe-book',
     url: '/fire/guestbook',
   },
+  {
+    name: 'Authentication',
+    icon: 'fe fe-lock',
+    url: '/auth',
+  },
 ]
+
+const user = {
+  name: 'Anonymous',
+  description: 'Guest user',
+  avatarText: '?'
+}
 
 export const AppConfig = {
   header: {
     title: 'Fire',
     menu: headerMenu,
+    user,
+    profileLinks: [
+      {
+        link: '/login',
+        label: 'Log in',
+        icon: 'fe fe-log-in',
+      },
+    ]
   },
   footer: {
     disclaimer: `
