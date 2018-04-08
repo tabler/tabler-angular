@@ -5,10 +5,12 @@ import { Component, Input } from '@angular/core'
   template: `
     <div class="dropdown" dropdown *ngIf="profile">
       <a class="nav-link pr-0" data-toggle="dropdown" dropdownToggle>
-        <ui-avatar [image]="profile.avatar"></ui-avatar>
+        <ui-avatar [image]="profile.avatar" [text]="profile.avatarText"></ui-avatar>
         <span class="ml-2 d-none d-lg-block">
-          <span class="text-default">{{ profile.name }} {{ profile.surname }}</span>
-          <small class="text-muted d-block mt-1">Administrator</small>
+          <span class="text-default">{{ profile.name }}</span>
+          <small class="text-muted d-block mt-1">
+            {{ profile.description }}
+          </small>
         </span>
       </a>
 

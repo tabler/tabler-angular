@@ -128,8 +128,8 @@ const headerMenu = [
 ]
 
 const user = {
-  name: 'Jane',
-  surname: 'Pearson',
+  name: 'Jane Pearson',
+  description: 'Administrator',
   avatar: 'assets/faces/female/25.jpg',
 }
 
