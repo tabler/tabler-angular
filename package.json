@@ -5,9 +5,11 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve --app demo --port=4200 --host 0.0.0.0 --aot",
+    "dev": "npm run demo",
+    "demo": "ng serve --app demo --port=4200 --host 0.0.0.0 --aot",
     "docs": "ng serve --app docs --port=4201 --host 0.0.0.0 --aot",
-    "build": "npm run build:demo && npm run build:docs",
+    "fire": "ng serve --app fire --port=4202 --host 0.0.0.0 --aot",
+    "build": "npm run build:demo && npm run build:docs && npm run build:fire",
     "build:demo": "ng build --prod --app demo",
     "build:docs": "ng build --prod --app docs",
     "build:fire": "ng build --prod --app fire",
