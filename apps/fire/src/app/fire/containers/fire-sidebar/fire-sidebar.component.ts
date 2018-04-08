@@ -20,9 +20,9 @@ export class FireSidebarComponent implements OnInit {
 
   public items = [
     {
-      url: 'introduction',
-      title: 'Introduction',
-      icon: 'fe fe-flag',
+      url: 'guestbook',
+      title: 'Guestbook',
+      icon: 'fe fe-book',
     },
   ]
 

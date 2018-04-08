@@ -1,9 +1,9 @@
 
 const headerMenu = [
   {
-    name: 'Fire',
-    icon: 'fa fa-fire',
-    url: '/fire',
+    name: 'Guestbook',
+    icon: 'fe fe-book',
+    url: '/fire/guestbook',
   },
 ]
 

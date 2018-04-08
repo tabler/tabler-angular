@@ -20,7 +20,7 @@ export class DocsSidebarComponent implements OnInit {
 
   public items = [
     {
-      url: 'introduction',
+      url: 'guestbook',
       title: 'Introduction',
       icon: 'fe fe-flag',
     },

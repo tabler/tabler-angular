@@ -15,8 +15,8 @@ import { DocsSidebarComponent } from './containers/docs-sidebar/docs-sidebar.com
 
 const routes: Routes = [ {
   path: '', component: DocsIndexComponent, children: [
-    { path: '', redirectTo: 'introduction', pathMatch: 'full' },
-    { path: 'introduction', component: IntroductionComponent },
+    { path: '', redirectTo: 'guestbook', pathMatch: 'full' },
+    { path: 'guestbook', component: IntroductionComponent },
     { path: 'alerts', component: AlertsComponent },
     { path: 'badges', component: BadgesComponent },
     { path: 'buttons', component: ButtonsComponent },
