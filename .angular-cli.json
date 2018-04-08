@@ -62,6 +62,32 @@
       "tags": []
     },
     {
+      "name": "fire",
+      "root": "apps/fire/src",
+      "outDir": "dist/apps/fire",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "tags": []
+    },
+    {
       "name": "angular-core",
       "root": "libs/angular-core/src",
       "test": "../../../test.js",
@@ -69,15 +95,15 @@
       "tags": []
     },
     {
-      "name": "angular-ui",
-      "root": "libs/angular-ui/src",
+      "name": "angular-styles",
+      "root": "libs/angular-styles/src",
       "test": "../../../test.js",
       "appRoot": "",
       "tags": []
     },
     {
-      "name": "angular-styles",
-      "root": "libs/angular-styles/src",
+      "name": "angular-ui",
+      "root": "libs/angular-ui/src",
       "test": "../../../test.js",
       "appRoot": "",
       "tags": []
@@ -107,6 +133,14 @@
     },
     {
       "project": "apps/docs/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/fire/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/fire/e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
     }
   ],
