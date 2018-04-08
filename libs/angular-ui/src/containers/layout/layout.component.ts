@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import { map } from 'rxjs/operators'
 
@@ -18,7 +18,7 @@ import { map } from 'rxjs/operators'
   `,
 })
 export class LayoutComponent implements OnInit {
-  public config: any
+  @Input() public config: any
 
   constructor(public route: ActivatedRoute) {
   }
