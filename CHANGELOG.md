@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/beeman/angular-tabler/compare/v0.4.0...v0.5.0) (2018-04-09)
+
+
+### Bug Fixes
+
+* **fire:** clean up dead code ([0b92619](https://github.com/beeman/angular-tabler/commit/0b92619))
+* **fire:** improve consistency in the UI ([6f046eb](https://github.com/beeman/angular-tabler/commit/6f046eb))
+
+
+### Features
+
+* **angular-ui:** add fallback for profile description field ([d43be77](https://github.com/beeman/angular-tabler/commit/d43be77))
+* **fire:** improve authentication module ([3482c5f](https://github.com/beeman/angular-tabler/commit/3482c5f))
+* **fire:** post user details to guestbook if logged in ([0dcd44b](https://github.com/beeman/angular-tabler/commit/0dcd44b))
+* **fire:** prevent posting empty messages ([a945192](https://github.com/beeman/angular-tabler/commit/a945192))
+* **fire:** redirect if on login page and authed ([3304ab3](https://github.com/beeman/angular-tabler/commit/3304ab3))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/beeman/angular-tabler/compare/v0.3.2...v0.4.0) (2018-04-09)
 
