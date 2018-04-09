@@ -12,7 +12,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
       <div class="list-group-item list-group-ixtem-action mb-3"
            *ngFor="let message of messages">
 
-        <app-message [message]="message" (action)="handleAction($event)"></app-message>
+        <app-message [user]="user" [message]="message" (action)="handleAction($event)"></app-message>
 
       </div>
     </div>
@@ -21,6 +21,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class MessageListComponent {
   @Input() public messages = [];
+  @Input() public user;
   @Output() public action = new EventEmitter();
 
   handleAction($event) {

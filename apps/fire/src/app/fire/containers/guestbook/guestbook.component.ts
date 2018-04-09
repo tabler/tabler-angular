@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../../auth/services/auth.service';
 import { FireService } from '../../services/fire.service';
 
 @Component({
@@ -11,23 +12,25 @@ import { FireService } from '../../services/fire.service';
 
     <app-message-form
       [message]="message"
+      [user]="auth.user$ | async"
       (action)="handleAction($event)">
     </app-message-form>
 
     <app-message-list
       [messages]="fire.collection$ | async"
+      [user]="auth.user$ | async"
       (action)="handleAction($event)">
     </app-message-list>
   `,
 })
 export class GuestbookComponent {
-
   public message = ''
 
-  constructor(public fire: FireService) {}
+  constructor(public auth: AuthService, public fire: FireService) {}
 
-  addMessage(message: string) {
-    this.fire.upsert({ message })
+  addMessage({ message, user }) {
+    console.log('addMessage', message, user)
+    this.fire.upsert({ message, user })
       .subscribe(() => console.log('Item added'))
   }
 
@@ -36,7 +39,7 @@ export class GuestbookComponent {
       .subscribe(() => console.log('Item deleted'))
   }
 
-  handleAction({ type, payload = ''}) {
+  handleAction({ type, payload }) {
     switch (type) {
       case 'ADD':
         return this.addMessage(payload)
