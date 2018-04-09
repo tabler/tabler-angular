@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
 import { NgxChartsModule } from '@swimlane/ngx-charts'
-import { AlertModule } from '@tabler/angular-ui/src/modules/alert/alert.module';
 import { ChartsModule } from 'ng2-charts'
 import { NgPipesModule } from 'angular-pipes'
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
 import { HighlightModule } from 'ngx-highlightjs'
 
 import { TimeAgoPipe } from './pipes/time-ago.pipe'
+
+import { AlertModule } from './modules/alert/alert.module';
 
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
