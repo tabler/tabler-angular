@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-auth-index',
@@ -13,10 +12,4 @@ import { ActivatedRoute } from '@angular/router';
     </ui-page>
   `,
 })
-export class AuthIndexComponent {
-  constructor(private route: ActivatedRoute) {
-    this.route.data.subscribe(res => {
-      console.log('res', res)
-    })
-  }
-}
+export class AuthIndexComponent {}
