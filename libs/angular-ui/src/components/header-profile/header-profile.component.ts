@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core'
         <span class="ml-2 d-none d-lg-block">
           <span class="text-default">{{ profile.name }}</span>
           <small class="text-muted d-block mt-1">
-            {{ profile.description }}
+            {{ profile.description || profile.title || profile.email }}
           </small>
         </span>
       </a>
