@@ -17,6 +17,12 @@ import { FireService } from '../../services/fire.service';
       (action)="handleAction($event)">
     </app-message-form>
 
+    <div *ngIf="error">
+      <ui-alert type="info">
+        {{error}}
+      </ui-alert>
+    </div>
+
     <app-message-list
       [messages]="fire.collection$ | async"
       [user]="auth.user$ | async"
@@ -25,12 +31,17 @@ import { FireService } from '../../services/fire.service';
   `,
 })
 export class GuestbookComponent {
+  public error = null
   public message = ''
 
   constructor(public auth: AuthService, public fire: FireService) {}
 
   addMessage({ message, user }) {
-    console.log('addMessage', message, user)
+    this.error = null
+    if (message === '') {
+      this.error = 'Please write a message first!'
+      return
+    }
     this.fire.upsert({ message, user })
       .subscribe(() => console.log('Item added'))
   }

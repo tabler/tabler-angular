@@ -12,7 +12,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
         </div>
         <input type="text"
                class="form-control"
-               placeholder="Type a message 🚀 "
+               placeholder="Type your message here"
                [(ngModel)]="message"
                (keydown.enter)="sendMessage()">
           <div class="input-group-append">
