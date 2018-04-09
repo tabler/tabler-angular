@@ -4,18 +4,16 @@ import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-auth-logout',
   template: `
-    <ui-page>
-      <ui-page-title
-        [title]="loggedOut ? 'Logged out' : 'Logging out' "
-        icon="fe fe-log-out">
-      </ui-page-title>
-      
-      <div class="card">
-        <div class="card-body">
-          <a routerLink="/auth/login">Click here</a> to log in again.
-        </div>
+    <ui-page-title
+      [title]="loggedOut ? 'Logged out' : 'Logging out' "
+      icon="fe fe-log-out">
+    </ui-page-title>
+    
+    <div class="card">
+      <div class="card-body">
+        <a routerLink="/auth/login">Click here</a> to log in again.
       </div>
-    </ui-page>
+    </div>
   `,
   styles: []
 })

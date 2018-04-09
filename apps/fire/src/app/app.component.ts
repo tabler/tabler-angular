@@ -11,7 +11,7 @@ import { AppService } from './app.service'
 })
 export class AppComponent {
   constructor(public app: AppService) {
-    app.title = 'Fire'
+    app.title = 'Firebase Demo'
     app.menu = [
       {
         name: 'Guestbook',

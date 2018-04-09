@@ -6,7 +6,8 @@ import { FireService } from '../../services/fire.service';
   selector: 'app-guestbook',
   template: `
     <ui-page-title
-      title="Firebase Guestbook"
+      title="Guestbook"
+      icon="fa fa-fire"
       subTitle="Rock a guestbook like it's 1999! 🚀 ">
     </ui-page-title>
 

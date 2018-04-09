@@ -8,7 +8,9 @@ import { Component, Input } from '@angular/core'
         <div class="d-flex">
           <a class="navbar-brand" routerLink="/">
             <img src="assets/brand/tabler.svg" class="navbar-brand-img" alt="tabler.io">
-            {{ config?.title }}
+            <span class="d-none d-md-inline">
+              {{ config?.title }}
+            </span>
           </a>
           <div class="ml-auto d-flex order-lg-2">
 

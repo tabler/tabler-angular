@@ -5,32 +5,30 @@ import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-auth-login',
   template: `
-    <ui-page>
-      <ui-page-title title="Log in"
-                     subTitle="Please select your login provider"
-                     icon="fe fe-log-in">
-      </ui-page-title>
+    <ui-page-title title="Log in"
+                   subTitle="Please select your login provider"
+                   icon="fe fe-log-in">
+    </ui-page-title>
 
-      <ui-alert type="danger" *ngIf="error">
-        <strong>An error occurred.</strong>
-        {{error}}
-      </ui-alert>
+    <ui-alert type="danger" *ngIf="error">
+      <strong>An error occurred.</strong>
+      {{error}}
+    </ui-alert>
 
-      <div class="card">
-        <div class="card-body">
+    <div class="card">
+      <div class="card-body">
 
-          <div *ngFor="let provider of auth.providers" class="my-3">
-            <button type="button"
-                    class="btn btn-block btn-{{provider.id}}"
-                    (click)="login(provider.id)">
-              <i class="fa fa-{{provider.id}} mr-2"></i>
-              {{provider.name}}
-            </button>
-          </div>
-          
+        <div *ngFor="let provider of auth.providers" class="my-3">
+          <button type="button"
+                  class="btn btn-block btn-{{provider.id}}"
+                  (click)="login(provider.id)">
+            <i class="fa fa-{{provider.id}} mr-2"></i>
+            {{provider.name}}
+          </button>
         </div>
+        
       </div>
-    </ui-page>
+    </div>
   `,
   styles: []
 })
