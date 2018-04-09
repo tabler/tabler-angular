@@ -38,13 +38,19 @@ export class AuthLoginComponent {
   public error = null
 
   constructor(public auth: AuthService, private router: Router) {
+    this.auth.authState$
+      .subscribe((user) => user && this.redirect())
+  }
+
+  redirect() {
+    this.router.navigate(['/auth'])
   }
 
   login(provider) {
     this.error = false
     this.auth.login(provider)
       .subscribe(
-        () => this.router.navigate(['/auth']),
+        () => this.redirect(),
         err => this.error = err.message
       );
   }
