@@ -38,6 +38,11 @@ export class AuthService {
   public authState$: Observable<any>
   public user$: Observable<FireUser>
 
+  private _isLoggedIn = false
+  public get isLoggedIn() {
+    return this._isLoggedIn
+  }
+
   constructor(
     private afAuth: AngularFireAuth,
     private db: AngularFirestore
@@ -56,8 +61,10 @@ export class AuthService {
     this.user$ = this.authState$
       .switchMap(user => {
         if (user) {
+          this._isLoggedIn = true
           return this._getDocRef(user.uid).valueChanges()
         } else {
+          this._isLoggedIn = false
           return of(null)
         }
       })
@@ -95,6 +102,16 @@ export class AuthService {
   }
 
   /**
+   * Perform the login with the Github provider
+   * @returns {Promise<void>}
+   */
+  public loginGithub() {
+    return this._login(new firebase.auth.GithubAuthProvider())
+      .then(credentials => this._updateProfile(credentials.user))
+  }
+
+
+  /**
    * Perform the login with the Google provider
    * @returns {Promise<void>}
    */
@@ -103,13 +120,28 @@ export class AuthService {
       .then(credentials => this._updateProfile(credentials.user))
   }
 
+  public get providers() {
+    return [
+      {
+        id: 'github',
+        name: 'Github'
+      },
+      {
+        id: 'google',
+        name: 'Google'
+      },
+    ]
+  }
+
   /**
    * Public login method
    * @param {"google"} provider
    * @returns {any}
    */
-  public login(provider: 'google' = 'google') {
+  public login(provider: 'google'|'github' = 'google') {
     switch (provider) {
+      case 'github':
+        return fromPromise(this.loginGithub())
       case 'google':
         return fromPromise(this.loginGoogle())
       default:
