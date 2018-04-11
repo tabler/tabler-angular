@@ -19,9 +19,19 @@ export class AppComponent {
         url: '/fire/guestbook'
       },
       {
-        name: 'Authentication',
-        icon: 'fe fe-lock',
-        url: '/auth'
+        name: 'Profile',
+        icon: 'fe fe-user',
+        url: '/auth/profile'
+      },
+      {
+        name: 'Beers',
+        icon: 'fa fa-beer',
+        url: '/crud/beers'
+      },
+      {
+        name: 'Notes',
+        icon: 'fa fa-pencil-square-o',
+        url: '/crud/notes'
       }
     ]
   }

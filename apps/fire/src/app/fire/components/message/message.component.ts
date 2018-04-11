@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component({
   selector: 'app-message',
@@ -15,6 +15,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
       <div class="col ml-3">
         <div>
           <strong>{{message.user && message.user.name || 'Anonymous' }}</strong>
+          <span class="ml-3 badge badge-info"
+                *ngIf="message.user && message.user.admin">
+            Admin
+          </span>
         </div>
         <div class="my-3">
           {{message.message}}
@@ -26,7 +30,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
             {{message.created | date: 'short' }}
           </small>
           <a class="text-danger ml-2"
-             *ngIf="user && message.user && message.user.id === user.id"
+             *ngIf="showDelete()"
              (click)="deleteMessage(message.id)">
             <i class="fa fa-trash"></i>
           </a>
@@ -37,10 +41,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styles: []
 })
 export class MessageComponent {
-  @Input() public message;
-  @Input() public user;
+  @Input() public message
+  @Input() public user
   @Output() action = new EventEmitter()
+
   deleteMessage(id) {
-    this.action.emit({ type: 'DELETE', payload: id })
+    if (window.confirm('Are you sure?')) {
+      this.action.emit({ type: 'DELETE', payload: id })
+    }
+  }
+
+  showDelete() {
+    return (this.user && this.user.admin)
+      || (this.user && this.message && this.message.user.id === this.user.id)
   }
 }

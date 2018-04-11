@@ -57,6 +57,7 @@ const exported = [
   CardComponent,
   CardBodyComponent,
   HighlightComponent,
+  MenuComponent,
 ]
 
 @NgModule({
