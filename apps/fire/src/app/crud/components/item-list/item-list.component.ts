@@ -69,9 +69,7 @@ export class ItemListComponent {
     this.action.emit({ type: 'ADD' })
   }
   canDelete(item) {
-    console.log('canDelete')
     if (!item || !this.user ) {
-      console.log('no item or user', item, this.user)
       return false
     }
     const isAdmin = this.user['admin']

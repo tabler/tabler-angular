@@ -85,7 +85,7 @@ export class ItemFormComponent implements OnInit {
   }
 
   canEdit(item) {
-    if (!item || !this.user ) {
+    if (!item || !this.user) {
       return false
     }
     const isNew = typeof item.id === 'undefined'

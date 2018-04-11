@@ -2,7 +2,7 @@
 
 > WIP: Implementation of [tabler](https://github.com/tabler/tabler) using Angular.
 
-<strong><a href="https://develop-tabler-angular-tabler.buddy.show">Live Demo</a></strong> | <strong><a href="https://tabler.github.io/tabler-angular/">Documentation</a></strong> | <strong><a href="https://goo.gl/zJP2dT">Join us on Slack</a></strong>
+<strong><a href="https://develop-tabler-angular-tabler.buddy.show">Live Demo</a></strong> | <strong><a href="https://tabler-angular-fire.firebaseapp.com">Firebase Demo</a></strong> | <strong><a href="https://tabler.github.io/tabler-angular/">Documentation</a></strong> | <strong><a href="https://goo.gl/zJP2dT">Join us on Slack</a></strong>
 
 # Installation
 
