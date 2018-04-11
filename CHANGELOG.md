@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/tabler/tabler-angular/compare/v0.5.0...v0.6.0) (2018-04-11)
+
+
+### Bug Fixes
+
+* **styles:** remove peer dependency on Bootswatch ([b7ccd3a](https://github.com/tabler/tabler-angular/commit/b7ccd3a))
+
+
+### Features
+
+* **core:** export Forms, Modal from CoreModule ([98077b0](https://github.com/tabler/tabler-angular/commit/98077b0))
+* **fire:** implement crud example ([4abbdc8](https://github.com/tabler/tabler-angular/commit/4abbdc8))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/beeman/angular-tabler/compare/v0.4.0...v0.5.0) (2018-04-09)
 
