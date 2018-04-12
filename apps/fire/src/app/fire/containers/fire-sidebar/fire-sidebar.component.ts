@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-fire-sidebar',
@@ -14,10 +14,9 @@ import {Component, OnInit} from '@angular/core';
       </a>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class FireSidebarComponent implements OnInit {
-
   public items = [
     {
       url: 'guestbook',
@@ -26,10 +25,7 @@ export class FireSidebarComponent implements OnInit {
     },
   ]
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

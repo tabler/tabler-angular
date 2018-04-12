@@ -39,14 +39,10 @@ import { Component, OnInit } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class MessagesComposeComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

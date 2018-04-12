@@ -23,7 +23,7 @@ import { Component, Input } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class ComponentsStoreProductComponent {
   @Input() product

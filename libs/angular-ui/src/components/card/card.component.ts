@@ -79,14 +79,16 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
       </div>
     </div>
   `,
-  styles: [`
+  styles: [
+    `
     .hide {
       display: none;
     }
     .show {
       display: block;
     }
-  `]
+  `,
+  ],
 })
 export class CardComponent {
   @Input() public alert: any

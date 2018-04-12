@@ -46,7 +46,7 @@ import { DemoService } from '../../../demo/services/demo.service'
     </div>
 
   `,
-  styles: []
+  styles: [],
 })
 export class MessagesListComponent implements OnInit {
   public messages = []
@@ -55,10 +55,8 @@ export class MessagesListComponent implements OnInit {
     console.log(this.messages)
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   public getMessages() {
     return this.messages
   }
-
 }

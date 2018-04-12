@@ -47,7 +47,7 @@ import { Collection } from '../../data.typings'
       </table>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ItemListComponent {
   @Input() collection: Collection
@@ -69,7 +69,7 @@ export class ItemListComponent {
     this.action.emit({ type: 'ADD' })
   }
   canDelete(item) {
-    if (!item || !this.user ) {
+    if (!item || !this.user) {
       return false
     }
     const isAdmin = this.user['admin']

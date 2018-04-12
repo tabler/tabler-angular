@@ -8,5 +8,4 @@ import { Component } from '@angular/core'
     </div>
   `,
 })
-export class LayoutBaseComponent {
-}
+export class LayoutBaseComponent {}

@@ -27,5 +27,4 @@ export class DataService {
   public getItems(collectionId: string): Observable<Item[]> {
     return this.service.getItems(collectionId)
   }
-
 }

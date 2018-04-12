@@ -14,7 +14,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
       </div>
     </a>
   `,
-  styles: []
+  styles: [],
 })
 export class HeaderNotificationItemComponent {
   @Input() public notification
@@ -22,6 +22,9 @@ export class HeaderNotificationItemComponent {
 
   public onClick(e) {
     e.preventDefault()
-    this.action.emit({ type: 'NOTIFICATION_CLICK', payload: this.notification })
+    this.action.emit({
+      type: 'NOTIFICATION_CLICK',
+      payload: this.notification,
+    })
   }
 }

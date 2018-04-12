@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-tags',
@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
       tags works!
     </p>
   `,
-  styles: []
+  styles: [],
 })
 export class TagsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

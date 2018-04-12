@@ -1,27 +1,27 @@
-import { Injectable } from '@angular/core';
-import { AuthService } from './auth/services/auth.service';
+import { Injectable } from '@angular/core'
+import { AuthService } from './auth/services/auth.service'
 
 const defaultUser = {
   name: 'Anonymous',
   email: 'Guest account',
-  avatarText: '?'
+  avatarText: '?',
 }
 const linkLogin = {
   link: '/auth/login',
   label: 'Log in',
-  icon: 'fe fe-log-in'
+  icon: 'fe fe-log-in',
 }
 const linkLogout = {
   link: '/auth/logout',
   label: 'Log out',
-  icon: 'fe fe-log-out'
+  icon: 'fe fe-log-out',
 }
 const linkSource = {
   label: 'Source Code',
   link: 'https://github.com/tabler/tabler-angular/tree/develop/apps/fire/src/app',
   class: 'btn btn-sm btn-outline-primary ml-2',
   icon: 'fe fe-github',
-  target: '_blank'
+  target: '_blank',
 }
 
 @Injectable()
@@ -31,12 +31,12 @@ export class AppService {
    * @type {{}}
    * @private
    */
-  private _config = {};
+  private _config = {}
   public get config() {
-    return this._config;
+    return this._config
   }
   public set config(config) {
-    this._config = config;
+    this._config = config
   }
 
   /**
@@ -75,7 +75,7 @@ export class AppService {
         Theme by <a href="https://github.com/codecalm" target="_blank">@codecalm</a>.
         Angular by <a href="https://github.com/beeman" target="_blank">@beeman</a>.
         MIT Licensed
-      `
+      `,
     }
   }
 
@@ -84,7 +84,7 @@ export class AppService {
    * @type {boolean}
    * @private
    */
-  private _isLoggedIn = false;
+  private _isLoggedIn = false
   public get isLoggedIn() {
     return this._isLoggedIn
   }
@@ -97,7 +97,7 @@ export class AppService {
    * @type {{}}
    * @private
    */
-  private _user;
+  private _user
   private set user(user) {
     // Set the logged in state
     if (user.id) {
@@ -115,7 +115,6 @@ export class AppService {
     return this._user
   }
 
-
   /**
    * Method that returns Header Config
    * @returns
@@ -125,11 +124,9 @@ export class AppService {
       title: this._title,
       menu: this._menu,
       user: this.user,
-      links: [ linkSource ],
-      profileLinks: [
-        this.isLoggedIn ? linkLogout : linkLogin,
-      ],
-    };
+      links: [linkSource],
+      profileLinks: [this.isLoggedIn ? linkLogout : linkLogin],
+    }
   }
 
   /**
@@ -139,13 +136,10 @@ export class AppService {
     this.config = {
       header: this.header,
       footer: this.footer,
-    };
+    }
   }
 
   constructor(private auth: AuthService) {
-    this.auth.user$
-      .map(user => user ? user : defaultUser)
-      .subscribe(user => this.user = user);
+    this.auth.user$.map(user => (user ? user : defaultUser)).subscribe(user => (this.user = user))
   }
-
 }

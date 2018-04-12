@@ -154,9 +154,8 @@ import { DemoService } from '../../../demo/services/demo.service'
 
     </ui-page>
   `,
-  styles: []
+  styles: [],
 })
 export class HomeIndexComponent {
-
   constructor(public demoService: DemoService) {}
 }

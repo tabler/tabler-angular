@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { FormsInputIconComponent } from './forms-input-icon.component';
+import { FormsInputIconComponent } from './forms-input-icon.component'
 
 describe('FormsInputIconComponent', () => {
-  let component: FormsInputIconComponent;
-  let fixture: ComponentFixture<FormsInputIconComponent>;
+  let component: FormsInputIconComponent
+  let fixture: ComponentFixture<FormsInputIconComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ FormsInputIconComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [FormsInputIconComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormsInputIconComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(FormsInputIconComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

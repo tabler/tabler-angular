@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class GalleryListComponent {
   @Input() public photos = []

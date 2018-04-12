@@ -4,11 +4,9 @@ import { of } from 'rxjs/observable/of'
 
 @Injectable()
 export class ProfileResolver implements Resolve<any> {
-
   constructor() {}
 
   resolve() {
     return of({})
   }
-
 }

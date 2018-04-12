@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-components-maps-world',
@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
       components-maps-world works!
     </p>
   `,
-  styles: []
+  styles: [],
 })
 export class ComponentsMapsWorldComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

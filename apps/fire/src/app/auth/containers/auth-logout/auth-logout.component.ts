@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
+import { Component, OnInit } from '@angular/core'
+import { AuthService } from '../../services/auth.service'
 
 @Component({
   selector: 'app-auth-logout',
@@ -15,15 +15,13 @@ import { AuthService } from '../../services/auth.service';
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class AuthLogoutComponent implements OnInit {
   public loggedOut = false
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService) {}
 
   ngOnInit() {
-    this.auth.logout()
-      .subscribe(() => this.loggedOut = !this.loggedOut)
+    this.auth.logout().subscribe(() => (this.loggedOut = !this.loggedOut))
   }
-
 }

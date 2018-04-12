@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { HeaderNotificationItemComponent } from './header-notification-item.component';
+import { HeaderNotificationItemComponent } from './header-notification-item.component'
 
 describe('HeaderNotificationItemComponent', () => {
-  let component: HeaderNotificationItemComponent;
-  let fixture: ComponentFixture<HeaderNotificationItemComponent>;
+  let component: HeaderNotificationItemComponent
+  let fixture: ComponentFixture<HeaderNotificationItemComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HeaderNotificationItemComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [HeaderNotificationItemComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderNotificationItemComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(HeaderNotificationItemComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

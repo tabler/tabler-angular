@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core'
     </a>
     <div *ngIf="link.divider" class="dropdown-divider"></div>
   `,
-  styles: []
+  styles: [],
 })
 export class HeaderProfileLinkComponent {
   @Input() link

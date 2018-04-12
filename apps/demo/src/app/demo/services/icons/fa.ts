@@ -784,5 +784,5 @@ export const fa = [
   'fa-yoast',
   'fa-youtube',
   'fa-youtube-play',
-  'fa-youtube-square'
+  'fa-youtube-square',
 ]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 import { DemoService } from '../../../demo/services/demo.service'
 
 @Component({
@@ -17,13 +17,11 @@ import { DemoService } from '../../../demo/services/demo.service'
   `,
 })
 export class ComponentsIconsComponent implements OnInit {
-
   public iconSets = []
 
-  constructor(public demoService: DemoService) { }
+  constructor(public demoService: DemoService) {}
 
   ngOnInit() {
     this.iconSets = this.demoService.icons
   }
-
 }

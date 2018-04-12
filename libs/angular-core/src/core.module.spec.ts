@@ -1,7 +1,7 @@
-import { CoreModule } from './core.module';
+import { CoreModule } from './core.module'
 
 describe('CoreModule', () => {
   it('should work', () => {
-    expect(new CoreModule()).toBeDefined();
-  });
-});
+    expect(new CoreModule()).toBeDefined()
+  })
+})

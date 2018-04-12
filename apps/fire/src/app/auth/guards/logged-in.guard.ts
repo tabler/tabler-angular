@@ -8,8 +8,7 @@ import { AuthService } from '../services/auth.service'
 
 @Injectable()
 export class LoggedInGuard implements CanActivate {
-  constructor(private auth: AuthService, private router: Router) {
-  }
+  constructor(private auth: AuthService, private router: Router) {}
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     const redirectUrl = state.url || '/auth/profile'
@@ -25,11 +24,10 @@ export class LoggedInGuard implements CanActivate {
   }
 
   login(redirectUrl) {
-    return this.router.navigate([ `/auth/login` ], {
+    return this.router.navigate([`/auth/login`], {
       queryParams: {
         url: redirectUrl,
       },
     })
   }
-
 }

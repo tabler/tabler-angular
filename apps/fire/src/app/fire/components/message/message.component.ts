@@ -38,7 +38,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class MessageComponent {
   @Input() public message
@@ -52,7 +52,6 @@ export class MessageComponent {
   }
 
   showDelete() {
-    return (this.user && this.user.admin)
-      || (this.user && this.message && this.message.user.id === this.user.id)
+    return (this.user && this.user.admin) || (this.user && this.message && this.message.user.id === this.user.id)
   }
 }

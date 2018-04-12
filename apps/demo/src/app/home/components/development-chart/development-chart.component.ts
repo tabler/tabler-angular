@@ -21,19 +21,23 @@ export class DevelopmentChartComponent implements OnInit {
   // lineChart
   public datasets: any[] = []
 
-  public get labels () {
-    return this.datasets[ 0 ].data
+  public get labels() {
+    return this.datasets[0].data
   }
 
   public options: any = {
     maintainAspectRatio: false,
     scales: {
-      xAxes: [{
-        display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
+      xAxes: [
+        {
+          display: false,
+        },
+      ],
+      yAxes: [
+        {
+          display: false,
+        },
+      ],
     },
     elements: {
       line: {
@@ -47,7 +51,7 @@ export class DevelopmentChartComponent implements OnInit {
       },
     },
     legend: {
-      display: false
+      display: false,
     },
     animation: {
       duration: 0, // general animation time
@@ -59,7 +63,7 @@ export class DevelopmentChartComponent implements OnInit {
     {
       backgroundColor: 'rgba(70,127,207,0.1)',
       borderColor: 'rgba(70,127,207)',
-    }
+    },
   ]
 
   ngOnInit() {
@@ -67,8 +71,7 @@ export class DevelopmentChartComponent implements OnInit {
       {
         data: this.data,
         label: this.label,
-      }
+      },
     ]
   }
-
 }

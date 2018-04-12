@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'ui-pages-auth',
@@ -17,13 +17,11 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class AuthIndexComponent implements OnInit {
   public colClass = 'col-login'
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

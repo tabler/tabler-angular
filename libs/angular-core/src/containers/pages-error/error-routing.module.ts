@@ -11,10 +11,34 @@ export const messages = {
 }
 
 export const ErrorRoutes: Routes = [
-  { path: '400', component: PagesErrorComponent, data: { code: '400', message: messages[ '400' ] } },
-  { path: '401', component: PagesErrorComponent, data: { code: '401', message: messages[ '401' ] } },
-  { path: '403', component: PagesErrorComponent, data: { code: '403', message: messages[ '403' ] } },
-  { path: '404', component: PagesErrorComponent, data: { code: '404', message: messages[ '404' ] } },
-  { path: '400', component: PagesErrorComponent, data: { code: '400', message: messages[ '400' ] } },
-  { path: '503', component: PagesErrorComponent, data: { code: '503', message: messages[ '503' ] } },
+  {
+    path: '400',
+    component: PagesErrorComponent,
+    data: { code: '400', message: messages['400'] },
+  },
+  {
+    path: '401',
+    component: PagesErrorComponent,
+    data: { code: '401', message: messages['401'] },
+  },
+  {
+    path: '403',
+    component: PagesErrorComponent,
+    data: { code: '403', message: messages['403'] },
+  },
+  {
+    path: '404',
+    component: PagesErrorComponent,
+    data: { code: '404', message: messages['404'] },
+  },
+  {
+    path: '400',
+    component: PagesErrorComponent,
+    data: { code: '400', message: messages['400'] },
+  },
+  {
+    path: '503',
+    component: PagesErrorComponent,
+    data: { code: '503', message: messages['503'] },
+  },
 ]

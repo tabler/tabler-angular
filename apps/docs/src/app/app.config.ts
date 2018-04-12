@@ -8,29 +8,29 @@ const headerMenu = [
     subpages: [
       {
         name: '400 error',
-        url: '/400'
+        url: '/400',
       },
       {
         name: '401 error',
-        url: '/401'
+        url: '/401',
       },
       {
         name: '403 error',
-        url: '/403'
+        url: '/403',
       },
       {
         name: '404 error',
-        url: '/404'
+        url: '/404',
       },
       {
         name: '500 error',
-        url: '/500'
+        url: '/500',
       },
       {
         name: '503 error',
-        url: '/503'
+        url: '/503',
       },
-    ]
+    ],
   },
 ]
 
@@ -53,7 +53,7 @@ export const AppConfig = {
   header: {
     title: 'Documentation',
     menu: headerMenu,
-    links: [ liveDemo , sourceCode],
+    links: [liveDemo, sourceCode],
   },
   footer: {
     disclaimer: `
@@ -62,10 +62,6 @@ export const AppConfig = {
       Angular by <a href="https://github.com/beeman" target="_blank">@beeman</a>.
       MIT Licensed
     `,
-    links: [
-      { link: '/docs', label: 'Documentation'},
-      { link: '/faq', label: 'FAQ'},
-      sourceCode,
-    ],
-  }
+    links: [{ link: '/docs', label: 'Documentation' }, { link: '/faq', label: 'FAQ' }, sourceCode],
+  },
 }

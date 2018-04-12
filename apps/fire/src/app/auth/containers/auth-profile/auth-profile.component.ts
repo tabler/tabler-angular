@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
+import { Component, OnInit } from '@angular/core'
+import { AuthService } from '../../services/auth.service'
 
 @Component({
   selector: 'app-auth-profile',
@@ -47,20 +47,18 @@ import { AuthService } from '../../services/auth.service';
 
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class AuthProfileComponent implements OnInit {
-  public authState$;
-  public user$;
-  public error = null;
+  public authState$
+  public user$
+  public error = null
   public debug = false
 
-  constructor(private authService: AuthService) {
-  }
+  constructor(private authService: AuthService) {}
 
   ngOnInit() {
-    this.authState$ = this.authService.authState$;
-    this.user$ = this.authService.user$;
+    this.authState$ = this.authService.authState$
+    this.user$ = this.authService.user$
   }
-
 }

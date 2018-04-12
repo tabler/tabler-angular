@@ -23,7 +23,7 @@ export interface FireUser {
   // [key: string]: any | any[]
 }
 
-const defaultProfile = (user) => ({
+const defaultProfile = user => ({
   id: user.uid,
   name: user.displayName,
   email: user.email,
@@ -43,10 +43,7 @@ export class AuthService {
     return this._isLoggedIn
   }
 
-  constructor(
-    private afAuth: AngularFireAuth,
-    private db: AngularFirestore
-  ) {
+  constructor(private afAuth: AngularFireAuth, private db: AngularFirestore) {
     this._observeState()
   }
 
@@ -58,16 +55,15 @@ export class AuthService {
     // Set the main authState
     this.authState$ = this.afAuth.authState
     // Set the user profile
-    this.user$ = this.authState$
-      .switchMap(user => {
-        if (user) {
-          this._isLoggedIn = true
-          return this._getDocRef(user.uid).valueChanges()
-        } else {
-          this._isLoggedIn = false
-          return of(null)
-        }
-      })
+    this.user$ = this.authState$.switchMap(user => {
+      if (user) {
+        this._isLoggedIn = true
+        return this._getDocRef(user.uid).valueChanges()
+      } else {
+        this._isLoggedIn = false
+        return of(null)
+      }
+    })
   }
 
   /**
@@ -87,8 +83,7 @@ export class AuthService {
    * @private
    */
   private _updateProfile(user) {
-    return this._getDocRef(user.uid)
-      .set(defaultProfile(user), { merge: true})
+    return this._getDocRef(user.uid).set(defaultProfile(user), { merge: true })
   }
 
   /**
@@ -106,29 +101,30 @@ export class AuthService {
    * @returns {Promise<void>}
    */
   public loginGithub() {
-    return this._login(new firebase.auth.GithubAuthProvider())
-      .then(credentials => this._updateProfile(credentials.user))
+    return this._login(new firebase.auth.GithubAuthProvider()).then(credentials =>
+      this._updateProfile(credentials.user)
+    )
   }
-
 
   /**
    * Perform the login with the Google provider
    * @returns {Promise<void>}
    */
   public loginGoogle() {
-    return this._login(new firebase.auth.GoogleAuthProvider())
-      .then(credentials => this._updateProfile(credentials.user))
+    return this._login(new firebase.auth.GoogleAuthProvider()).then(credentials =>
+      this._updateProfile(credentials.user)
+    )
   }
 
   public get providers() {
     return [
       {
         id: 'github',
-        name: 'Github'
+        name: 'Github',
       },
       {
         id: 'google',
-        name: 'Google'
+        name: 'Google',
       },
     ]
   }
@@ -138,7 +134,7 @@ export class AuthService {
    * @param {"google"} provider
    * @returns {any}
    */
-  public login(provider: 'google'|'github' = 'google') {
+  public login(provider: 'google' | 'github' = 'google') {
     switch (provider) {
       case 'github':
         return fromPromise(this.loginGithub())
@@ -157,5 +153,4 @@ export class AuthService {
   public logout() {
     return fromPromise(this.afAuth.auth.signOut())
   }
-
 }

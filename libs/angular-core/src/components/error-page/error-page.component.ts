@@ -20,7 +20,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
       </ui-page>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class ErrorPageComponent {
   @Input() code = '500'

@@ -1,15 +1,18 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing'
 
-import { FireService } from './fire.service';
+import { FireService } from './fire.service'
 
 describe('FireService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [FireService]
-    });
-  });
+      providers: [FireService],
+    })
+  })
 
-  it('should be created', inject([FireService], (service: FireService) => {
-    expect(service).toBeTruthy();
-  }));
-});
+  it(
+    'should be created',
+    inject([FireService], (service: FireService) => {
+      expect(service).toBeTruthy()
+    })
+  )
+})

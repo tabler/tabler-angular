@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 
 @Component({
   selector: 'app-message-list',
@@ -17,12 +17,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class MessageListComponent {
-  @Input() public messages = [];
-  @Input() public user;
-  @Output() public action = new EventEmitter();
+  @Input() public messages = []
+  @Input() public user
+  @Output() public action = new EventEmitter()
 
   handleAction($event) {
     console.log($event)

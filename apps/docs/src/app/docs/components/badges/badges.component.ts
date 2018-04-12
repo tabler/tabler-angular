@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-badges',
@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
       badges works!
     </p>
   `,
-  styles: []
+  styles: [],
 })
 export class BadgesComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

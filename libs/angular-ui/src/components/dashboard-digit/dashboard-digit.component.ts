@@ -13,7 +13,7 @@ import { Component, Input } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class DashboardDigitComponent {
   @Input() color = 'blue'

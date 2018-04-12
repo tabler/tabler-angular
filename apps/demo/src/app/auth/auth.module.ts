@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { SharedModule } from '../../../../../libs/angular-core'
 import { AuthIndexComponent } from './container/auth-index/auth-index.component'
@@ -10,7 +10,9 @@ import { AuthResetComponent } from './components/auth-reset/auth-reset.component
 
 const routes: Routes = [
   {
-    path: '', component: AuthIndexComponent, children: [
+    path: '',
+    component: AuthIndexComponent,
+    children: [
       { path: 'login', component: AuthLoginComponent },
       { path: 'register', component: AuthRegisterComponent },
       { path: 'forgot-password', component: AuthForgotComponent },
@@ -20,16 +22,13 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  imports: [
-    SharedModule,
-    RouterModule.forChild(routes),
-  ],
+  imports: [SharedModule, RouterModule.forChild(routes)],
   declarations: [
     AuthIndexComponent,
     AuthLoginComponent,
     AuthRegisterComponent,
     AuthForgotComponent,
     AuthResetComponent,
-  ]
+  ],
 })
-export class AuthModule { }
+export class AuthModule {}

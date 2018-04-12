@@ -10,5 +10,5 @@ export const environment = {
     docs: 'http://localhost:4201',
     fire: 'http://localhost:4202',
     repo: 'https://github.com/tabler/tabler-angular',
-  }
-};
+  },
+}

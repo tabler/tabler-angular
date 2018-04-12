@@ -7,6 +7,8 @@ import { DemoService } from '../../../demo/services/demo.service'
     <ui-page>
       <ui-page-title title="Forms" icon="fe fe-check-square"></ui-page-title>
 
+      <app-forms-demo class="my-5"></app-forms-demo>
+      
       <form action="https://httpbin.org/post" method="post" class="card">
         <div class="card-header">
           <h3 class="card-title">Form elements</h3>
@@ -635,18 +637,18 @@ determine address more accurately.</p><p class='mb-0'><a href=''>USP ZIP codes l
         </div>
       </form>
     </ui-page>
-  `
+  `,
 })
 export class FormsIndexComponent implements OnInit {
   public users = []
   public photos = []
 
-  constructor(private demoService: DemoService) {
-  }
+  constructor(private demoService: DemoService) {}
 
   ngOnInit() {
     this.users = this.demoService.users
-    this.photos = this.demoService.photos.slice(30, 39)
-      .map((photo, idx) => Object.assign({}, photo, { checked: (idx % 2 === 0) }))
+    this.photos = this.demoService.photos
+      .slice(30, 39)
+      .map((photo, idx) => Object.assign({}, photo, { checked: idx % 2 === 0 }))
   }
 }

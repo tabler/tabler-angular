@@ -7,20 +7,17 @@ import { ActivatedRoute } from '@angular/router'
   template: `
     <app-error-page [code]="code" [message]="message" (action)="handleAction()"></app-error-page>
   `,
-  styles: []
+  styles: [],
 })
 export class PagesErrorComponent implements OnInit {
   public code: number | string
   public message: string
 
-  constructor(private location: Location, private route: ActivatedRoute) {
-  }
+  constructor(private location: Location, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.code = this.route.snapshot.data.code || 500
-    this.message = this.route.snapshot.data.message
-      || this.route.snapshot.queryParams.message
-      || 'Unknown error...'
+    this.message = this.route.snapshot.data.message || this.route.snapshot.queryParams.message || 'Unknown error...'
   }
 
   public handleAction() {

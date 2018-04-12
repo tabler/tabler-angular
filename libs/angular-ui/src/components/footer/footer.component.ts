@@ -28,7 +28,7 @@ import { Component, Input } from '@angular/core'
       </div>
     </footer>
   `,
-  styles: []
+  styles: [],
 })
 export class FooterComponent {
   @Input() public config

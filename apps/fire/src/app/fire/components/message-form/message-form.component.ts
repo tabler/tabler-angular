@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component({
   selector: 'app-message-form',
@@ -25,7 +25,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class MessageFormComponent {
   @Input() message = ''

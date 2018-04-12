@@ -22,7 +22,7 @@ import { Component, Input } from '@angular/core'
       </ng-container>
     </ul>
   `,
-  styles: []
+  styles: [],
 })
 export class MenuComponent {
   @Input() public links = []

@@ -7,9 +7,10 @@ import { Collection } from '../../data.typings'
 import { DataService } from '../../services'
 import 'rxjs/add/operator/take'
 
-export const getProperties = o => Object.keys(o || {})
-  .map(id => (Object.assign({}, o[id], { id })))
-  .filter(prop => prop.id !== 'id')
+export const getProperties = o =>
+  Object.keys(o || {})
+    .map(id => Object.assign({}, o[id], { id }))
+    .filter(prop => prop.id !== 'id')
 
 @Component({
   selector: 'app-notes-index',
@@ -60,15 +61,15 @@ export class ItemsIndexComponent implements OnInit {
     private auth: AuthService,
     private route: ActivatedRoute,
     private data: DataService,
-    private modal: BsModalService) {}
+    private modal: BsModalService
+  ) {}
 
   ngOnInit() {
     this.route.data
-      .map(res => this.parseCollection(res[ 'collection' ]))
+      .map(res => this.parseCollection(res['collection']))
       .map(res => res && res.id)
-      .subscribe(id => this.items$ = this.data.getItems(id))
-    this.auth.user$
-      .subscribe(user => this.user = user)
+      .subscribe(id => (this.items$ = this.data.getItems(id)))
+    this.auth.user$.subscribe(user => (this.user = user))
   }
 
   parseCollection(collection) {
@@ -106,14 +107,11 @@ export class ItemsIndexComponent implements OnInit {
         return this.showModal('form', { user: this.user })
       case 'SAVE_CLOSE':
       case 'SAVE':
-        return this.data.upsertItem(this.collection.id, payload)
-          .subscribe(
-            () => type === 'SAVE_CLOSE' && this.hideModal(),
-            err => console.log('err', err)
-          )
+        return this.data
+          .upsertItem(this.collection.id, payload)
+          .subscribe(() => type === 'SAVE_CLOSE' && this.hideModal(), err => console.log('err', err))
       default:
         console.log(`Unknown type: ${type}. Payload: `, payload)
     }
   }
-
 }

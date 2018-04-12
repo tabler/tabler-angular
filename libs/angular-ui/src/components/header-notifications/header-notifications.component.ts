@@ -23,7 +23,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class HeaderNotificationsComponent {
   @Input() public notifications = []

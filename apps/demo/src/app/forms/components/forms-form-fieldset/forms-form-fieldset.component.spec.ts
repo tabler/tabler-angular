@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { FormsFormFieldsetComponent } from './forms-form-fieldset.component';
+import { FormsFormFieldsetComponent } from './forms-form-fieldset.component'
 
 describe('FormsFormFieldsetComponent', () => {
-  let component: FormsFormFieldsetComponent;
-  let fixture: ComponentFixture<FormsFormFieldsetComponent>;
+  let component: FormsFormFieldsetComponent
+  let fixture: ComponentFixture<FormsFormFieldsetComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ FormsFormFieldsetComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [FormsFormFieldsetComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormsFormFieldsetComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(FormsFormFieldsetComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

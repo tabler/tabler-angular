@@ -18,33 +18,15 @@ const routes: Routes = [
     path: ':collectionId',
     resolve: { collection: CollectionResolver },
     data: { service: FirebaseDataService },
-    children: [
-      { path: '', component: ItemsIndexComponent },
-    ]
+    children: [{ path: '', component: ItemsIndexComponent }],
   },
 ]
 
 @NgModule({
-  imports: [
-    SharedModule,
-    RouterModule.forChild(routes),
-    ModalModule.forRoot(),
-  ],
-  declarations: [
-    ItemsIndexComponent,
-    ItemFieldComponent,
-    ItemListComponent,
-    ItemModalComponent,
-    ItemFormComponent,
-  ],
-  entryComponents: [
-    ItemModalComponent,
-  ],
-  providers: [
-    DataService,
-    FirebaseDataService,
-    CollectionResolver,
-  ]
+  imports: [SharedModule, RouterModule.forChild(routes), ModalModule.forRoot()],
+  declarations: [ItemsIndexComponent, ItemFieldComponent, ItemListComponent, ItemModalComponent, ItemFormComponent],
+  entryComponents: [ItemModalComponent],
+  providers: [DataService, FirebaseDataService, CollectionResolver],
 })
 export class CrudModule {
   constructor(data: DataService, firebase: FirebaseDataService) {

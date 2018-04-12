@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-alerts',
@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
       alerts works!
     </p>
   `,
-  styles: []
+  styles: [],
 })
 export class AlertsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

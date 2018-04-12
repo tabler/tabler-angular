@@ -47,7 +47,7 @@ import { Component, Input } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class CardMembersComponent {
   @Input() users

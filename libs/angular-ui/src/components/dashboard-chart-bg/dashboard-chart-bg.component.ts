@@ -22,7 +22,8 @@ import { Component, Input } from '@angular/core'
         </div>
     </div>
   `,
-  styles: [`
+  styles: [
+    `
     .card-body {
       background-color: transparent;
       position: absolute;
@@ -32,7 +33,8 @@ import { Component, Input } from '@angular/core'
       left: 0;
       padding: 1.25rem;
     }
-  `]
+  `,
+  ],
 })
 export class DashboardChartBgComponent {
   @Input() rate
@@ -44,23 +46,27 @@ export class DashboardChartBgComponent {
   public datasets = [
     {
       data: [78, 81, 80, 45, 34, 12, 40],
-      label: 'Series A'
-    }
+      label: 'Series A',
+    },
   ]
   public labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
   public options = {
     maintainAspectRatio: false,
     scales: {
-      xAxes: [{
-        display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
+      xAxes: [
+        {
+          display: false,
+        },
+      ],
+      yAxes: [
+        {
+          display: false,
+        },
+      ],
     },
     elements: {
       line: {
-        borderWidth: 2
+        borderWidth: 2,
       },
       point: {
         radius: 0,
@@ -69,7 +75,7 @@ export class DashboardChartBgComponent {
       },
     },
     legend: {
-      display: false
+      display: false,
     },
     animation: {
       duration: 0,
@@ -79,6 +85,6 @@ export class DashboardChartBgComponent {
     {
       backgroundColor: 'rgba(70,127,207,0.1)',
       borderColor: 'rgba(70,127,207)',
-    }
+    },
   ]
 }

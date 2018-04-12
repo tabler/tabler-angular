@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-gallery-page-options',
@@ -17,13 +17,10 @@ import { Component, OnInit } from '@angular/core';
     </div>
     
   `,
-  styles: []
+  styles: [],
 })
 export class GalleryPageOptionsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

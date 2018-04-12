@@ -8,11 +8,11 @@ import { Component, Input } from '@angular/core'
       <span *ngIf="status" class="avatar-status bg-{{status}}"></span>
     </span>
   `,
-  styles: []
+  styles: [],
 })
 export class AvatarComponent {
   @Input() image: string
-  @Input() size: 'sm'|'md'|'lg'|'xl'|'xxl'
+  @Input() size: 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
   @Input() status
   @Input() text: string
   backgroundImage() {

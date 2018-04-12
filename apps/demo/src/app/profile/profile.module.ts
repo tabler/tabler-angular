@@ -9,15 +9,10 @@ import { ProfileEditComponent } from './components/profile-edit/profile-edit.com
 import { ProfileEditBigComponent } from './components/profile-edit-big/profile-edit-big.component'
 import { ProfileCardSmallComponent } from './components/profile-card-small/profile-card-small.component'
 
-export const routes: Routes = [
-  { path: '', component: ProfileIndexComponent },
-]
+export const routes: Routes = [{ path: '', component: ProfileIndexComponent }]
 
 @NgModule({
-  imports: [
-    SharedModule,
-    RouterModule.forChild(routes)
-  ],
+  imports: [SharedModule, RouterModule.forChild(routes)],
   declarations: [
     ProfileIndexComponent,
     ProfileCardComponent,
@@ -25,7 +20,6 @@ export const routes: Routes = [
     ProfileEditComponent,
     ProfileEditBigComponent,
     ProfileCardSmallComponent,
-  ]
+  ],
 })
-export class ProfileModule {
-}
+export class ProfileModule {}

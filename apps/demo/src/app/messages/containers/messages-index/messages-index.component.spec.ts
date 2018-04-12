@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { MessagesIndexComponent } from './messages-index.component';
+import { MessagesIndexComponent } from './messages-index.component'
 
 describe('MessagesIndexComponent', () => {
-  let component: MessagesIndexComponent;
-  let fixture: ComponentFixture<MessagesIndexComponent>;
+  let component: MessagesIndexComponent
+  let fixture: ComponentFixture<MessagesIndexComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MessagesIndexComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [MessagesIndexComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MessagesIndexComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(MessagesIndexComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

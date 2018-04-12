@@ -10,7 +10,7 @@ export const users = [
     birthday: {
       dmy: '14/11/1984',
       mdy: '11/14/1984',
-      raw: 469330121
+      raw: 469330121,
     },
     email: 'victoria_84@example.com',
     username: 'victoria_84',
@@ -19,9 +19,9 @@ export const users = [
       expiration: '2/23',
       number: '2150-3673-8175-7377',
       pin: 6832,
-      security: 811
+      security: 811,
     },
-    photo: 'assets/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg',
   },
   {
     name: 'Nathan',
@@ -34,7 +34,7 @@ export const users = [
     birthday: {
       dmy: '23/04/1983',
       mdy: '04/23/1983',
-      raw: 419976627
+      raw: 419976627,
     },
     email: 'nathan83@example.com',
     username: 'nathan83',
@@ -43,9 +43,9 @@ export const users = [
       expiration: '9/20',
       number: '8807-2752-3115-6561',
       pin: 6607,
-      security: 162
+      security: 162,
     },
-    photo: 'assets/faces/male/41.jpg'
+    photo: 'assets/faces/male/41.jpg',
   },
   {
     name: 'Alice',
@@ -58,7 +58,7 @@ export const users = [
     birthday: {
       dmy: '02/11/1990',
       mdy: '11/02/1990',
-      raw: 657531937
+      raw: 657531937,
     },
     email: 'alice_mason@example.com',
     username: 'alice_mason',
@@ -67,9 +67,9 @@ export const users = [
       expiration: '4/18',
       number: '4135-3840-6711-3157',
       pin: 8205,
-      security: 313
+      security: 313,
     },
-    photo: 'assets/faces/female/1.jpg'
+    photo: 'assets/faces/female/1.jpg',
   },
   {
     name: 'Rose',
@@ -82,7 +82,7 @@ export const users = [
     birthday: {
       dmy: '02/08/1988',
       mdy: '08/02/1988',
-      raw: 586521207
+      raw: 586521207,
     },
     email: 'rosebradley@example.com',
     username: 'rosebradley',
@@ -91,9 +91,9 @@ export const users = [
       expiration: '10/25',
       number: '3793-6265-8047-8744',
       pin: 6576,
-      security: 945
+      security: 945,
     },
-    photo: 'assets/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg',
   },
   {
     name: 'Peter',
@@ -106,7 +106,7 @@ export const users = [
     birthday: {
       dmy: '13/02/1990',
       mdy: '02/13/1990',
-      raw: 634949207
+      raw: 634949207,
     },
     email: 'peter90@example.com',
     username: 'peter90',
@@ -115,9 +115,9 @@ export const users = [
       expiration: '3/22',
       number: '2615-9724-6285-4634',
       pin: 2651,
-      security: 836
+      security: 836,
     },
-    photo: 'assets/faces/male/16.jpg'
+    photo: 'assets/faces/male/16.jpg',
   },
   {
     name: 'Wayne',
@@ -130,7 +130,7 @@ export const users = [
     birthday: {
       dmy: '02/01/1982',
       mdy: '01/02/1982',
-      raw: 378866557
+      raw: 378866557,
     },
     email: 'wayne-82@example.com',
     username: 'wayne-82',
@@ -139,9 +139,9 @@ export const users = [
       expiration: '4/20',
       number: '7383-3935-8867-8578',
       pin: 2474,
-      security: 853
+      security: 853,
     },
-    photo: 'assets/faces/male/26.jpg'
+    photo: 'assets/faces/male/26.jpg',
   },
   {
     name: 'Michelle',
@@ -154,7 +154,7 @@ export const users = [
     birthday: {
       dmy: '08/07/1984',
       mdy: '07/08/1984',
-      raw: 458129960
+      raw: 458129960,
     },
     email: 'michelle84@example.com',
     username: 'michelle84',
@@ -163,9 +163,9 @@ export const users = [
       expiration: '11/18',
       number: '4624-1932-2269-3875',
       pin: 2353,
-      security: 729
+      security: 729,
     },
-    photo: 'assets/faces/female/7.jpg'
+    photo: 'assets/faces/female/7.jpg',
   },
   {
     name: 'Debra',
@@ -178,7 +178,7 @@ export const users = [
     birthday: {
       dmy: '03/12/1991',
       mdy: '12/03/1991',
-      raw: 691767904
+      raw: 691767904,
     },
     email: 'debrabeck@example.com',
     username: 'debrabeck',
@@ -187,9 +187,9 @@ export const users = [
       expiration: '11/23',
       number: '6580-9093-8136-3572',
       pin: 9022,
-      security: 225
+      security: 225,
     },
-    photo: 'assets/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg',
   },
   {
     name: 'Phillip',
@@ -202,7 +202,7 @@ export const users = [
     birthday: {
       dmy: '19/09/1990',
       mdy: '09/19/1990',
-      raw: 653795164
+      raw: 653795164,
     },
     email: 'phillip_90@example.com',
     username: 'phillip_90',
@@ -211,9 +211,9 @@ export const users = [
       expiration: '12/25',
       number: '3860-1239-6732-9030',
       pin: 7680,
-      security: 258
+      security: 258,
     },
-    photo: 'assets/faces/male/30.jpg'
+    photo: 'assets/faces/male/30.jpg',
   },
   {
     name: 'Jack',
@@ -226,7 +226,7 @@ export const users = [
     birthday: {
       dmy: '30/04/1993',
       mdy: '04/30/1993',
-      raw: 736160114
+      raw: 736160114,
     },
     email: 'jack.ruiz@example.com',
     username: 'jack.ruiz',
@@ -235,9 +235,9 @@ export const users = [
       expiration: '10/23',
       number: '9519-9111-9960-8285',
       pin: 4360,
-      security: 510
+      security: 510,
     },
-    photo: 'assets/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg',
   },
   {
     name: 'Ronald',
@@ -250,7 +250,7 @@ export const users = [
     birthday: {
       dmy: '19/09/1987',
       mdy: '09/19/1987',
-      raw: 559029506
+      raw: 559029506,
     },
     email: 'ronald-87@example.com',
     username: 'ronald-87',
@@ -259,9 +259,9 @@ export const users = [
       expiration: '4/23',
       number: '9721-2116-4059-5378',
       pin: 3412,
-      security: 173
+      security: 173,
     },
-    photo: 'assets/faces/male/9.jpg'
+    photo: 'assets/faces/male/9.jpg',
   },
   {
     name: 'Kathleen',
@@ -274,7 +274,7 @@ export const users = [
     birthday: {
       dmy: '06/01/1983',
       mdy: '01/06/1983',
-      raw: 410755395
+      raw: 410755395,
     },
     email: 'kathleen_83@example.com',
     username: 'kathleen_83',
@@ -283,9 +283,9 @@ export const users = [
       expiration: '4/20',
       number: '6933-7255-7795-4627',
       pin: 3600,
-      security: 208
+      security: 208,
     },
-    photo: 'assets/faces/female/8.jpg'
+    photo: 'assets/faces/female/8.jpg',
   },
   {
     name: 'Bobby',
@@ -298,7 +298,7 @@ export const users = [
     birthday: {
       dmy: '29/12/1990',
       mdy: '12/29/1990',
-      raw: 662472876
+      raw: 662472876,
     },
     email: 'bobby-knight@example.com',
     username: 'bobby-knight',
@@ -307,9 +307,9 @@ export const users = [
       expiration: '2/23',
       number: '9110-6484-1952-8037',
       pin: 7115,
-      security: 812
+      security: 812,
     },
-    photo: 'assets/faces/male/4.jpg'
+    photo: 'assets/faces/male/4.jpg',
   },
   {
     name: 'Craig',
@@ -322,7 +322,7 @@ export const users = [
     birthday: {
       dmy: '15/12/1981',
       mdy: '12/15/1981',
-      raw: 377321355
+      raw: 377321355,
     },
     email: 'craig81@example.com',
     username: 'craig81',
@@ -331,9 +331,9 @@ export const users = [
       expiration: '11/18',
       number: '4366-7262-7491-1436',
       pin: 1635,
-      security: 560
+      security: 560,
     },
-    photo: 'assets/faces/male/35.jpg'
+    photo: 'assets/faces/male/35.jpg',
   },
   {
     name: 'Crystal',
@@ -346,7 +346,7 @@ export const users = [
     birthday: {
       dmy: '02/08/1994',
       mdy: '08/02/1994',
-      raw: 775818866
+      raw: 775818866,
     },
     email: 'crystal94@example.com',
     username: 'crystal94',
@@ -355,9 +355,9 @@ export const users = [
       expiration: '12/23',
       number: '9076-8555-2107-8003',
       pin: 5762,
-      security: 883
+      security: 883,
     },
-    photo: 'assets/faces/female/29.jpg'
+    photo: 'assets/faces/female/29.jpg',
   },
   {
     name: 'Vincent',
@@ -370,7 +370,7 @@ export const users = [
     birthday: {
       dmy: '24/02/1991',
       mdy: '02/24/1991',
-      raw: 667397970
+      raw: 667397970,
     },
     email: 'vincent_91@example.com',
     username: 'vincent_91',
@@ -379,9 +379,9 @@ export const users = [
       expiration: '9/20',
       number: '3844-2842-9875-2924',
       pin: 6471,
-      security: 207
+      security: 207,
     },
-    photo: 'assets/faces/male/2.jpg'
+    photo: 'assets/faces/male/2.jpg',
   },
   {
     name: 'Beverly',
@@ -394,7 +394,7 @@ export const users = [
     birthday: {
       dmy: '13/12/1987',
       mdy: '12/13/1987',
-      raw: 566449563
+      raw: 566449563,
     },
     email: 'beverly_87@example.com',
     username: 'beverly_87',
@@ -403,9 +403,9 @@ export const users = [
       expiration: '8/21',
       number: '3178-7131-8709-4357',
       pin: 8665,
-      security: 246
+      security: 246,
     },
-    photo: 'assets/faces/female/1.jpg'
+    photo: 'assets/faces/female/1.jpg',
   },
   {
     name: 'Russell',
@@ -418,7 +418,7 @@ export const users = [
     birthday: {
       dmy: '13/07/1983',
       mdy: '07/13/1983',
-      raw: 426927090
+      raw: 426927090,
     },
     email: 'russell_83@example.com',
     username: 'russell_83',
@@ -427,9 +427,9 @@ export const users = [
       expiration: '5/24',
       number: '3813-9088-2134-8472',
       pin: 2848,
-      security: 719
+      security: 719,
     },
-    photo: 'assets/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg',
   },
   {
     name: 'Tyler',
@@ -442,7 +442,7 @@ export const users = [
     birthday: {
       dmy: '09/11/1983',
       mdy: '11/09/1983',
-      raw: 437204290
+      raw: 437204290,
     },
     email: 'tyler-munoz@example.com',
     username: 'tyler-munoz',
@@ -451,9 +451,9 @@ export const users = [
       expiration: '3/22',
       number: '3467-9330-8793-3426',
       pin: 9498,
-      security: 541
+      security: 541,
     },
-    photo: 'assets/faces/male/7.jpg'
+    photo: 'assets/faces/male/7.jpg',
   },
   {
     name: 'Sharon',
@@ -466,7 +466,7 @@ export const users = [
     birthday: {
       dmy: '04/08/1982',
       mdy: '08/04/1982',
-      raw: 397294955
+      raw: 397294955,
     },
     email: 'sharon_wells@example.com',
     username: 'sharon_wells',
@@ -475,9 +475,9 @@ export const users = [
       expiration: '2/24',
       number: '5925-8971-7574-2018',
       pin: 7433,
-      security: 822
+      security: 822,
     },
-    photo: 'assets/faces/female/11.jpg'
+    photo: 'assets/faces/female/11.jpg',
   },
   {
     name: 'Juan',
@@ -490,7 +490,7 @@ export const users = [
     birthday: {
       dmy: '22/01/1992',
       mdy: '01/22/1992',
-      raw: 696086445
+      raw: 696086445,
     },
     email: 'juan-92@example.com',
     username: 'juan-92',
@@ -499,9 +499,9 @@ export const users = [
       expiration: '11/25',
       number: '3191-5439-5753-5387',
       pin: 8943,
-      security: 412
+      security: 412,
     },
-    photo: 'assets/faces/male/21.jpg'
+    photo: 'assets/faces/male/21.jpg',
   },
   {
     name: 'Dylan',
@@ -514,7 +514,7 @@ export const users = [
     birthday: {
       dmy: '09/08/1991',
       mdy: '08/09/1991',
-      raw: 681717592
+      raw: 681717592,
     },
     email: 'dylan_91@example.com',
     username: 'dylan_91',
@@ -523,9 +523,9 @@ export const users = [
       expiration: '6/24',
       number: '7313-9561-5006-6775',
       pin: 4427,
-      security: 131
+      security: 131,
     },
-    photo: 'assets/faces/male/25.jpg'
+    photo: 'assets/faces/male/25.jpg',
   },
   {
     name: 'Kathryn',
@@ -538,7 +538,7 @@ export const users = [
     birthday: {
       dmy: '23/12/1990',
       mdy: '12/23/1990',
-      raw: 662012718
+      raw: 662012718,
     },
     email: 'kathryn-90@example.com',
     username: 'kathryn-90',
@@ -547,9 +547,9 @@ export const users = [
       expiration: '7/18',
       number: '5055-5351-3220-7861',
       pin: 5201,
-      security: 948
+      security: 948,
     },
-    photo: 'assets/faces/female/5.jpg'
+    photo: 'assets/faces/female/5.jpg',
   },
   {
     name: 'Cynthia',
@@ -562,7 +562,7 @@ export const users = [
     birthday: {
       dmy: '23/06/1987',
       mdy: '06/23/1987',
-      raw: 551484722
+      raw: 551484722,
     },
     email: 'cynthia87@example.com',
     username: 'cynthia87',
@@ -571,9 +571,9 @@ export const users = [
       expiration: '8/21',
       number: '6687-9454-9530-5551',
       pin: 7703,
-      security: 395
+      security: 395,
     },
-    photo: 'assets/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg',
   },
   {
     name: 'Michael',
@@ -586,7 +586,7 @@ export const users = [
     birthday: {
       dmy: '08/02/1986',
       mdy: '02/08/1986',
-      raw: 508289883
+      raw: 508289883,
     },
     email: 'michael-86@example.com',
     username: 'michael-86',
@@ -595,9 +595,9 @@ export const users = [
       expiration: '10/20',
       number: '9738-6485-3707-8979',
       pin: 6286,
-      security: 773
+      security: 773,
     },
-    photo: 'assets/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg',
   },
   {
     name: 'Billy',
@@ -610,7 +610,7 @@ export const users = [
     birthday: {
       dmy: '14/10/1990',
       mdy: '10/14/1990',
-      raw: 655898753
+      raw: 655898753,
     },
     email: 'billy_may@example.com',
     username: 'billy_may',
@@ -619,9 +619,9 @@ export const users = [
       expiration: '10/18',
       number: '4637-7468-4060-5622',
       pin: 1959,
-      security: 223
+      security: 223,
     },
-    photo: 'assets/faces/male/33.jpg'
+    photo: 'assets/faces/male/33.jpg',
   },
   {
     name: 'Larry',
@@ -634,7 +634,7 @@ export const users = [
     birthday: {
       dmy: '19/02/1996',
       mdy: '02/19/1996',
-      raw: 824737422
+      raw: 824737422,
     },
     email: 'larry_jensen@example.com',
     username: 'larry_jensen',
@@ -643,9 +643,9 @@ export const users = [
       expiration: '8/19',
       number: '5416-8528-5700-2513',
       pin: 2258,
-      security: 866
+      security: 866,
     },
-    photo: 'assets/faces/male/6.jpg'
+    photo: 'assets/faces/male/6.jpg',
   },
   {
     name: 'Terry',
@@ -658,7 +658,7 @@ export const users = [
     birthday: {
       dmy: '17/03/1985',
       mdy: '03/17/1985',
-      raw: 479964994
+      raw: 479964994,
     },
     email: 'terry85@example.com',
     username: 'terry85',
@@ -667,9 +667,9 @@ export const users = [
       expiration: '1/18',
       number: '3185-8734-4723-6695',
       pin: 3263,
-      security: 832
+      security: 832,
     },
-    photo: 'assets/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg',
   },
   {
     name: 'Ruth',
@@ -682,7 +682,7 @@ export const users = [
     birthday: {
       dmy: '09/09/1985',
       mdy: '09/09/1985',
-      raw: 495144647
+      raw: 495144647,
     },
     email: 'ruth.arnold@example.com',
     username: 'ruth.arnold',
@@ -691,9 +691,9 @@ export const users = [
       expiration: '7/20',
       number: '9548-9549-4575-3017',
       pin: 5710,
-      security: 537
+      security: 537,
     },
-    photo: 'assets/faces/female/10.jpg'
+    photo: 'assets/faces/female/10.jpg',
   },
   {
     name: 'Julia',
@@ -706,7 +706,7 @@ export const users = [
     birthday: {
       dmy: '24/03/1992',
       mdy: '03/24/1992',
-      raw: 701486448
+      raw: 701486448,
     },
     email: 'julia.reed@example.com',
     username: 'julia.reed',
@@ -715,9 +715,9 @@ export const users = [
       expiration: '6/23',
       number: '6522-9284-3378-8162',
       pin: 6421,
-      security: 928
+      security: 928,
     },
-    photo: 'assets/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg',
   },
   {
     name: 'Amanda',
@@ -730,7 +730,7 @@ export const users = [
     birthday: {
       dmy: '27/03/1985',
       mdy: '03/27/1985',
-      raw: 480761301
+      raw: 480761301,
     },
     email: 'amanda_hunt@example.com',
     username: 'amanda_hunt',
@@ -739,9 +739,9 @@ export const users = [
       expiration: '9/24',
       number: '9093-3872-1755-9085',
       pin: 8726,
-      security: 679
+      security: 679,
     },
-    photo: 'assets/faces/female/12.jpg'
+    photo: 'assets/faces/female/12.jpg',
   },
   {
     name: 'Laura',
@@ -754,7 +754,7 @@ export const users = [
     birthday: {
       dmy: '22/05/1993',
       mdy: '05/22/1993',
-      raw: 738115918
+      raw: 738115918,
     },
     email: 'lauraweaver@example.com',
     username: 'lauraweaver',
@@ -763,9 +763,9 @@ export const users = [
       expiration: '1/23',
       number: '3056-6296-8755-3670',
       pin: 2256,
-      security: 372
+      security: 372,
     },
-    photo: 'assets/faces/female/21.jpg'
+    photo: 'assets/faces/female/21.jpg',
   },
   {
     name: 'Margaret',
@@ -778,7 +778,7 @@ export const users = [
     birthday: {
       dmy: '25/01/1988',
       mdy: '01/25/1988',
-      raw: 570139939
+      raw: 570139939,
     },
     email: 'margaret88@example.com',
     username: 'margaret88',
@@ -787,9 +787,9 @@ export const users = [
       expiration: '3/24',
       number: '7614-4944-1013-5932',
       pin: 1921,
-      security: 790
+      security: 790,
     },
-    photo: 'assets/faces/female/29.jpg'
+    photo: 'assets/faces/female/29.jpg',
   },
   {
     name: 'Nancy',
@@ -802,7 +802,7 @@ export const users = [
     birthday: {
       dmy: '15/03/1983',
       mdy: '03/15/1983',
-      raw: 416564824
+      raw: 416564824,
     },
     email: 'nancy_83@example.com',
     username: 'nancy_83',
@@ -811,9 +811,9 @@ export const users = [
       expiration: '12/24',
       number: '2112-9947-9680-6241',
       pin: 9913,
-      security: 793
+      security: 793,
     },
-    photo: 'assets/faces/female/2.jpg'
+    photo: 'assets/faces/female/2.jpg',
   },
   {
     name: 'Edward',
@@ -826,7 +826,7 @@ export const users = [
     birthday: {
       dmy: '14/10/1990',
       mdy: '10/14/1990',
-      raw: 655905095
+      raw: 655905095,
     },
     email: 'edward90@example.com',
     username: 'edward90',
@@ -835,9 +835,9 @@ export const users = [
       expiration: '11/23',
       number: '8377-1848-9270-9803',
       pin: 9281,
-      security: 331
+      security: 331,
     },
-    photo: 'assets/faces/male/34.jpg'
+    photo: 'assets/faces/male/34.jpg',
   },
   {
     name: 'Joan',
@@ -850,7 +850,7 @@ export const users = [
     birthday: {
       dmy: '13/01/1985',
       mdy: '01/13/1985',
-      raw: 474459367
+      raw: 474459367,
     },
     email: 'joan.hanson@example.com',
     username: 'joan.hanson',
@@ -859,9 +859,9 @@ export const users = [
       expiration: '6/24',
       number: '6890-6191-7589-2580',
       pin: 4939,
-      security: 546
+      security: 546,
     },
-    photo: 'assets/faces/female/11.jpg'
+    photo: 'assets/faces/female/11.jpg',
   },
   {
     name: 'Janet',
@@ -874,7 +874,7 @@ export const users = [
     birthday: {
       dmy: '29/04/1990',
       mdy: '04/29/1990',
-      raw: 641378888
+      raw: 641378888,
     },
     email: 'janet-reed@example.com',
     username: 'janet-reed',
@@ -883,9 +883,9 @@ export const users = [
       expiration: '9/22',
       number: '3392-7455-7355-9023',
       pin: 4753,
-      security: 139
+      security: 139,
     },
-    photo: 'assets/faces/female/30.jpg'
+    photo: 'assets/faces/female/30.jpg',
   },
   {
     name: 'Johnny',
@@ -898,7 +898,7 @@ export const users = [
     birthday: {
       dmy: '20/07/1983',
       mdy: '07/20/1983',
-      raw: 427528001
+      raw: 427528001,
     },
     email: 'johnny_83@example.com',
     username: 'johnny_83',
@@ -907,9 +907,9 @@ export const users = [
       expiration: '6/22',
       number: '8241-4665-4515-2471',
       pin: 3603,
-      security: 812
+      security: 812,
     },
-    photo: 'assets/faces/male/31.jpg'
+    photo: 'assets/faces/male/31.jpg',
   },
   {
     name: 'Ethan',
@@ -922,7 +922,7 @@ export const users = [
     birthday: {
       dmy: '16/05/1988',
       mdy: '05/16/1988',
-      raw: 579765322
+      raw: 579765322,
     },
     email: 'ethan88@example.com',
     username: 'ethan88',
@@ -931,9 +931,9 @@ export const users = [
       expiration: '5/23',
       number: '1523-4779-3052-3977',
       pin: 1771,
-      security: 452
+      security: 452,
     },
-    photo: 'assets/faces/male/42.jpg'
+    photo: 'assets/faces/male/42.jpg',
   },
   {
     name: 'Albert',
@@ -946,7 +946,7 @@ export const users = [
     birthday: {
       dmy: '21/10/1982',
       mdy: '10/21/1982',
-      raw: 404093831
+      raw: 404093831,
     },
     email: 'albert82@example.com',
     username: 'albert82',
@@ -955,9 +955,9 @@ export const users = [
       expiration: '7/25',
       number: '6919-4510-9221-3519',
       pin: 9433,
-      security: 546
+      security: 546,
     },
-    photo: 'assets/faces/male/2.jpg'
+    photo: 'assets/faces/male/2.jpg',
   },
   {
     name: 'Jane',
@@ -970,7 +970,7 @@ export const users = [
     birthday: {
       dmy: '10/02/1994',
       mdy: '02/10/1994',
-      raw: 760895528
+      raw: 760895528,
     },
     email: 'jane-pearson@example.com',
     username: 'jane-pearson',
@@ -979,9 +979,9 @@ export const users = [
       expiration: '6/25',
       number: '4420-1542-8659-4279',
       pin: 8205,
-      security: 568
+      security: 568,
     },
-    photo: 'assets/faces/female/25.jpg'
+    photo: 'assets/faces/female/25.jpg',
   },
   {
     name: 'Jason',
@@ -994,7 +994,7 @@ export const users = [
     birthday: {
       dmy: '14/11/1983',
       mdy: '11/14/1983',
-      raw: 437647165
+      raw: 437647165,
     },
     email: 'jason-porter@example.com',
     username: 'jason-porter',
@@ -1003,9 +1003,9 @@ export const users = [
       expiration: '7/21',
       number: '2858-1146-3264-1510',
       pin: 3894,
-      security: 440
+      security: 440,
     },
-    photo: 'assets/faces/male/9.jpg'
+    photo: 'assets/faces/male/9.jpg',
   },
   {
     name: 'Teresa',
@@ -1018,7 +1018,7 @@ export const users = [
     birthday: {
       dmy: '02/02/1988',
       mdy: '02/02/1988',
-      raw: 570791658
+      raw: 570791658,
     },
     email: 'teresa-wood@example.com',
     username: 'teresa-wood',
@@ -1027,9 +1027,9 @@ export const users = [
       expiration: '10/21',
       number: '7837-1878-9871-5562',
       pin: 7094,
-      security: 433
+      security: 433,
     },
-    photo: 'assets/faces/female/25.jpg'
+    photo: 'assets/faces/female/25.jpg',
   },
   {
     name: 'Mary',
@@ -1042,7 +1042,7 @@ export const users = [
     birthday: {
       dmy: '12/11/1982',
       mdy: '11/12/1982',
-      raw: 405936284
+      raw: 405936284,
     },
     email: 'mary.butler@example.com',
     username: 'mary.butler',
@@ -1051,9 +1051,9 @@ export const users = [
       expiration: '3/25',
       number: '2619-8457-5184-3840',
       pin: 4775,
-      security: 544
+      security: 544,
     },
-    photo: 'assets/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg',
   },
   {
     name: 'Janice',
@@ -1066,7 +1066,7 @@ export const users = [
     birthday: {
       dmy: '07/12/1983',
       mdy: '12/07/1983',
-      raw: 439702564
+      raw: 439702564,
     },
     email: 'janice_lane@example.com',
     username: 'janice_lane',
@@ -1075,9 +1075,9 @@ export const users = [
       expiration: '6/23',
       number: '5910-5934-6190-7779',
       pin: 8052,
-      security: 920
+      security: 920,
     },
-    photo: 'assets/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg',
   },
   {
     name: 'Anthony',
@@ -1090,7 +1090,7 @@ export const users = [
     birthday: {
       dmy: '17/12/1994',
       mdy: '12/17/1994',
-      raw: 787719776
+      raw: 787719776,
     },
     email: 'anthony94@example.com',
     username: 'anthony94',
@@ -1099,9 +1099,9 @@ export const users = [
       expiration: '8/22',
       number: '5924-2102-2190-4312',
       pin: 3796,
-      security: 271
+      security: 271,
     },
-    photo: 'assets/faces/male/26.jpg'
+    photo: 'assets/faces/male/26.jpg',
   },
   {
     name: 'Denise',
@@ -1114,7 +1114,7 @@ export const users = [
     birthday: {
       dmy: '01/03/1994',
       mdy: '03/01/1994',
-      raw: 762520275
+      raw: 762520275,
     },
     email: 'denise-94@example.com',
     username: 'denise-94',
@@ -1123,9 +1123,9 @@ export const users = [
       expiration: '7/20',
       number: '7636-1990-9718-9319',
       pin: 1260,
-      security: 599
+      security: 599,
     },
-    photo: 'assets/faces/female/9.jpg'
+    photo: 'assets/faces/female/9.jpg',
   },
   {
     name: 'Rose',
@@ -1138,7 +1138,7 @@ export const users = [
     birthday: {
       dmy: '10/02/1983',
       mdy: '02/10/1983',
-      raw: 413739486
+      raw: 413739486,
     },
     email: 'rose-cook@example.com',
     username: 'rose-cook',
@@ -1147,9 +1147,9 @@ export const users = [
       expiration: '11/23',
       number: '6457-8145-9981-7249',
       pin: 4532,
-      security: 582
+      security: 582,
     },
-    photo: 'assets/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg',
   },
   {
     name: 'Terry',
@@ -1162,7 +1162,7 @@ export const users = [
     birthday: {
       dmy: '06/02/1993',
       mdy: '02/06/1993',
-      raw: 729020665
+      raw: 729020665,
     },
     email: 'terrytucker@example.com',
     username: 'terrytucker',
@@ -1171,9 +1171,9 @@ export const users = [
       expiration: '2/24',
       number: '7526-6345-8241-8012',
       pin: 3867,
-      security: 547
+      security: 547,
     },
-    photo: 'assets/faces/male/17.jpg'
+    photo: 'assets/faces/male/17.jpg',
   },
   {
     name: 'Grace',
@@ -1186,7 +1186,7 @@ export const users = [
     birthday: {
       dmy: '26/08/1989',
       mdy: '08/26/1989',
-      raw: 620179529
+      raw: 620179529,
     },
     email: 'grace-knight@example.com',
     username: 'grace-knight',
@@ -1195,9 +1195,9 @@ export const users = [
       expiration: '12/20',
       number: '6690-3515-5416-7818',
       pin: 1180,
-      security: 462
+      security: 462,
     },
-    photo: 'assets/faces/female/6.jpg'
+    photo: 'assets/faces/female/6.jpg',
   },
   {
     name: 'Elizabeth',
@@ -1210,7 +1210,7 @@ export const users = [
     birthday: {
       dmy: '16/10/1992',
       mdy: '10/16/1992',
-      raw: 719222407
+      raw: 719222407,
     },
     email: 'elizabeth92@example.com',
     username: 'elizabeth92',
@@ -1219,9 +1219,9 @@ export const users = [
       expiration: '3/18',
       number: '7979-1700-6432-2371',
       pin: 7658,
-      security: 203
+      security: 203,
     },
-    photo: 'assets/faces/female/26.jpg'
+    photo: 'assets/faces/female/26.jpg',
   },
   {
     name: 'Michelle',
@@ -1234,7 +1234,7 @@ export const users = [
     birthday: {
       dmy: '19/03/1995',
       mdy: '03/19/1995',
-      raw: 795626142
+      raw: 795626142,
     },
     email: 'michelle95@example.com',
     username: 'michelle95',
@@ -1243,9 +1243,9 @@ export const users = [
       expiration: '10/19',
       number: '5708-3279-7951-1648',
       pin: 2296,
-      security: 583
+      security: 583,
     },
-    photo: 'assets/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg',
   },
   {
     name: 'Crystal',
@@ -1258,7 +1258,7 @@ export const users = [
     birthday: {
       dmy: '01/02/1985',
       mdy: '02/01/1985',
-      raw: 476095715
+      raw: 476095715,
     },
     email: 'crystal-85@example.com',
     username: 'crystal-85',
@@ -1267,9 +1267,9 @@ export const users = [
       expiration: '8/21',
       number: '1953-8442-3725-5930',
       pin: 9458,
-      security: 565
+      security: 565,
     },
-    photo: 'assets/faces/female/21.jpg'
+    photo: 'assets/faces/female/21.jpg',
   },
   {
     name: 'Douglas',
@@ -1282,7 +1282,7 @@ export const users = [
     birthday: {
       dmy: '11/07/1983',
       mdy: '07/11/1983',
-      raw: 426796693
+      raw: 426796693,
     },
     email: 'douglas-ray@example.com',
     username: 'douglas-ray',
@@ -1291,9 +1291,9 @@ export const users = [
       expiration: '7/25',
       number: '4252-3074-3609-8065',
       pin: 8416,
-      security: 800
+      security: 800,
     },
-    photo: 'assets/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg',
   },
   {
     name: 'Teresa',
@@ -1306,7 +1306,7 @@ export const users = [
     birthday: {
       dmy: '28/05/1995',
       mdy: '05/28/1995',
-      raw: 801677203
+      raw: 801677203,
     },
     email: 'teresareyes@example.com',
     username: 'teresareyes',
@@ -1315,9 +1315,9 @@ export const users = [
       expiration: '11/25',
       number: '3358-4686-7380-6576',
       pin: 2780,
-      security: 910
+      security: 910,
     },
-    photo: 'assets/faces/female/12.jpg'
+    photo: 'assets/faces/female/12.jpg',
   },
   {
     name: 'Emma',
@@ -1330,7 +1330,7 @@ export const users = [
     birthday: {
       dmy: '03/11/1988',
       mdy: '11/03/1988',
-      raw: 594610742
+      raw: 594610742,
     },
     email: 'emma-wade@example.com',
     username: 'emma-wade',
@@ -1339,9 +1339,9 @@ export const users = [
       expiration: '12/18',
       number: '7606-7040-2987-1499',
       pin: 2434,
-      security: 768
+      security: 768,
     },
-    photo: 'assets/faces/female/4.jpg'
+    photo: 'assets/faces/female/4.jpg',
   },
   {
     name: 'Carol',
@@ -1354,7 +1354,7 @@ export const users = [
     birthday: {
       dmy: '02/03/1994',
       mdy: '03/02/1994',
-      raw: 762637993
+      raw: 762637993,
     },
     email: 'carol-94@example.com',
     username: 'carol-94',
@@ -1363,9 +1363,9 @@ export const users = [
       expiration: '1/18',
       number: '6083-6125-8328-3482',
       pin: 2015,
-      security: 842
+      security: 842,
     },
-    photo: 'assets/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg',
   },
   {
     name: 'Christopher',
@@ -1378,7 +1378,7 @@ export const users = [
     birthday: {
       dmy: '09/12/1984',
       mdy: '12/09/1984',
-      raw: 471473124
+      raw: 471473124,
     },
     email: 'christopher84@example.com',
     username: 'christopher84',
@@ -1387,9 +1387,9 @@ export const users = [
       expiration: '8/19',
       number: '1934-3950-3785-1183',
       pin: 8472,
-      security: 192
+      security: 192,
     },
-    photo: 'assets/faces/male/20.jpg'
+    photo: 'assets/faces/male/20.jpg',
   },
   {
     name: 'Deborah',
@@ -1402,7 +1402,7 @@ export const users = [
     birthday: {
       dmy: '02/04/1993',
       mdy: '04/02/1993',
-      raw: 733790719
+      raw: 733790719,
     },
     email: 'deborah-93@example.com',
     username: 'deborah-93',
@@ -1411,9 +1411,9 @@ export const users = [
       expiration: '1/19',
       number: '3840-6082-5168-7124',
       pin: 4117,
-      security: 525
+      security: 525,
     },
-    photo: 'assets/faces/female/5.jpg'
+    photo: 'assets/faces/female/5.jpg',
   },
   {
     name: 'Gregory',
@@ -1426,7 +1426,7 @@ export const users = [
     birthday: {
       dmy: '30/06/1991',
       mdy: '06/30/1991',
-      raw: 678324660
+      raw: 678324660,
     },
     email: 'gregory_hunt@example.com',
     username: 'gregory_hunt',
@@ -1435,9 +1435,9 @@ export const users = [
       expiration: '5/22',
       number: '3694-6401-6758-1266',
       pin: 4601,
-      security: 969
+      security: 969,
     },
-    photo: 'assets/faces/male/10.jpg'
+    photo: 'assets/faces/male/10.jpg',
   },
   {
     name: 'Jesse',
@@ -1450,7 +1450,7 @@ export const users = [
     birthday: {
       dmy: '24/07/1990',
       mdy: '07/24/1990',
-      raw: 648821469
+      raw: 648821469,
     },
     email: 'jesse-90@example.com',
     username: 'jesse-90',
@@ -1459,9 +1459,9 @@ export const users = [
       expiration: '3/25',
       number: '7141-7492-8381-4142',
       pin: 8301,
-      security: 749
+      security: 749,
     },
-    photo: 'assets/faces/male/14.jpg'
+    photo: 'assets/faces/male/14.jpg',
   },
   {
     name: 'Joan',
@@ -1474,7 +1474,7 @@ export const users = [
     birthday: {
       dmy: '23/07/1986',
       mdy: '07/23/1986',
-      raw: 522487254
+      raw: 522487254,
     },
     email: 'joan.wood@example.com',
     username: 'joan.wood',
@@ -1483,9 +1483,9 @@ export const users = [
       expiration: '12/18',
       number: '8010-4298-4962-9156',
       pin: 6409,
-      security: 124
+      security: 124,
     },
-    photo: 'assets/faces/female/22.jpg'
+    photo: 'assets/faces/female/22.jpg',
   },
   {
     name: 'Carl',
@@ -1498,7 +1498,7 @@ export const users = [
     birthday: {
       dmy: '14/03/1996',
       mdy: '03/14/1996',
-      raw: 826788142
+      raw: 826788142,
     },
     email: 'carl96@example.com',
     username: 'carl96',
@@ -1507,9 +1507,9 @@ export const users = [
       expiration: '8/22',
       number: '8521-9385-1952-3510',
       pin: 6955,
-      security: 857
+      security: 857,
     },
-    photo: 'assets/faces/male/20.jpg'
+    photo: 'assets/faces/male/20.jpg',
   },
   {
     name: 'Frank',
@@ -1522,7 +1522,7 @@ export const users = [
     birthday: {
       dmy: '12/05/1986',
       mdy: '05/12/1986',
-      raw: 516295873
+      raw: 516295873,
     },
     email: 'frank-george@example.com',
     username: 'frank-george',
@@ -1531,9 +1531,9 @@ export const users = [
       expiration: '11/18',
       number: '7908-3185-7212-3204',
       pin: 3134,
-      security: 690
+      security: 690,
     },
-    photo: 'assets/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg',
   },
   {
     name: 'Kathleen',
@@ -1546,7 +1546,7 @@ export const users = [
     birthday: {
       dmy: '20/02/1986',
       mdy: '02/20/1986',
-      raw: 509276696
+      raw: 509276696,
     },
     email: 'kathleen_86@example.com',
     username: 'kathleen_86',
@@ -1555,9 +1555,9 @@ export const users = [
       expiration: '10/18',
       number: '5542-1253-6048-9850',
       pin: 8982,
-      security: 361
+      security: 361,
     },
-    photo: 'assets/faces/female/17.jpg'
+    photo: 'assets/faces/female/17.jpg',
   },
   {
     name: 'Michelle',
@@ -1570,7 +1570,7 @@ export const users = [
     birthday: {
       dmy: '09/03/1988',
       mdy: '03/09/1988',
-      raw: 573896683
+      raw: 573896683,
     },
     email: 'michelle_88@example.com',
     username: 'michelle_88',
@@ -1579,9 +1579,9 @@ export const users = [
       expiration: '7/20',
       number: '3263-4994-3355-6138',
       pin: 2606,
-      security: 291
+      security: 291,
     },
-    photo: 'assets/faces/female/6.jpg'
+    photo: 'assets/faces/female/6.jpg',
   },
   {
     name: 'Nancy',
@@ -1594,7 +1594,7 @@ export const users = [
     birthday: {
       dmy: '22/07/1987',
       mdy: '07/22/1987',
-      raw: 553927855
+      raw: 553927855,
     },
     email: 'nancy_87@example.com',
     username: 'nancy_87',
@@ -1603,9 +1603,9 @@ export const users = [
       expiration: '5/19',
       number: '9695-7211-8431-9041',
       pin: 4974,
-      security: 932
+      security: 932,
     },
-    photo: 'assets/faces/female/5.jpg'
+    photo: 'assets/faces/female/5.jpg',
   },
   {
     name: 'Tyler',
@@ -1618,7 +1618,7 @@ export const users = [
     birthday: {
       dmy: '12/06/1984',
       mdy: '06/12/1984',
-      raw: 455919000
+      raw: 455919000,
     },
     email: 'tylerfisher@example.com',
     username: 'tylerfisher',
@@ -1627,9 +1627,9 @@ export const users = [
       expiration: '4/25',
       number: '5537-4206-4747-3802',
       pin: 4254,
-      security: 429
+      security: 429,
     },
-    photo: 'assets/faces/male/1.jpg'
+    photo: 'assets/faces/male/1.jpg',
   },
   {
     name: 'Jordan',
@@ -1642,7 +1642,7 @@ export const users = [
     birthday: {
       dmy: '12/12/1984',
       mdy: '12/12/1984',
-      raw: 471722014
+      raw: 471722014,
     },
     email: 'jordan-84@example.com',
     username: 'jordan-84',
@@ -1651,9 +1651,9 @@ export const users = [
       expiration: '1/20',
       number: '2567-8033-5728-2886',
       pin: 7743,
-      security: 726
+      security: 726,
     },
-    photo: 'assets/faces/male/5.jpg'
+    photo: 'assets/faces/male/5.jpg',
   },
   {
     name: 'Wayne',
@@ -1666,7 +1666,7 @@ export const users = [
     birthday: {
       dmy: '23/08/1994',
       mdy: '08/23/1994',
-      raw: 777624285
+      raw: 777624285,
     },
     email: 'wayne-94@example.com',
     username: 'wayne-94',
@@ -1675,9 +1675,9 @@ export const users = [
       expiration: '11/18',
       number: '7725-7838-2145-6629',
       pin: 2734,
-      security: 537
+      security: 537,
     },
-    photo: 'assets/faces/male/27.jpg'
+    photo: 'assets/faces/male/27.jpg',
   },
   {
     name: 'Johnny',
@@ -1690,7 +1690,7 @@ export const users = [
     birthday: {
       dmy: '01/11/1982',
       mdy: '11/01/1982',
-      raw: 405030155
+      raw: 405030155,
     },
     email: 'johnny_82@example.com',
     username: 'johnny_82',
@@ -1699,9 +1699,9 @@ export const users = [
       expiration: '2/24',
       number: '7003-5640-6900-1859',
       pin: 3408,
-      security: 823
+      security: 823,
     },
-    photo: 'assets/faces/male/10.jpg'
+    photo: 'assets/faces/male/10.jpg',
   },
   {
     name: 'Tyler',
@@ -1714,7 +1714,7 @@ export const users = [
     birthday: {
       dmy: '03/07/1986',
       mdy: '07/03/1986',
-      raw: 520825685
+      raw: 520825685,
     },
     email: 'tyler86@example.com',
     username: 'tyler86',
@@ -1723,9 +1723,9 @@ export const users = [
       expiration: '3/20',
       number: '5595-7358-9778-8284',
       pin: 3289,
-      security: 721
+      security: 721,
     },
-    photo: 'assets/faces/male/31.jpg'
+    photo: 'assets/faces/male/31.jpg',
   },
   {
     name: 'Debra',
@@ -1738,7 +1738,7 @@ export const users = [
     birthday: {
       dmy: '15/06/1986',
       mdy: '06/15/1986',
-      raw: 519270646
+      raw: 519270646,
     },
     email: 'debra86@example.com',
     username: 'debra86',
@@ -1747,9 +1747,9 @@ export const users = [
       expiration: '6/20',
       number: '6887-4208-6992-9087',
       pin: 5621,
-      security: 311
+      security: 311,
     },
-    photo: 'assets/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg',
   },
   {
     name: 'Beverly',
@@ -1762,7 +1762,7 @@ export const users = [
     birthday: {
       dmy: '09/10/1982',
       mdy: '10/09/1982',
-      raw: 403052309
+      raw: 403052309,
     },
     email: 'beverly-82@example.com',
     username: 'beverly-82',
@@ -1771,9 +1771,9 @@ export const users = [
       expiration: '6/18',
       number: '7077-2837-7906-6463',
       pin: 5931,
-      security: 119
+      security: 119,
     },
-    photo: 'assets/faces/female/21.jpg'
+    photo: 'assets/faces/female/21.jpg',
   },
   {
     name: 'Sean',
@@ -1786,7 +1786,7 @@ export const users = [
     birthday: {
       dmy: '15/10/1984',
       mdy: '10/15/1984',
-      raw: 466740019
+      raw: 466740019,
     },
     email: 'seangilbert@example.com',
     username: 'seangilbert',
@@ -1795,9 +1795,9 @@ export const users = [
       expiration: '9/21',
       number: '2367-8064-8849-5901',
       pin: 4647,
-      security: 823
+      security: 823,
     },
-    photo: 'assets/faces/male/42.jpg'
+    photo: 'assets/faces/male/42.jpg',
   },
   {
     name: 'Diane',
@@ -1810,7 +1810,7 @@ export const users = [
     birthday: {
       dmy: '22/01/1989',
       mdy: '01/22/1989',
-      raw: 601475829
+      raw: 601475829,
     },
     email: 'dianemccoy@example.com',
     username: 'dianemccoy',
@@ -1819,9 +1819,9 @@ export const users = [
       expiration: '2/24',
       number: '6136-6721-6168-4945',
       pin: 6081,
-      security: 248
+      security: 248,
     },
-    photo: 'assets/faces/female/32.jpg'
+    photo: 'assets/faces/female/32.jpg',
   },
   {
     name: 'Robert',
@@ -1834,7 +1834,7 @@ export const users = [
     birthday: {
       dmy: '02/12/1986',
       mdy: '12/02/1986',
-      raw: 533896297
+      raw: 533896297,
     },
     email: 'robert_86@example.com',
     username: 'robert_86',
@@ -1843,9 +1843,9 @@ export const users = [
       expiration: '1/23',
       number: '4056-7539-9636-3348',
       pin: 5587,
-      security: 663
+      security: 663,
     },
-    photo: 'assets/faces/male/35.jpg'
+    photo: 'assets/faces/male/35.jpg',
   },
   {
     name: 'Olivia',
@@ -1858,7 +1858,7 @@ export const users = [
     birthday: {
       dmy: '11/03/1991',
       mdy: '03/11/1991',
-      raw: 668716174
+      raw: 668716174,
     },
     email: 'olivia-91@example.com',
     username: 'olivia-91',
@@ -1867,9 +1867,9 @@ export const users = [
       expiration: '8/22',
       number: '3451-2955-4832-9824',
       pin: 2059,
-      security: 222
+      security: 222,
     },
-    photo: 'assets/faces/female/26.jpg'
+    photo: 'assets/faces/female/26.jpg',
   },
   {
     name: 'Lori',
@@ -1882,7 +1882,7 @@ export const users = [
     birthday: {
       dmy: '06/06/1992',
       mdy: '06/06/1992',
-      raw: 707807320
+      raw: 707807320,
     },
     email: 'lorigeorge@example.com',
     username: 'lorigeorge',
@@ -1891,9 +1891,9 @@ export const users = [
       expiration: '1/22',
       number: '4168-6989-7963-1856',
       pin: 8584,
-      security: 440
+      security: 440,
     },
-    photo: 'assets/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg',
   },
   {
     name: 'Madison',
@@ -1906,7 +1906,7 @@ export const users = [
     birthday: {
       dmy: '13/08/1984',
       mdy: '08/13/1984',
-      raw: 461233971
+      raw: 461233971,
     },
     email: 'madison_84@example.com',
     username: 'madison_84',
@@ -1915,9 +1915,9 @@ export const users = [
       expiration: '6/23',
       number: '7468-6335-3459-1864',
       pin: 7150,
-      security: 718
+      security: 718,
     },
-    photo: 'assets/faces/female/13.jpg'
+    photo: 'assets/faces/female/13.jpg',
   },
   {
     name: 'Joan',
@@ -1930,7 +1930,7 @@ export const users = [
     birthday: {
       dmy: '09/12/1982',
       mdy: '12/09/1982',
-      raw: 408289023
+      raw: 408289023,
     },
     email: 'joanrivera@example.com',
     username: 'joanrivera',
@@ -1939,9 +1939,9 @@ export const users = [
       expiration: '4/20',
       number: '2666-9358-4122-8636',
       pin: 3248,
-      security: 783
+      security: 783,
     },
-    photo: 'assets/faces/female/4.jpg'
+    photo: 'assets/faces/female/4.jpg',
   },
   {
     name: 'Helen',
@@ -1954,7 +1954,7 @@ export const users = [
     birthday: {
       dmy: '29/08/1989',
       mdy: '08/29/1989',
-      raw: 620443277
+      raw: 620443277,
     },
     email: 'helen89@example.com',
     username: 'helen89',
@@ -1963,9 +1963,9 @@ export const users = [
       expiration: '6/24',
       number: '9644-8107-8718-9500',
       pin: 9643,
-      security: 979
+      security: 979,
     },
-    photo: 'assets/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg',
   },
   {
     name: 'Bryan',
@@ -1978,7 +1978,7 @@ export const users = [
     birthday: {
       dmy: '19/04/1996',
       mdy: '04/19/1996',
-      raw: 829917586
+      raw: 829917586,
     },
     email: 'bryan-96@example.com',
     username: 'bryan-96',
@@ -1987,9 +1987,9 @@ export const users = [
       expiration: '1/18',
       number: '4037-1782-3483-3159',
       pin: 4561,
-      security: 967
+      security: 967,
     },
-    photo: 'assets/faces/male/40.jpg'
+    photo: 'assets/faces/male/40.jpg',
   },
   {
     name: 'Joan',
@@ -2002,7 +2002,7 @@ export const users = [
     birthday: {
       dmy: '15/02/1986',
       mdy: '02/15/1986',
-      raw: 508869080
+      raw: 508869080,
     },
     email: 'joan-beck@example.com',
     username: 'joan-beck',
@@ -2011,9 +2011,9 @@ export const users = [
       expiration: '8/22',
       number: '3604-3855-9526-8328',
       pin: 1283,
-      security: 276
+      security: 276,
     },
-    photo: 'assets/faces/female/27.jpg'
+    photo: 'assets/faces/female/27.jpg',
   },
   {
     name: 'Douglas',
@@ -2026,7 +2026,7 @@ export const users = [
     birthday: {
       dmy: '17/09/1992',
       mdy: '09/17/1992',
-      raw: 716759926
+      raw: 716759926,
     },
     email: 'douglas_92@example.com',
     username: 'douglas_92',
@@ -2035,9 +2035,9 @@ export const users = [
       expiration: '10/25',
       number: '8219-6286-7950-6091',
       pin: 8096,
-      security: 609
+      security: 609,
     },
-    photo: 'assets/faces/male/33.jpg'
+    photo: 'assets/faces/male/33.jpg',
   },
   {
     name: 'Ethan',
@@ -2050,7 +2050,7 @@ export const users = [
     birthday: {
       dmy: '27/06/1982',
       mdy: '06/27/1982',
-      raw: 394058755
+      raw: 394058755,
     },
     email: 'ethan.bell@example.com',
     username: 'ethan.bell',
@@ -2059,9 +2059,9 @@ export const users = [
       expiration: '4/25',
       number: '2436-1949-3793-2053',
       pin: 9459,
-      security: 477
+      security: 477,
     },
-    photo: 'assets/faces/male/24.jpg'
+    photo: 'assets/faces/male/24.jpg',
   },
   {
     name: 'Frances',
@@ -2074,7 +2074,7 @@ export const users = [
     birthday: {
       dmy: '14/10/1990',
       mdy: '10/14/1990',
-      raw: 655941507
+      raw: 655941507,
     },
     email: 'frances-90@example.com',
     username: 'frances-90',
@@ -2083,9 +2083,9 @@ export const users = [
       expiration: '3/25',
       number: '7848-8827-6292-1224',
       pin: 1638,
-      security: 273
+      security: 273,
     },
-    photo: 'assets/faces/female/18.jpg'
+    photo: 'assets/faces/female/18.jpg',
   },
   {
     name: 'Amanda',
@@ -2098,7 +2098,7 @@ export const users = [
     birthday: {
       dmy: '14/12/1986',
       mdy: '12/14/1986',
-      raw: 534985240
+      raw: 534985240,
     },
     email: 'amanda_86@example.com',
     username: 'amanda_86',
@@ -2107,9 +2107,9 @@ export const users = [
       expiration: '2/22',
       number: '4309-9777-1263-8906',
       pin: 8405,
-      security: 375
+      security: 375,
     },
-    photo: 'assets/faces/female/26.jpg'
+    photo: 'assets/faces/female/26.jpg',
   },
   {
     name: 'Emma',
@@ -2122,7 +2122,7 @@ export const users = [
     birthday: {
       dmy: '09/10/1990',
       mdy: '10/09/1990',
-      raw: 655482600
+      raw: 655482600,
     },
     email: 'emma_bailey@example.com',
     username: 'emma_bailey',
@@ -2131,9 +2131,9 @@ export const users = [
       expiration: '12/23',
       number: '1064-3282-9450-4512',
       pin: 4504,
-      security: 572
+      security: 572,
     },
-    photo: 'assets/faces/female/7.jpg'
+    photo: 'assets/faces/female/7.jpg',
   },
   {
     name: 'Anna',
@@ -2146,7 +2146,7 @@ export const users = [
     birthday: {
       dmy: '23/08/1992',
       mdy: '08/23/1992',
-      raw: 714565413
+      raw: 714565413,
     },
     email: 'anna_jordan@example.com',
     username: 'anna_jordan',
@@ -2155,9 +2155,9 @@ export const users = [
       expiration: '7/25',
       number: '9730-6241-6592-4060',
       pin: 9937,
-      security: 891
+      security: 891,
     },
-    photo: 'assets/faces/female/16.jpg'
+    photo: 'assets/faces/female/16.jpg',
   },
   {
     name: 'Daniel',
@@ -2170,7 +2170,7 @@ export const users = [
     birthday: {
       dmy: '26/06/1990',
       mdy: '06/26/1990',
-      raw: 646441023
+      raw: 646441023,
     },
     email: 'daniel_90@example.com',
     username: 'daniel_90',
@@ -2179,9 +2179,9 @@ export const users = [
       expiration: '8/24',
       number: '4862-2631-5960-9945',
       pin: 4255,
-      security: 399
+      security: 399,
     },
-    photo: 'assets/faces/male/12.jpg'
+    photo: 'assets/faces/male/12.jpg',
   },
   {
     name: 'Rachel',
@@ -2194,7 +2194,7 @@ export const users = [
     birthday: {
       dmy: '19/03/1987',
       mdy: '03/19/1987',
-      raw: 543143339
+      raw: 543143339,
     },
     email: 'rachel87@example.com',
     username: 'rachel87',
@@ -2203,9 +2203,9 @@ export const users = [
       expiration: '11/19',
       number: '4282-6687-2324-7560',
       pin: 3418,
-      security: 403
+      security: 403,
     },
-    photo: 'assets/faces/female/23.jpg'
+    photo: 'assets/faces/female/23.jpg',
   },
   {
     name: 'Virginia',
@@ -2218,7 +2218,7 @@ export const users = [
     birthday: {
       dmy: '27/07/1986',
       mdy: '07/27/1986',
-      raw: 522889702
+      raw: 522889702,
     },
     email: 'virginia86@example.com',
     username: 'virginia86',
@@ -2227,9 +2227,9 @@ export const users = [
       expiration: '8/24',
       number: '2197-3465-1934-5637',
       pin: 1408,
-      security: 445
+      security: 445,
     },
-    photo: 'assets/faces/female/15.jpg'
+    photo: 'assets/faces/female/15.jpg',
   },
   {
     name: 'Joe',
@@ -2242,7 +2242,7 @@ export const users = [
     birthday: {
       dmy: '23/03/1985',
       mdy: '03/23/1985',
-      raw: 480476274
+      raw: 480476274,
     },
     email: 'joe-sandoval@example.com',
     username: 'joe-sandoval',
@@ -2251,9 +2251,9 @@ export const users = [
       expiration: '5/18',
       number: '7908-7619-4021-5179',
       pin: 5860,
-      security: 343
+      security: 343,
     },
-    photo: 'assets/faces/male/32.jpg'
+    photo: 'assets/faces/male/32.jpg',
   },
   {
     name: 'Megan',
@@ -2266,7 +2266,7 @@ export const users = [
     birthday: {
       dmy: '16/05/1985',
       mdy: '05/16/1985',
-      raw: 485083327
+      raw: 485083327,
     },
     email: 'meganray@example.com',
     username: 'meganray',
@@ -2275,9 +2275,9 @@ export const users = [
       expiration: '5/19',
       number: '3669-6526-9619-9110',
       pin: 1602,
-      security: 739
+      security: 739,
     },
-    photo: 'assets/faces/female/9.jpg'
+    photo: 'assets/faces/female/9.jpg',
   },
   {
     name: 'Joshua',
@@ -2290,7 +2290,7 @@ export const users = [
     birthday: {
       dmy: '25/10/1983',
       mdy: '10/25/1983',
-      raw: 435903018
+      raw: 435903018,
     },
     email: 'joshua.rios@example.com',
     username: 'joshua.rios',
@@ -2299,9 +2299,9 @@ export const users = [
       expiration: '3/24',
       number: '2913-3945-7820-3364',
       pin: 5831,
-      security: 848
+      security: 848,
     },
-    photo: 'assets/faces/male/28.jpg'
+    photo: 'assets/faces/male/28.jpg',
   },
   {
     name: 'Aaron',
@@ -2314,7 +2314,7 @@ export const users = [
     birthday: {
       dmy: '02/11/1988',
       mdy: '11/02/1988',
-      raw: 594523359
+      raw: 594523359,
     },
     email: 'aaronsilva@example.com',
     username: 'aaronsilva',
@@ -2323,9 +2323,9 @@ export const users = [
       expiration: '8/21',
       number: '4984-9631-4415-8297',
       pin: 4111,
-      security: 339
+      security: 339,
     },
-    photo: 'assets/faces/male/9.jpg'
+    photo: 'assets/faces/male/9.jpg',
   },
   {
     name: 'Kathy',
@@ -2338,7 +2338,7 @@ export const users = [
     birthday: {
       dmy: '16/11/1986',
       mdy: '11/16/1986',
-      raw: 532561618
+      raw: 532561618,
     },
     email: 'kathy-86@example.com',
     username: 'kathy-86',
@@ -2347,9 +2347,9 @@ export const users = [
       expiration: '12/22',
       number: '2877-6888-7152-7093',
       pin: 8777,
-      security: 188
+      security: 188,
     },
-    photo: 'assets/faces/female/10.jpg'
+    photo: 'assets/faces/female/10.jpg',
   },
   {
     name: 'Zachary',
@@ -2362,7 +2362,7 @@ export const users = [
     birthday: {
       dmy: '08/04/1991',
       mdy: '04/08/1991',
-      raw: 671166620
+      raw: 671166620,
     },
     email: 'zachary91@example.com',
     username: 'zachary91',
@@ -2371,9 +2371,9 @@ export const users = [
       expiration: '6/18',
       number: '8195-1181-7480-4546',
       pin: 4527,
-      security: 579
+      security: 579,
     },
-    photo: 'assets/faces/male/14.jpg'
+    photo: 'assets/faces/male/14.jpg',
   },
   {
     name: 'Richard',
@@ -2386,7 +2386,7 @@ export const users = [
     birthday: {
       dmy: '28/08/1995',
       mdy: '08/28/1995',
-      raw: 809631690
+      raw: 809631690,
     },
     email: 'richard95@example.com',
     username: 'richard95',
@@ -2395,8 +2395,8 @@ export const users = [
       expiration: '12/23',
       number: '6105-5217-1956-5157',
       pin: 4843,
-      security: 976
+      security: 976,
     },
-    photo: 'assets/faces/male/11.jpg'
-  }
+    photo: 'assets/faces/male/11.jpg',
+  },
 ]

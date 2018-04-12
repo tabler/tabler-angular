@@ -19,13 +19,13 @@ import { BsModalRef } from 'ngx-bootstrap'
   `,
 })
 export class ItemModalComponent {
-  @Input() type: 'inspect'|'form' = 'form'
+  @Input() type: 'inspect' | 'form' = 'form'
   @Input() public item
   @Input() public user
   @Input() public properties
   @Output() public action = new EventEmitter()
 
-  constructor(public bsModalRef: BsModalRef) { }
+  constructor(public bsModalRef: BsModalRef) {}
 
   handleAction({ type, payload }) {
     switch (type) {
@@ -39,5 +39,4 @@ export class ItemModalComponent {
         this.action.emit({ type, payload })
     }
   }
-
 }

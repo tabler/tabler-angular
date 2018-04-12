@@ -71,12 +71,10 @@ import { Component, OnInit } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class ComponentsMapsClientComponent {
-
-  constructor() {
-  }
+  constructor() {}
 
   backgroundImage() {
     return 'url(assets/staticmap.png)'

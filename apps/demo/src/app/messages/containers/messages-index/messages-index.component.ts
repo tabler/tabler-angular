@@ -17,10 +17,9 @@ import { Component, OnInit } from '@angular/core'
       </div>
     </ui-page>
   `,
-  styles: []
+  styles: [],
 })
 export class MessagesIndexComponent {
-
   public folders = [
     {
       id: 'inbox',
@@ -29,7 +28,7 @@ export class MessagesIndexComponent {
       badge: {
         type: 'primary',
         label: '14',
-      }
+      },
     },
     {
       id: 'sent',
@@ -43,7 +42,7 @@ export class MessagesIndexComponent {
       badge: {
         type: 'secondary',
         label: '3',
-      }
+      },
     },
     {
       id: 'starred',
@@ -66,5 +65,4 @@ export class MessagesIndexComponent {
       label: 'Trash',
     },
   ]
-
 }

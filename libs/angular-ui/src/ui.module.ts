@@ -10,8 +10,6 @@ import { HighlightModule } from 'ngx-highlightjs'
 
 import { TimeAgoPipe } from './pipes/time-ago.pipe'
 
-import { AlertModule } from './modules/alert/alert.module';
-
 import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { LayoutComponent } from './containers/layout/layout.component'
@@ -35,12 +33,12 @@ import { HeaderNotificationsComponent } from './components/header-notifications/
 import { HeaderNotificationItemComponent } from './components/header-notification-item/header-notification-item.component'
 import { HeaderProfileComponent } from './components/header-profile/header-profile.component'
 import { HeaderProfileLinkComponent } from './components/header-profile-link/header-profile-link.component'
-import { BadgeComponent } from './components/badge/badge.component';
+import { BadgeComponent } from './components/badge/badge.component'
 import { HeaderLinksComponent } from './components/header-links/header-links.component'
 
-const uiModules = [
-  AlertModule,
-]
+import { AlertModule, ButtonModule } from './modules'
+
+const uiModules = [AlertModule, ButtonModule]
 
 const exported = [
   ...uiModules,
@@ -73,7 +71,7 @@ const exported = [
     HighlightModule.forRoot({
       theme: 'atom-one-light',
     }),
-    ...uiModules
+    ...uiModules,
   ],
   declarations: [
     HeaderComponent,
@@ -101,13 +99,6 @@ const exported = [
     TimeAgoPipe,
     HeaderLinksComponent,
   ],
-  exports: [
-    ...exported,
-    NgxChartsModule,
-    ChartsModule,
-    NgPipesModule,
-    RouterModule,
-  ]
+  exports: [...exported, NgxChartsModule, ChartsModule, NgPipesModule, RouterModule],
 })
-export class UiModule {
-}
+export class UiModule {}

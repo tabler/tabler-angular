@@ -28,7 +28,7 @@ import { Component, Input, OnInit } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class ComponentsIconMapComponent {
   @Input() public description

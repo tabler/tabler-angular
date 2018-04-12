@@ -22,8 +22,6 @@ import { Component } from '@angular/core'
       </div>
     </ui-page>
   `,
-  styles: []
+  styles: [],
 })
-export class DocsIndexComponent {
-
-}
+export class DocsIndexComponent {}

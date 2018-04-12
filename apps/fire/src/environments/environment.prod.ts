@@ -6,6 +6,6 @@ export const environment = {
     databaseURL: 'https://tabler-angular-fire.firebaseio.com',
     projectId: 'tabler-angular-fire',
     storageBucket: '',
-    messagingSenderId: '856023319444'
-  }
-};
+    messagingSenderId: '856023319444',
+  },
+}

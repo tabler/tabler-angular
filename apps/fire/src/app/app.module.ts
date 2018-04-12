@@ -31,9 +31,8 @@ import { AppService } from './app.service'
     AuthModule,
     AppRoutingModule,
   ],
-  declarations: [ AppComponent ],
-  bootstrap: [ AppComponent ],
-  providers: [ AppService ]
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [AppService],
 })
-export class AppModule {
-}
+export class AppModule {}

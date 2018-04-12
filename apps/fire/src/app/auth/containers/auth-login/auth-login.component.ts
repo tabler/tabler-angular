@@ -30,23 +30,22 @@ import { AuthService } from '../../services/auth.service'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class AuthLoginComponent {
   private readonly redirectUrl: string
   public error = null
 
   constructor(public auth: AuthService, private route: ActivatedRoute, private router: Router) {
-    this.redirectUrl = this.route.snapshot.queryParams[ 'url' ] || '/auth/profile'
+    this.redirectUrl = this.route.snapshot.queryParams['url'] || '/auth/profile'
   }
 
   redirect() {
-    return this.router.navigate([ this.redirectUrl ])
+    return this.router.navigate([this.redirectUrl])
   }
 
   login(provider) {
     this.error = false
     this.auth.login(provider).subscribe(() => this.redirect(), err => (this.error = err.message))
   }
-
 }

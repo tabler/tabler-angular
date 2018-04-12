@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-forms-form-fieldset',
@@ -22,13 +22,10 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </fieldset>
   `,
-  styles: []
+  styles: [],
 })
 export class FormsFormFieldsetComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

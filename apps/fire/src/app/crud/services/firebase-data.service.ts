@@ -7,10 +7,8 @@ import { AbstractDataService } from './abstract-data.service'
 
 @Injectable()
 export class FirebaseDataService implements AbstractDataService {
-
   private collectionsRef = (path: string): Observable<any[]> => {
-    return this.db.collection<any[]>(path)
-      .valueChanges()
+    return this.db.collection<any[]>(path).valueChanges()
   }
 
   private docRef = (path: string) => {
@@ -30,22 +28,33 @@ export class FirebaseDataService implements AbstractDataService {
   public addItem(collectionId: string, item: Item): Observable<any> {
     item.id = item.id || this.db.createId()
     item.created = new Date()
-    return fromPromise(this.db.collection(collectionId).doc(item.id).set(item))
+    return fromPromise(
+      this.db
+        .collection(collectionId)
+        .doc(item.id)
+        .set(item)
+    )
   }
 
   public updateItem(collectionId: string, item: Item): Observable<any> {
     item.updated = new Date()
-    return fromPromise(this.db.collection(collectionId).doc(item.id).update(item))
+    return fromPromise(
+      this.db
+        .collection(collectionId)
+        .doc(item.id)
+        .update(item)
+    )
   }
 
   public upsertItem(collectionId: string, item: Item): Observable<any> {
-    return item.id
-      ? this.updateItem(collectionId, item)
-      : this.addItem(collectionId, item)
+    return item.id ? this.updateItem(collectionId, item) : this.addItem(collectionId, item)
   }
 
   public deleteItem(collectionId: string, id: string): Observable<boolean> {
-    return fromPromise(this.colDocRef(collectionId, id).delete().then(() => true))
+    return fromPromise(
+      this.colDocRef(collectionId, id)
+        .delete()
+        .then(() => true)
+    )
   }
-
 }

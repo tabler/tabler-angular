@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { AuthService } from '../../../auth/services/auth.service';
-import { FireService } from '../../services/fire.service';
+import { Component } from '@angular/core'
+import { AuthService } from '../../../auth/services/auth.service'
+import { FireService } from '../../services/fire.service'
 
 @Component({
   selector: 'app-guestbook',
@@ -42,13 +42,11 @@ export class GuestbookComponent {
       this.error = 'Please write a message first!'
       return
     }
-    this.fire.upsert({ message, user })
-      .subscribe(() => console.log('Item added'))
+    this.fire.upsert({ message, user }).subscribe(() => console.log('Item added'))
   }
 
   deleteMessage(id) {
-    this.fire.delete(id)
-      .subscribe(() => console.log('Item deleted'))
+    this.fire.delete(id).subscribe(() => console.log('Item deleted'))
   }
 
   handleAction({ type, payload }) {

@@ -7,7 +7,7 @@ import { AppService } from './app.service'
     <ui-layout [config]="app.config">
       <router-outlet></router-outlet>
     </ui-layout>
-  `
+  `,
 })
 export class AppComponent {
   constructor(public app: AppService) {
@@ -16,23 +16,23 @@ export class AppComponent {
       {
         name: 'Guestbook',
         icon: 'fe fe-book',
-        url: '/fire/guestbook'
+        url: '/fire/guestbook',
       },
       {
         name: 'Profile',
         icon: 'fe fe-user',
-        url: '/auth/profile'
+        url: '/auth/profile',
       },
       {
         name: 'Beers',
         icon: 'fa fa-beer',
-        url: '/crud/beers'
+        url: '/crud/beers',
       },
       {
         name: 'Notes',
         icon: 'fa fa-pencil-square-o',
-        url: '/crud/notes'
-      }
+        url: '/crud/notes',
+      },
     ]
   }
 }

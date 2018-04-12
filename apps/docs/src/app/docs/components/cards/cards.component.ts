@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'ui-cards',
@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
     </div>
     <ui-highlight [code]="code" name="highlight.component.ts" icon="fe fe-typescript"></ui-highlight>
   `,
-  styles: []
+  styles: [],
 })
 export class CardsComponent implements OnInit {
   public code = `import { Component, Input } from '@angular/core'
@@ -33,9 +33,7 @@ export class HighlightComponent {
   @Input() code
 }
   `
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

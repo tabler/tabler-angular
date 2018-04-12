@@ -17,7 +17,7 @@ import { Component, Input } from '@angular/core'
       </ng-container>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class CardBodyComponent {
   @Input() loader = false

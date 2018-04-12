@@ -28,7 +28,7 @@ import { GalleryModalComponent } from '../gallery-modal/gallery-modal.component'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class GalleryItemComponent {
   @Input() public user
@@ -37,16 +37,18 @@ export class GalleryItemComponent {
 
   public modalRef: BsModalRef
 
-  constructor(private modalService: BsModalService) {
-  }
+  constructor(private modalService: BsModalService) {}
 
   public open(photo, user, index) {
     const initialState = {
       photo,
       user,
-      index
+      index,
     }
-    this.modalRef = this.modalService.show(GalleryModalComponent, { initialState, class: 'modal-lg' })
+    this.modalRef = this.modalService.show(GalleryModalComponent, {
+      initialState,
+      class: 'modal-lg',
+    })
     this.modalRef.content.closeBtnName = 'Close'
   }
 }

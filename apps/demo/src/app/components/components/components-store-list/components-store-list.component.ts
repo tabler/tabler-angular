@@ -26,13 +26,11 @@ import { Component, Input, OnInit } from '@angular/core'
       </table>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class ComponentsStoreListComponent implements OnInit {
   @Input() products
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

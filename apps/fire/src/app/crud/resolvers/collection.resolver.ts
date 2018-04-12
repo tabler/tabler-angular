@@ -13,7 +13,6 @@ const collections = {
 
 @Injectable()
 export class CollectionResolver implements Resolve<any> {
-
   resolve(route: ActivatedRouteSnapshot) {
     let { collectionId } = route.params
     if (!collectionId || !collections[collectionId]) {

@@ -36,16 +36,14 @@ import { BsModalRef } from 'ngx-bootstrap'
     </div>
     
   `,
-  styles: []
+  styles: [],
 })
 export class GalleryModalComponent implements OnInit {
   public index
   public user
   public photo
 
-  constructor(public bsModalRef: BsModalRef) { }
+  constructor(public bsModalRef: BsModalRef) {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

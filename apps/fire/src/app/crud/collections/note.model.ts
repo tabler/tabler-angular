@@ -5,15 +5,15 @@ export const NoteModel = {
   properties: {
     id: {
       required: true,
-      type: 'string'
+      type: 'string',
     },
     title: {
       id: 'title',
-      type: 'string'
+      type: 'string',
     },
     content: {
       id: 'content',
-      type: 'string'
+      type: 'string',
     },
   },
   fields: [
@@ -28,5 +28,5 @@ export const NoteModel = {
       headerClass: 'w-25 text-right',
       columnClass: 'text-right',
     },
-  ]
+  ],
 }

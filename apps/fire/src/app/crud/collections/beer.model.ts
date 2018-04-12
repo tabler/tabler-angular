@@ -6,25 +6,25 @@ export const BeerModel = {
     brewery: {
       id: 'brewery',
       type: 'string',
-      visible: 'true'
+      visible: 'true',
     },
     id: {
       required: true,
-      type: 'string'
+      type: 'string',
     },
     name: {
       id: 'name',
       type: 'string',
-      visible: 'true'
+      visible: 'true',
     },
     percentage: {
       id: 'percentage',
-      type: 'string'
+      type: 'string',
     },
     type: {
       id: 'type',
-      type: 'string'
-    }
+      type: 'string',
+    },
   },
   fields: [
     {
@@ -32,10 +32,11 @@ export const BeerModel = {
       key: 'brewery',
       type: 'string',
       link: true,
-    }, {
+    },
+    {
       label: 'Name',
       key: 'name',
-      type: 'string'
+      type: 'string',
     },
     {
       label: 'Percentage',
@@ -44,5 +45,5 @@ export const BeerModel = {
       headerClass: 'w-25 text-right',
       columnClass: 'text-right',
     },
-  ]
+  ],
 }

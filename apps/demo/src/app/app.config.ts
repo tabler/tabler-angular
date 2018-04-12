@@ -14,19 +14,19 @@ const headerMenu = [
       {
         name: 'Cards design',
         icon: 'fe fe-box',
-        url: '/interface/cards'
+        url: '/interface/cards',
       },
       {
         name: 'Charts',
         icon: 'fe fe-pie-chart',
-        url: '/interface/charts'
+        url: '/interface/charts',
       },
       {
         name: 'Pricing cards',
         icon: 'fe fe-dollar-sign',
-        url: '/interface/pricing-cards'
-      }
-    ]
+        url: '/interface/pricing-cards',
+      },
+    ],
   },
   {
     name: 'Components',
@@ -36,23 +36,23 @@ const headerMenu = [
       {
         name: 'Maps',
         icon: 'fe fe-map-pin',
-        url: '/components/maps'
+        url: '/components/maps',
       },
       {
         name: 'Icons',
         icon: 'fe fe-heart',
-        url: '/components/icons'
+        url: '/components/icons',
       },
       {
         name: 'Store',
         icon: 'fe fe-shopping-cart',
-        url: '/components/store'
+        url: '/components/store',
       },
       {
         name: 'Blog',
         icon: 'fe fe-shopping-cart',
-        url: '/components/blog'
-      }
+        url: '/components/blog',
+      },
     ],
   },
   {
@@ -63,67 +63,67 @@ const headerMenu = [
       {
         name: 'Profile',
         icon: 'fe fe-user',
-        url: '/profile'
+        url: '/profile',
       },
       {
         name: 'Login',
-        url: '/login'
+        url: '/login',
       },
       {
         name: 'Register',
-        url: '/register'
+        url: '/register',
       },
       {
         name: 'Forgot password',
-        url: '/forgot-password'
+        url: '/forgot-password',
       },
       {
         name: 'Reset password',
-        url: '/reset-password'
+        url: '/reset-password',
       },
       {
         name: '400 error',
-        url: '/400'
+        url: '/400',
       },
       {
         name: '401 error',
-        url: '/401'
+        url: '/401',
       },
       {
         name: '403 error',
-        url: '/403'
+        url: '/403',
       },
       {
         name: '404 error',
-        url: '/404'
+        url: '/404',
       },
       {
         name: '500 error',
-        url: '/500'
+        url: '/500',
       },
       {
         name: '503 error',
-        url: '/503'
+        url: '/503',
       },
       {
         name: 'Email',
-        url: '/messages'
+        url: '/messages',
       },
       {
         name: 'Empty page',
-        url: '/empty'
-      }
+        url: '/empty',
+      },
     ],
   },
   {
     name: 'Forms',
     icon: 'fe fe-check-square',
-    url: '/forms'
+    url: '/forms',
   },
   {
     name: 'Gallery',
     icon: 'fe fe-image',
-    url: '/gallery'
+    url: '/gallery',
   },
 ]
 
@@ -135,22 +135,26 @@ const user = {
 
 const now = new Date().getTime()
 
-const notifications = [ {
-  avatarText: 'AB',
-  from: 'AB',
-  text: 'pushed new commit: Fix page load performance issue.',
-  date: now - 10000
-}, {
-  avatarText: 'AB',
-  from: 'AB',
-  text: 'started new task: Tabler UI design.',
-  date: now - 100000
-}, {
-  avatarText: 'AB',
-  from: 'AB',
-  text: 'deployed new version of NodeJS REST Api V3',
-  date: now - 1000000
-} ]
+const notifications = [
+  {
+    avatarText: 'AB',
+    from: 'AB',
+    text: 'pushed new commit: Fix page load performance issue.',
+    date: now - 10000,
+  },
+  {
+    avatarText: 'AB',
+    from: 'AB',
+    text: 'started new task: Tabler UI design.',
+    date: now - 100000,
+  },
+  {
+    avatarText: 'AB',
+    from: 'AB',
+    text: 'deployed new version of NodeJS REST Api V3',
+    date: now - 1000000,
+  },
+]
 
 const sourceCode = {
   label: 'Source Code',
@@ -190,7 +194,7 @@ const profileLinks = [
     badge: {
       label: '6',
       type: 'primary',
-    }
+    },
   },
   {
     link: '/messages/compose',
@@ -198,7 +202,7 @@ const profileLinks = [
     icon: 'fe fe-send',
   },
   {
-    divider: true
+    divider: true,
   },
   {
     link: '/',
@@ -218,7 +222,7 @@ export const AppConfig = {
     menu: headerMenu,
     user,
     notifications,
-    links: [ fire, documentation, sourceCode ],
+    links: [fire, documentation, sourceCode],
     profileLinks,
   },
   subfooter: {
@@ -232,6 +236,6 @@ export const AppConfig = {
       Angular by <a href="https://github.com/beeman" target="_blank">@beeman</a>.
       MIT Licensed
     `,
-    links: [ documentation, sourceCode ],
-  }
+    links: [documentation, sourceCode],
+  },
 }

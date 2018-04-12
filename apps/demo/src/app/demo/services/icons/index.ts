@@ -4,7 +4,6 @@ import { flags } from './flags'
 import { payments } from './payments'
 import { simpleLineIcons } from './simple-line-icons'
 
-
 export const icons = [
   {
     title: 'Feather Icons',

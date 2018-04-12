@@ -76,7 +76,7 @@ import { until } from 'selenium-webdriver'
 
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class TableUsersComponent {
   @Input() public users = []

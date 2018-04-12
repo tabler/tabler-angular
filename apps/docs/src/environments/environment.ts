@@ -9,5 +9,5 @@ export const environment = {
     docs: 'http://localhost:4201',
     demo: 'http://localhost:4200',
     repo: 'https://github.com/tabler/tabler-angular',
-  }
+  },
 }

@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { FormsInputToggleComponent } from './forms-input-toggle.component';
+import { FormsInputToggleComponent } from './forms-input-toggle.component'
 
 describe('FormsInputToggleComponent', () => {
-  let component: FormsInputToggleComponent;
-  let fixture: ComponentFixture<FormsInputToggleComponent>;
+  let component: FormsInputToggleComponent
+  let fixture: ComponentFixture<FormsInputToggleComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ FormsInputToggleComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [FormsInputToggleComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormsInputToggleComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(FormsInputToggleComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

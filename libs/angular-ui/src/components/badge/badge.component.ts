@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core'
 
-export type badgeTypes = 'primary'|'secondary'|'success'|'danger'|'warning'|'info'
+export type badgeTypes = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info'
 
 @Component({
   selector: 'ui-badge',
@@ -13,7 +13,7 @@ export type badgeTypes = 'primary'|'secondary'|'success'|'danger'|'warning'|'inf
 export class BadgeComponent implements OnInit {
   @Input() public label: string
   @Input() public type: badgeTypes
-  @Input() public badge: { label: 'string', type: badgeTypes }
+  @Input() public badge: { label: 'string'; type: badgeTypes }
 
   ngOnInit() {
     if (this.badge) {

@@ -4,7 +4,7 @@ import { LayoutBaseComponent, LayoutComponent } from '@tabler/angular-ui'
 import { AppConfig } from './app.config'
 
 const data = {
-  config: AppConfig
+  config: AppConfig,
 }
 
 const routes: Routes = [
@@ -14,14 +14,29 @@ const routes: Routes = [
     data,
     component: LayoutComponent,
     children: [
-      { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
+      {
+        path: 'components',
+        loadChildren: './components/components.module#ComponentsModule',
+      },
       { path: 'home', loadChildren: './home/home.module#HomeModule' },
-      { path: 'interface', loadChildren: './interface/interface.module#InterfaceModule' },
-      { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
+      {
+        path: 'interface',
+        loadChildren: './interface/interface.module#InterfaceModule',
+      },
+      {
+        path: 'profile',
+        loadChildren: './profile/profile.module#ProfileModule',
+      },
       { path: 'forms', loadChildren: './forms/forms.module#FormsModule' },
-      { path: 'gallery', loadChildren: './gallery/gallery.module#GalleryModule' },
-      { path: 'messages', loadChildren: './messages/messages.module#MessagesModule' },
-      { path: 'empty', children: []},
+      {
+        path: 'gallery',
+        loadChildren: './gallery/gallery.module#GalleryModule',
+      },
+      {
+        path: 'messages',
+        loadChildren: './messages/messages.module#MessagesModule',
+      },
+      { path: 'empty', children: [] },
     ],
   },
   {

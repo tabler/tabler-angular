@@ -261,5 +261,5 @@ export const fe = [
   'fe-zap',
   'fe-zap-off',
   'fe-zoom-in',
-  'fe-zoom-out'
+  'fe-zoom-out',
 ]

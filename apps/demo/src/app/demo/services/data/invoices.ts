@@ -7,7 +7,7 @@ export const invoices = [
     date: '15 Dec 2017',
     status: 'success',
     statusName: 'Paid',
-    price: '$887'
+    price: '$887',
   },
   {
     invoice: '00450',
@@ -17,7 +17,7 @@ export const invoices = [
     date: '12 Apr 2017',
     status: 'warning',
     statusName: 'Pending',
-    price: '$1200'
+    price: '$1200',
   },
   {
     invoice: '00452',
@@ -27,7 +27,7 @@ export const invoices = [
     date: '23 Oct 2017',
     status: 'warning',
     statusName: 'Pending',
-    price: '$534'
+    price: '$534',
   },
   {
     invoice: '00450',
@@ -37,7 +37,7 @@ export const invoices = [
     date: '2 Sep 2017',
     status: 'secondary',
     statusName: 'Due in 2 Weeks',
-    price: '$1500'
+    price: '$1500',
   },
   {
     invoice: '00450',
@@ -47,7 +47,7 @@ export const invoices = [
     date: '29 Jan 2018',
     status: 'danger',
     statusName: 'Paid Today',
-    price: '$648'
+    price: '$648',
   },
   {
     invoice: '00450',
@@ -57,7 +57,7 @@ export const invoices = [
     date: '4 Feb 2018',
     status: 'secondary',
     statusName: 'Due in 3 Weeks',
-    price: '$300'
+    price: '$300',
   },
   {
     invoice: '00450',
@@ -67,7 +67,7 @@ export const invoices = [
     date: '22 Mar 2018',
     status: 'success',
     statusName: 'Paid Today',
-    price: '$2500'
+    price: '$2500',
   },
   {
     invoice: '00450',
@@ -77,6 +77,6 @@ export const invoices = [
     date: '13 May 2018',
     status: 'success',
     statusName: 'Paid Today',
-    price: '$940'
-  }
+    price: '$940',
+  },
 ]
