@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-forms',
   template: `
-    <p>
-      forms works!
-    </p>
+    <div class="my-5">
+      <app-forms-demo-basic></app-forms-demo-basic>
+    </div>
+    <div class="my-5">
+      <app-forms-demo-advanced></app-forms-demo-advanced>
+    </div>
+    <div class="my-5">
+      <app-forms-demo-select></app-forms-demo-select>
+    </div>
   `,
-  styles: []
+  styles: [],
 })
 export class FormsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

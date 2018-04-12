@@ -1,22 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { FormsComponent } from './forms.component'
+import { HorizontalComponent } from './horizontal.component'
 
-describe('FormsComponent', () => {
-  let component: FormsComponent
-  let fixture: ComponentFixture<FormsComponent>
+describe('HorizontalComponent', () => {
+  let component: HorizontalComponent
+  let fixture: ComponentFixture<HorizontalComponent>
 
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [FormsComponent],
+        declarations: [HorizontalComponent],
       }).compileComponents()
     })
   )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormsComponent)
+    fixture = TestBed.createComponent(HorizontalComponent)
     component = fixture.componentInstance
+    component.field = {}
     fixture.detectChanges()
   })
 

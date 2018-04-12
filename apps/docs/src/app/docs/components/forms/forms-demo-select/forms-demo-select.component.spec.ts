@@ -1,21 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { FormsComponent } from './forms.component'
+import { FormsDemoSelectComponent } from './forms-demo-select.component'
 
-describe('FormsComponent', () => {
-  let component: FormsComponent
-  let fixture: ComponentFixture<FormsComponent>
+describe('FormsDemoSelectComponent', () => {
+  let component: FormsDemoSelectComponent
+  let fixture: ComponentFixture<FormsDemoSelectComponent>
 
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [FormsComponent],
+        declarations: [FormsDemoSelectComponent],
       }).compileComponents()
     })
   )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormsComponent)
+    fixture = TestBed.createComponent(FormsDemoSelectComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })
