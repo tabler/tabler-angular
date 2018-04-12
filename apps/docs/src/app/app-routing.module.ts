@@ -16,4 +16,6 @@ const routes: Routes = [
   { path: '**', redirectTo: '/404' },
 ]
 
-export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes)
+export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes, {
+  paramsInheritanceStrategy: 'always',
+})
