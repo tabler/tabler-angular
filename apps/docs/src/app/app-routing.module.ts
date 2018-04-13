@@ -1,13 +1,11 @@
 import { RouterModule, Routes } from '@angular/router'
 import { ModuleWithProviders } from '@angular/core'
 import { LayoutComponent } from '@tabler/angular-ui'
-import { AppConfig } from './app.config'
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    data: { config: AppConfig },
     children: [
       { path: '', loadChildren: './docs/docs.module#DocsModule' },
     ],
