@@ -5,12 +5,22 @@ import { Field } from '@tabler/angular-forms'
 @Component({
   selector: 'app-forms-demo-select',
   template: `
-    <ui-form [form]="form" [fields]="fields" [buttons]="buttons" (action)="handle($event)"></ui-form>
-    <pre>{{output | json}}</pre>
+    <div class="row">
+      <div class="col">
+        <ui-form [form]="form" [fields]="fields" [model]="model" [buttons]="buttons"
+                 (action)="handle($event)">
+        </ui-form>
+      </div>
+      <div class="col">
+        <app-docs-json [model]="model"></app-docs-json>
+        <app-docs-json [model]="output"></app-docs-json>
+      </div>
+    </div>
   `,
 })
 export class FormsSelectComponent {
-  public output
+  public output = {}
+  public model = {}
   public form = new FormGroup({})
   public fields = [
     Field.select('marvel1', {

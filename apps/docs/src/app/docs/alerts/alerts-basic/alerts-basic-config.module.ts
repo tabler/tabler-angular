@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { SharedModule } from '@tabler/angular-core'
 import { DocsViewerComponent } from '../../../docs-viewer'
-import { ButtonsBasicComponent } from './buttons-basic.component'
+import { AlertsBasicComponent } from './alerts-basic.component'
 
 @NgModule({
   imports: [SharedModule, RouterModule.forChild([
@@ -10,14 +10,14 @@ import { ButtonsBasicComponent } from './buttons-basic.component'
       path: '',
       component: DocsViewerComponent,
       data: {
-        examples: [
+        sections: [
           {
             description: require('!!html-loader!markdown-loader!./README.md'),
-            component: ButtonsBasicComponent,
+            component: AlertsBasicComponent,
             files: [
               {
-                file: 'buttons-basic.component.ts',
-                content: require('!!prismjs-loader?lang=typescript!./buttons-basic.component.ts'),
+                file: 'alerts-basic.component.ts',
+                content: require('!!prismjs-loader?lang=typescript!./alerts-basic.component.ts'),
               },
             ],
           },
@@ -27,6 +27,6 @@ import { ButtonsBasicComponent } from './buttons-basic.component'
   ])],
 
 })
-export class ConfigModule {
+export class AlertsBasicConfigModule {
 
 }

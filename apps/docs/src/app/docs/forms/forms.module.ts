@@ -23,9 +23,9 @@ import { FormsSelectModule } from './forms-select/forms-select.module'
           section: {
             chapter: 'forms',
             items: [
-              { icon: 'fe fe-check-square', path: '/docs/forms/basic', label: 'Basic forms' },
-              { icon: 'fe fe-check-square', path: '/docs/forms/advanced', label: 'Advanced forms' },
-              { icon: 'fe fe-check-square', path: '/docs/forms/select', label: 'Select types' },
+              { icon: 'fe fe-check-square', path: ['/forms/basic'], label: 'Basic forms' },
+              { icon: 'fe fe-check-square', path: ['/forms/advanced'], label: 'Advanced forms' },
+              { icon: 'fe fe-check-square', path: ['/forms/select'], label: 'Select types' },
             ],
           },
         },

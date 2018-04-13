@@ -9,8 +9,7 @@ const routes: Routes = [
     component: LayoutComponent,
     data: { config: AppConfig },
     children: [
-      { path: '', redirectTo: 'docs', pathMatch: 'full' },
-      { path: 'docs', loadChildren: './docs/docs.module#DocsModule' },
+      { path: '', loadChildren: './docs/docs.module#DocsModule' },
     ],
   },
   { path: '**', redirectTo: '/404' },

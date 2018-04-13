@@ -5,7 +5,14 @@ import { Field } from '@tabler/angular-forms'
 @Component({
   selector: 'app-forms-demo-advanced',
   template: `
-    <ui-form [form]="form" [fields]="fields" [model]="model"></ui-form>
+    <div class="row">
+      <div class="col">
+        <ui-form [form]="form" [fields]="fields" [model]="model"></ui-form>
+      </div>
+      <div class="col">
+        <app-docs-json [model]="model"></app-docs-json>
+      </div>
+    </div>
   `,
 })
 export class FormsAdvancedComponent {

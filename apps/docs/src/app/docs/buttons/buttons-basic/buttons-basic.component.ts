@@ -3,7 +3,14 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-buttons',
   template: `
-    <ui-buttons [config]="buttons" (action)="handleAction($event)"></ui-buttons>
+    <div class="row">
+      <div class="col">
+        <ui-buttons [config]="buttons" (action)="handleAction($event)"></ui-buttons>
+      </div>
+      <div class="col">
+        <app-docs-json [model]="action"></app-docs-json>
+      </div>
+    </div>
   `,
 })
 export class ButtonsBasicComponent {

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { SharedModule } from '@tabler/angular-core'
 import { DocsViewerComponent } from '../../../docs-viewer'
-import { FormsSelectComponent } from './forms-select.component'
+import { ButtonsBasicComponent } from './buttons-basic.component'
 
 @NgModule({
   imports: [SharedModule, RouterModule.forChild([
@@ -13,11 +13,11 @@ import { FormsSelectComponent } from './forms-select.component'
         sections: [
           {
             description: require('!!html-loader!markdown-loader!./README.md'),
-            component: FormsSelectComponent,
+            component: ButtonsBasicComponent,
             files: [
               {
-                file: 'forms-select.component.ts',
-                content: require('!!prismjs-loader?lang=typescript!./forms-select.component.ts'),
+                file: 'buttons-basic.component.ts',
+                content: require('!!prismjs-loader?lang=typescript!./buttons-basic.component.ts'),
               },
             ],
           },
@@ -25,7 +25,8 @@ import { FormsSelectComponent } from './forms-select.component'
       },
     },
   ])],
+
 })
-export class FormsSelectConfigModule {
+export class ButtonsBasicConfigModule {
 
 }

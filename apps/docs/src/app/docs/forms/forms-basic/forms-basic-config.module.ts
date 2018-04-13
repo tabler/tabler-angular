@@ -10,13 +10,13 @@ import { FormsBasicComponent } from './forms-basic.component'
       path: '',
       component: DocsViewerComponent,
       data: {
-        examples: [
+        sections: [
           {
             description: require('!!html-loader!markdown-loader!./README.md'),
             component: FormsBasicComponent,
             files: [
               {
-                file: 'buttons-basic.component.ts',
+                file: 'forms-basic.component.ts',
                 content: require('!!prismjs-loader?lang=typescript!./forms-basic.component.ts'),
               },
             ],

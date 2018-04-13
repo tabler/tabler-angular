@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router'
 @Component({
   selector: 'app-docs-viewer',
   template: `
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <ng-container *ngIf="route.data | async as data">
           <div class="col-lg-3 order-lg-0 mb-4">
@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router'
             </app-docs-chapters>
           </div>
           <div class="col-lg-9">
-            <app-docs-examples [examples]="data.examples"></app-docs-examples>
+            <app-docs-sections [sections]="data.sections"></app-docs-sections>
           </div>
         </ng-container>
       </div>

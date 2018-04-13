@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 
-import { ButtonsBasicModule } from './buttons-basic/buttons-basic.module'
+import { AlertsBasicModule } from './alerts-basic/alerts-basic.module'
 
 @NgModule({
   imports: [
-    ButtonsBasicModule,
+    AlertsBasicModule,
     RouterModule.forChild([
       {
         path: '',
         children: [
           { path: '', redirectTo: 'basic', pathMatch: 'full' },
-          { path: 'basic', loadChildren: './buttons-basic/buttons-basic-config.module#ButtonsBasicConfigModule' },
+          { path: 'basic', loadChildren: './alerts-basic/alerts-basic-config.module#AlertsBasicConfigModule' },
         ],
         data: {
           section: {
-            chapter: 'buttons',
+            chapter: 'alerts',
             items: [
-              { icon: 'fe fe-check-square', path: '/buttons/basic', label: 'Basic buttons' },
+              { icon: 'fe fe-check-square', path: '/alerts/basic', label: 'Basic alerts' },
             ],
           },
         },
@@ -25,4 +25,4 @@ import { ButtonsBasicModule } from './buttons-basic/buttons-basic.module'
     ]),
   ],
 })
-export class ButtonsModule {}
+export class AlertsModule {}

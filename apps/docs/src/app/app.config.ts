@@ -1,39 +1,5 @@
 import { environment } from '../environments/environment'
 
-const headerMenu = [
-  {
-    name: 'Documentation',
-    icon: 'fe fe-file-text',
-    url: '/docs',
-    subpages: [
-      {
-        name: '400 error',
-        url: '/400',
-      },
-      {
-        name: '401 error',
-        url: '/401',
-      },
-      {
-        name: '403 error',
-        url: '/403',
-      },
-      {
-        name: '404 error',
-        url: '/404',
-      },
-      {
-        name: '500 error',
-        url: '/500',
-      },
-      {
-        name: '503 error',
-        url: '/503',
-      },
-    ],
-  },
-]
-
 const sourceCode = {
   label: 'Source Code',
   link: environment.urls.repo,
@@ -52,7 +18,7 @@ const liveDemo = {
 export const AppConfig = {
   header: {
     title: 'Documentation',
-    menu: headerMenu,
+    logo: 'assets/brand/tabler.svg',
     links: [liveDemo, sourceCode],
   },
   footer: {

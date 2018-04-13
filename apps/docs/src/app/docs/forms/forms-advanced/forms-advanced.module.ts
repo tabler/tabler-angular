@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core'
-import { SharedModule } from '@tabler/angular-core'
+import { DocsViewerModule } from '../../../docs-viewer'
 import { FormsAdvancedComponent } from './forms-advanced.component'
 
 @NgModule({
-  imports: [SharedModule],
+  imports: [DocsViewerModule],
   declarations: [FormsAdvancedComponent],
   entryComponents: [FormsAdvancedComponent],
   exports: [FormsAdvancedComponent],

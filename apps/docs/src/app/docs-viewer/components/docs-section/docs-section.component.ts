@@ -2,17 +2,16 @@ import {
   Component,
   ComponentFactoryResolver,
   ComponentRef,
-  ElementRef,
   Input,
   OnDestroy,
   OnInit,
   ViewChild,
   ViewContainerRef,
 } from '@angular/core'
-import JSONFormatter from 'json-formatter-js'
+import { CopierService } from '../../services/copier.service'
 
 @Component({
-  selector: 'app-docs-example',
+  selector: 'app-docs-section',
   template: `
     <div class="card">
       <div class="card-header" *ngIf="title">
@@ -21,68 +20,49 @@ import JSONFormatter from 'json-formatter-js'
         </h2>
       </div>
       <div class="card-body">
-
         <div *ngIf="description" [innerHtml]="description"></div>
 
-        <div class="row my-5">
-          <div class="col-6">
-            <h3>Example</h3>
-            <ng-template #demo></ng-template>
-          </div>
-          <div class="col-6">
-            <div *ngIf="demoComponentRef">
-              <h3>Example model</h3>
-              <pre [style.display]="'none'">{{ model }}</pre>
-              <pre #modelPreview></pre>
-            </div>
-          </div>
-        </div>
+        <h3 class="my-5">Example</h3>
 
-        <div *ngFor="let file of files">
+        <ng-template #demo></ng-template>
 
-          <div class="my-3">
-            <h4 class="card-title">
-              {{file.file}}
+        <ng-container *ngIf="files.length">
+          <h3 class="my-5">Files</h3>
+          <div *ngFor="let file of files">
+            <div class="my-3">
               <ui-button class="float-right"
                          size="sm" color="secondary" icon="fa fa-copy"
                          (action)="copySource(textContent)">
               </ui-button>
-            </h4>
+              <h4 class="card-title pt-1">
+                <i class="fa fa-file-o mx-3"></i>
+                <a href="" (click)="toggle($event, file.file)">{{file.file}}</a>
+              </h4>
+            </div>
+            <ng-container *ngIf="show[file.file]">
+              <pre [innerHtml]="file.content" #textContent></pre>
+            </ng-container>
           </div>
-          <pre [innerHtml]="file.content" #textContent></pre>
-        </div>
+        </ng-container>
       </div>
     </div>
-
   `,
 })
 export class DocsSectionComponent implements OnInit, OnDestroy {
   @Input() public title
   @Input() public description
   @Input() public component
-  @Input() public files: { file: string; content: string }[]
-
-  _prevModel: any
+  @Input() public files: { file: string; content: string }[] = []
+  public show = {}
 
   @ViewChild('demo', { read: ViewContainerRef })
   demoRef: ViewContainerRef
-
-  @ViewChild('modelPreview') modelPreviewRef: ElementRef
   demoComponentRef: ComponentRef<any>
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) {}
-
-  get model() {
-    const model = JSON.stringify(this.demoComponentRef.instance.model)
-    if (this._prevModel !== model && this.modelPreviewRef && this.modelPreviewRef.nativeElement) {
-      this._prevModel = model
-      const formatter = new JSONFormatter(this.demoComponentRef.instance.model, 5, { hoverPreviewEnabled: true })
-      this.modelPreviewRef.nativeElement.innerHTML = ''
-      this.modelPreviewRef.nativeElement.appendChild(formatter.render())
-    }
-
-    return this.demoComponentRef.instance.model
-  }
+  constructor(
+    private componentFactoryResolver: ComponentFactoryResolver,
+    private copier: CopierService,
+  ) {}
 
   ngOnInit() {
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(this.component)
@@ -96,7 +76,10 @@ export class DocsSectionComponent implements OnInit, OnDestroy {
   }
 
   copySource(content) {
-    console.log(content)
-    // this.copier.copyText(content.innerText);
+    this.copier.copyText(content.innerText);
+  }
+  toggle(e, file) {
+    e.preventDefault()
+    this.show[file] = !this.show[file]
   }
 }

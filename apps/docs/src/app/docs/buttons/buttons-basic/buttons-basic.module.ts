@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core'
-import { SharedModule } from '@tabler/angular-core'
+import { DocsViewerModule } from '../../../docs-viewer'
 import { ButtonsBasicComponent } from './buttons-basic.component'
 
 @NgModule({
-  imports: [SharedModule],
+  imports: [DocsViewerModule],
   declarations: [ButtonsBasicComponent],
   entryComponents: [ButtonsBasicComponent],
   exports: [ButtonsBasicComponent],
