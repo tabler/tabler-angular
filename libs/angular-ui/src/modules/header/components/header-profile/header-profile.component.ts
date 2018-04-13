@@ -18,9 +18,10 @@ import { UiLink } from '../../../../modules'
 
       <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" *dropdownMenu>
         <ng-container *ngFor="let link of links">
-
-          <ui-header-profile-link [link]="link"></ui-header-profile-link>
-
+          <div *ngIf="link.divider; else linkEl" class="dropdown-divider"></div>
+          <ng-template #linkEl>
+            <ui-link [link]="link"></ui-link>
+          </ng-template>
         </ng-container>
       </div>
     </div>

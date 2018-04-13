@@ -1,17 +1,24 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router'
 import { ModuleWithProviders } from '@angular/core'
+import { LayoutComponent } from '@tabler/angular-ui'
 import { AuthModuleRoutes } from './auth/auth.module'
 import { LoggedInGuard } from './auth/guards/logged-in.guard'
 
 const routes: Routes = [
-  { path: '', redirectTo: 'fire', pathMatch: 'full' },
-  { path: 'auth', children: [...AuthModuleRoutes] },
+  { path: '', redirectTo: 'guestbook', pathMatch: 'full' },
   {
-    path: 'crud',
-    loadChildren: './crud/crud.module#CrudModule',
-    canActivate: [LoggedInGuard],
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: 'auth', children: [...AuthModuleRoutes] },
+      { path: 'guestbook', loadChildren: './fire/fire.module#FireModule' },
+      {
+        path: 'crud',
+        loadChildren: './crud/crud.module#CrudModule',
+        canActivate: [LoggedInGuard],
+      },
+    ],
   },
-  { path: 'fire', loadChildren: './fire/fire.module#FireModule' },
   { path: '**', redirectTo: '/404' },
 ]
 

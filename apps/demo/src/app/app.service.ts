@@ -4,23 +4,26 @@ import { environment } from '../environments/environment'
 
 const sourceCode = {
   label: 'Source Code',
+  labelClass: 'd-none d-lg-inline',
   link: environment.urls.repo,
-  class: 'btn btn-sm btn-outline-primary ml-2',
-  icon: 'fe fe-github',
+  linkClass: 'btn btn-sm btn-outline-primary ml-2',
+  icon: 'fa fa-fw fa-github',
   external: true,
 }
 const documentation = {
   label: 'Documentation',
+  labelClass: 'd-none d-lg-inline',
   link: environment.urls.docs,
-  class: 'btn btn-sm btn-outline-success ml-2',
-  icon: 'fe fe-info',
+  linkClass: 'btn btn-sm btn-outline-success ml-2',
+  icon: 'fa fa-fw fa-info',
   external: true,
 }
 const fire = {
-  label: 'Fire',
+  label: 'Firebase Demo',
+  labelClass: 'd-none d-lg-inline',
   link: environment.urls.fire,
-  class: 'btn btn-sm btn-outline-warning ml-2',
-  icon: 'fa fa-fire',
+  linkClass: 'btn btn-sm btn-outline-warning ml-2',
+  icon: 'fa fa-fw fa-fire',
   external: true,
 }
 
