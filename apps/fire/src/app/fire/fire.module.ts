@@ -15,8 +15,7 @@ const routes: Routes = [
     path: '',
     component: FireIndexComponent,
     children: [
-      { path: '', redirectTo: 'guestbook', pathMatch: 'full' },
-      { path: 'guestbook', component: GuestbookComponent },
+      { path: '', component: GuestbookComponent },
     ],
   },
 ]

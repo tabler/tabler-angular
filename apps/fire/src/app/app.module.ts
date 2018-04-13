@@ -35,4 +35,8 @@ import { AppService } from './app.service'
   bootstrap: [AppComponent],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(app: AppService) {
+    app.init()
+  }
+}

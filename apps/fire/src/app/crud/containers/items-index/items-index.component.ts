@@ -18,14 +18,14 @@ export const getProperties = o =>
     <ui-page>
       <div class="py-5">
         <div class="row">
-          <div class="col-8">
+          <div class="col-md-12 col-lg-8">
             <app-item-list [items]="items$ | async"
                             [user]="user"
                             [collection]="collection"
                             (action)="handleAction($event)">
             </app-item-list>
           </div>
-          <div class="col-4">
+          <div class="col-md-12 col-lg-4">
             <div class="card">
               <div class="card-body">
                 <h3 class="card-title">Crud Models</h3>

@@ -6,9 +6,6 @@ import { DemoService } from '../../../demo/services/demo.service'
   template: `
     <ui-page>
       <ui-page-title title="Forms" icon="fe fe-check-square"></ui-page-title>
-
-      <app-forms-demo class="my-5"></app-forms-demo>
-      
       <form action="https://httpbin.org/post" method="post" class="card">
         <div class="card-header">
           <h3 class="card-title">Form elements</h3>

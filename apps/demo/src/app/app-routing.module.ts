@@ -1,17 +1,11 @@
 import { RouterModule, Routes } from '@angular/router'
 import { ModuleWithProviders } from '@angular/core'
 import { LayoutBaseComponent, LayoutComponent } from '@tabler/angular-ui'
-import { AppConfig } from './app.config'
-
-const data = {
-  config: AppConfig,
-}
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
-    data,
     component: LayoutComponent,
     children: [
       {
@@ -41,7 +35,6 @@ const routes: Routes = [
   },
   {
     path: '',
-    data,
     component: LayoutBaseComponent,
     children: [
       { path: '', loadChildren: './auth/auth.module#AuthModule' },
