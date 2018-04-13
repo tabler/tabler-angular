@@ -1,1 +1,2 @@
-export { AlertModule } from './alert/alert.module'
+export * from './alert'
+export * from './button'

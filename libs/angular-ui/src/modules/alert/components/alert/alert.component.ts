@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core'
 
-export type alertTypes = 'primary'|'secondary'|'success'|'danger'|'warning'|'info'
+export type alertTypes = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info'
 
 @Component({
   selector: 'ui-alert',
@@ -14,7 +14,7 @@ export type alertTypes = 'primary'|'secondary'|'success'|'danger'|'warning'|'inf
 export class AlertComponent implements OnInit {
   @Input() public label: string
   @Input() public type: alertTypes
-  @Input() public alert: { label: 'string', type: alertTypes }
+  @Input() public alert: { label: 'string'; type: alertTypes }
 
   ngOnInit() {
     if (this.alert) {

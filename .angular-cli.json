@@ -95,6 +95,13 @@
       "tags": []
     },
     {
+      "name": "angular-forms",
+      "root": "libs/angular-forms/src",
+      "test": "../../../test.js",
+      "appRoot": "",
+      "tags": []
+    },
+    {
       "name": "angular-styles",
       "root": "libs/angular-styles/src",
       "test": "../../../test.js",

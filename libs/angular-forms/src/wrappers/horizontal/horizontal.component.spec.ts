@@ -1,22 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { AlertComponent } from './alert.component'
+import { HorizontalComponent } from './horizontal.component'
 
-describe('AlertComponent', () => {
-  let component: AlertComponent
-  let fixture: ComponentFixture<AlertComponent>
+describe('HorizontalComponent', () => {
+  let component: HorizontalComponent
+  let fixture: ComponentFixture<HorizontalComponent>
 
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [AlertComponent],
+        declarations: [HorizontalComponent],
       }).compileComponents()
     })
   )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AlertComponent)
+    fixture = TestBed.createComponent(HorizontalComponent)
     component = fixture.componentInstance
+    component.field = {}
     fixture.detectChanges()
   })
 
