@@ -15,7 +15,6 @@ export class Field {
    * @param templateType: string. Type variant (input type=range, input type=number)
    * @param key: the key for this field in the object model
    * @param options:
-   * @returns {}
    */
   public static field(type: string, templateType: string, key: string, options: any = {}) {
     const hideExpression = options.hideExpression || false

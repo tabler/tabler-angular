@@ -62,7 +62,7 @@ export class UiService {
 
   /**
    * Define the link to Home
-   * @param {string} link
+   * @param link
    */
   public set appLink(link: string) {
     this.config.appLink = link
@@ -70,7 +70,7 @@ export class UiService {
 
   /**
    * Set the link to the app logo image
-   * @param {string} logo
+   * @param logo
    */
   public set appLogo(logo: string) {
     this.config.appLogo = logo
@@ -86,7 +86,7 @@ export class UiService {
 
   /**
    * Set the main navigation items
-   * @param {UiLink[]} items
+   * @param items
    */
   public set headerNav(items: UiLink[]) {
     this.config.headerNav = items
@@ -94,7 +94,7 @@ export class UiService {
 
   /**
    * Set the secondary navigation items
-   * @param {UiLink[]} items
+   * @param items
    */
   public set headerSubNav(items: UiLink[]) {
     this.config.headerSubNav = items
@@ -102,7 +102,7 @@ export class UiService {
 
   /**
    * Set the User Profile
-   * @param {UiProfile} profile
+   * @param profile
    */
   public set profile(profile: UiProfile) {
     this.config.profile = profile
@@ -110,7 +110,7 @@ export class UiService {
 
   /**
    * Set the links in the user profile menu
-   * @param {UiLink[]} items
+   * @param items
    */
   public set profileNav(items: UiLink[]) {
     this.config.profileNav = items
@@ -118,7 +118,7 @@ export class UiService {
 
   /**
    * Set the notifications items dropdown
-   * @param {UiNotification[]} notifications
+   * @param notifications
    */
   public set notifications(notifications: UiNotification[]) {
     this.config.notifications = notifications
@@ -126,7 +126,7 @@ export class UiService {
 
   /**
    * Set the Navigation Items in the footer
-   * @param {UiLink[]} items
+   * @param items
    */
   public set footerNav(items: UiLink[]) {
     this.config.footerNav = items
@@ -134,7 +134,7 @@ export class UiService {
 
   /**
    * Set the footer text, good for a copyright/disclaimer message
-   * @param {string} text
+   * @param text
    */
   public set footerText(text: string) {
     this.config.footerText = text
@@ -144,7 +144,7 @@ export class UiService {
    * Set the footer sub navigation.
    *
    * Accepts an Array of UiLink Arrays
-   * @param {[UiLink[]]} items
+   * @param items
    */
   public set footerSubNav(items: [UiLink[]]) {
     this.config.footerSubNav = items
@@ -152,7 +152,7 @@ export class UiService {
 
   /**
    * Set the footer sub text
-   * @param {string} text
+   * @param text
    */
   public set footerSubText(text: string) {
     this.config.footerSubText = text
