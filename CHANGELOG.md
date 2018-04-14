@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/tabler/tabler-angular/compare/v0.6.0...v0.7.0) (2018-04-14)
+
+
+### Bug Fixes
+
+* **forms:** fix build error ([198e49c](https://github.com/tabler/tabler-angular/commit/198e49c))
+
+
+### Features
+
+* **docs:** implement new docs viewer ([45aaf46](https://github.com/tabler/tabler-angular/commit/45aaf46))
+* **docs:** update docs app ([5d39be2](https://github.com/tabler/tabler-angular/commit/5d39be2))
+* **docs:** update layout to new configuration ([56a9061](https://github.com/tabler/tabler-angular/commit/56a9061))
+* **fire:** update layout to new configuration ([ef415a2](https://github.com/tabler/tabler-angular/commit/ef415a2))
+* **forms:** implement first version of [@tabler](https://github.com/tabler)/angular-forms ([211e544](https://github.com/tabler/tabler-angular/commit/211e544))
+* **ui:** implement ui-button ([fb1f448](https://github.com/tabler/tabler-angular/commit/fb1f448))
+* **ui:** Modularize and refactor angular-ui ([95e8aad](https://github.com/tabler/tabler-angular/commit/95e8aad))
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/tabler/tabler-angular/compare/v0.5.0...v0.6.0) (2018-04-11)
 
