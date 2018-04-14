@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/tabler/tabler-angular/compare/v0.7.1...v0.7.2) (2018-04-14)
+
+
+### Bug Fixes
+
+* **ui:** fix build issues ([9e8de83](https://github.com/tabler/tabler-angular/commit/9e8de83))
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/tabler/tabler-angular/compare/v0.7.0...v0.7.1) (2018-04-14)
 
