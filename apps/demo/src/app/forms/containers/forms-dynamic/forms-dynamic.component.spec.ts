@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { FormsDynamicComponent } from './forms-index.component'
+import { FormsDynamicComponent } from './forms-dynamic.component'
 
 describe('FormsIndexComponent', () => {
   let component: FormsDynamicComponent

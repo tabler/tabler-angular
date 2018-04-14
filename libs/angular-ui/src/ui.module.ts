@@ -33,10 +33,6 @@ const uiModules = [
   PageModule,
 ]
 
-const exported = [
-  ...uiModules,
-]
-
 @NgModule({
   imports: [
     CommonModule,
@@ -49,7 +45,7 @@ const exported = [
   ],
   declarations: [],
   exports: [
-    ...exported,
+    ...uiModules,
     NgPipesModule,
   ],
   providers: [UiService],
