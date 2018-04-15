@@ -4,9 +4,9 @@ import { RouterModule } from '@angular/router'
 import { BsDropdownModule } from 'ngx-bootstrap'
 import { TimeAgoPipe } from '../../pipes/time-ago.pipe'
 
-import { AvatarModule } from '../avatar'
-import { BadgeModule } from '../badge'
-import { LinkModule } from '../link'
+import { AvatarModule } from '../avatar/avatar.module'
+import { BadgeModule } from '../badge/badge.module'
+import { LinkModule } from '../link/link.module'
 
 import { HeaderComponent } from './components/header/header.component'
 import { HeaderNotificationItemComponent } from './components/header-notification-item/header-notification-item.component'

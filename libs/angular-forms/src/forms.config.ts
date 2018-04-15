@@ -1,4 +1,3 @@
-import { Validators } from '@angular/forms'
 import { ConfigOption } from '@ngx-formly/core'
 import { HorizontalComponent } from './wrappers/horizontal/horizontal.component'
 
