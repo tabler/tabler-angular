@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { NgPipesModule } from 'angular-pipes'
 import { ModalModule } from 'ngx-bootstrap'
 import { SharedModule } from '@tabler/angular-core'
 import { GalleryIndexComponent } from './containers/gallery-index/gallery-index.component'
@@ -13,7 +14,7 @@ import { GalleryItemProfileComponent } from './components/gallery-item-profile/g
 const routes: Routes = [{ path: '', component: GalleryIndexComponent }]
 
 @NgModule({
-  imports: [SharedModule, RouterModule.forChild(routes), ModalModule.forRoot()],
+  imports: [SharedModule, RouterModule.forChild(routes), ModalModule.forRoot(), NgPipesModule],
   declarations: [
     GalleryIndexComponent,
     GalleryItemComponent,

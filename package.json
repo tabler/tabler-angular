@@ -59,7 +59,7 @@
     "@swimlane/ngx-charts": "^7.2.0",
     "angular-pipes": "^7.1.0",
     "angularfire2": "^5.0.0-rc.6",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "4.0.0",
     "chart.js": "^2.7.2",
     "core-js": "^2.4.1",
     "firebase": "^4.12.1",
