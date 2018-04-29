@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-value pull-right text-{{ color }}">{{ rate }}</div>
+    <h3 class="mb-1">{{ title}}</h3>
+    <div class="text-muted">{{ description }}</div>
+  </div>
+  <div class="card-img">
+    <canvas baseChart
+            class="pt-5"
+            height="160"
+            [datasets]="datasets"
+            [labels]="labels"
+            [options]="options"
+            [colors]="colors"
+            chartType="line"></canvas>
+  </div>
+</div>
