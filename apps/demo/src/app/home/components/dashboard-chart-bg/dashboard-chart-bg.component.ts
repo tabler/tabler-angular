@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core'
 @Component({
   selector: 'ui-dashboard-chart-bg',
   templateUrl: './dashboard-chart-bg.html',
-  styleUrls: ['./dashboard-chart-bg.scss',],
+  styleUrls: ['./dashboard-chart-bg.scss', ],
 })
 export class DashboardChartBgComponent {
   @Input() rate

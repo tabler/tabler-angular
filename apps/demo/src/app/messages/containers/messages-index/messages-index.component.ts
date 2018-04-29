@@ -1,22 +1,8 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'ui-page-email',
-  template: `
-    <ui-page>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="mb-5">
-            <ui-page-title title="Messages" [header]="false"></ui-page-title>
-          </div>
-          <app-messages-folders [folders]="folders"></app-messages-folders>
-        </div>
-        <div class="col-md-9">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
-    </ui-page>
-  `,
+  templateUrl: './messages-index.html',
   styles: [],
 })
 export class MessagesIndexComponent {
