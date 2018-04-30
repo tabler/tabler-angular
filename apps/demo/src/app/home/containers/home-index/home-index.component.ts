@@ -46,7 +46,7 @@ import { DemoService } from '../../../demo/services/demo.service'
               Check the example
             </a>
             and the
-            <a href="https://github.com/tabler/tabler-angular/tree/develop/apps/fire/src/app" class="alert-link">
+            <a href="https://github.com/tabler/tabler-angular-firebase" class="alert-link">
               source code
             </a>
           </div>

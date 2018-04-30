@@ -21,7 +21,7 @@ const documentation = {
 const fire = {
   label: 'Firebase Demo',
   labelClass: 'd-none d-lg-inline',
-  link: environment.urls.fire,
+  link: 'https://tabler-angular-fire.firebaseapp.com/',
   linkClass: 'btn btn-sm btn-outline-warning ml-2',
   icon: 'fa fa-fw fa-fire',
   external: true,

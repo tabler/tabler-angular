@@ -8,7 +8,6 @@ export const environment = {
   urls: {
     demo: 'http://localhost:4200',
     docs: 'http://localhost:4201',
-    fire: 'http://localhost:4202',
     repo: 'https://github.com/tabler/tabler-angular',
   },
 }
