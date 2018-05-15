@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
-import { BsDropdownModule } from 'ngx-bootstrap'
 import { TimeAgoPipe } from '../../pipes/time-ago.pipe'
 
 import { AvatarModule } from '../avatar/avatar.module'
@@ -13,9 +12,10 @@ import { HeaderNotificationItemComponent } from './components/header-notificatio
 import { HeaderNotificationsComponent } from './components/header-notifications/header-notifications.component'
 import { HeaderProfileComponent } from './components/header-profile/header-profile.component'
 import { MenuComponent } from './components/menu/menu.component'
+import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 
 @NgModule({
-  imports: [CommonModule, RouterModule, AvatarModule, BadgeModule, BsDropdownModule, LinkModule],
+  imports: [CommonModule, RouterModule, AvatarModule, BadgeModule, BsDropdownModule.forRoot(), LinkModule],
   declarations: [
     TimeAgoPipe,
     HeaderComponent,
