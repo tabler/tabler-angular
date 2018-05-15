@@ -2,17 +2,7 @@ import { Component, Input, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-development-chart',
-  template: `
-    <div style="display: block;">
-      <canvas baseChart
-              height="160"
-              [datasets]="datasets"
-              [labels]="labels"
-              [options]="options"
-              [colors]="colors"
-              chartType="line"></canvas>
-    </div>
-  `,
+  templateUrl: './development-chart.html',
 })
 export class DevelopmentChartComponent implements OnInit {
   @Input() data = []

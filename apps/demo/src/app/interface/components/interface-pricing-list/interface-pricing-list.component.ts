@@ -2,25 +2,7 @@ import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-interface-pricing-list',
-  template: `
-    <ui-page>
-      <ui-page-title
-        icon="fe fe-dollar-sign"
-        title="Pricing cards"></ui-page-title>
-      <div class="row">
-        <div class="col-3" *ngFor="let price of prices">
-          <app-interface-pricing
-            [category]="price.category"
-            [color]="price.color"
-            [features]="features"
-            [hasFeatures]="price.hasFeatures"
-            [price]="price.price"
-            [users]="price.users">
-          </app-interface-pricing>
-        </div>
-      </div>
-    </ui-page>
-  `,
+  templateUrl: './interface-pricing-list.html',
   styles: [],
 })
 export class InterfacePricingListComponent {

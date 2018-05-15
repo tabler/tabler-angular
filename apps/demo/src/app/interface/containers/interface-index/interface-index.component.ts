@@ -2,10 +2,6 @@ import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-interface-index',
-  template: `
-    <ui-page>
-      <router-outlet></router-outlet>
-    </ui-page>
-  `,
+  templateUrl: './interface-index.html',
 })
 export class InterfaceIndexComponent {}

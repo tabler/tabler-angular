@@ -4,36 +4,8 @@ import { DemoService } from '../../../demo/services/demo.service'
 
 @Component({
   selector: 'app-messages-read',
-  template: `
-    <ui-card [header]="message.subject" [buttons]="buttons">
-      <div class="card-body">
-        <div class="mb-5">
-          <div class="float-right text-muted">
-            {{message.datetime | date: 'medium' }}
-          </div>
-          <div class="float-left mr-3">
-            <ui-avatar [image]="message.from.photo" status="green" size="lg"></ui-avatar>
-          </div>
-          <div class="d-none d-lg-block">
-            <span class="text-default">
-              {{ message.from.name }} {{ message.from.surname }}
-            </span>
-            <small class="text-muted d-block mt-1">
-              {{ message.from.email }}
-            </small>
-          </div>
-        </div>
-        <div class="message" [innerHtml]="message.body"></div>
-      </div>
-    </ui-card>
-  `,
-  styles: [
-    `
-    .message {
-      white-space: pre-line;
-    }
-  `,
-  ],
+  templateUrl: './messages-read.html',
+  styleUrls: ['./messages-read.scss', ],
 })
 export class MessagesReadComponent implements OnInit {
   public buttons = [
