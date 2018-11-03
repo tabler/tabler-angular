@@ -29,4 +29,8 @@ You can start one of the following applications:
 - Navigate to `http://localhost:4201/`.
 - Update code in `apps/docs`
 
+## Release to npm
+
+- Run `npm run release-it`
+
 # License: MIT
