@@ -1,0 +1,19 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@tabler/angular-forms",
+  "version": "0.7.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "ngPackage": {
+    "lib": {
+      "entryFile": "index.ts"
+    },
+    "dest": "../../dist/libs/angular-forms"
+  },
+  "peerDependencies": {
+    "@ngx-formly/bootstrap": "^2.0.0-rc.55",
+    "@ngx-formly/core": "^2.0.0-rc.55"
+  }
+}

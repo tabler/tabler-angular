@@ -19,23 +19,10 @@ import { Component } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class FormsInputColorComponent {
+  public colors = ['azure', 'indigo', 'purple', 'pink', 'red', 'orange', 'yellow', 'lime', 'green', 'teal']
 
-  public colors = [
-    'azure',
-    'indigo',
-    'purple',
-    'pink',
-    'red',
-    'orange',
-    'yellow',
-    'lime',
-    'green',
-    'teal',
-  ]
-
-  public selectedColor = this.colors[ 1 ]
-
+  public selectedColor = this.colors[1]
 }

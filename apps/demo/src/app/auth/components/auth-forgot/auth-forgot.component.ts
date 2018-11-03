@@ -24,11 +24,10 @@ import { Router } from '@angular/router'
       Forget it, <a routerLink="/login">send me back</a> to the sign in screen.
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class AuthForgotComponent {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   submit() {
     this.router.navigate(['/reset-password'])

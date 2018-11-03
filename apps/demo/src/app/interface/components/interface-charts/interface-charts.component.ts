@@ -12,14 +12,10 @@ import { Component, OnInit } from '@angular/core'
       </ui-page-title>
     </ui-page>
   `,
-  styles: []
+  styles: [],
 })
 export class InterfaceChartsComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

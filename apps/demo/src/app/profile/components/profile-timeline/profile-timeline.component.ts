@@ -108,16 +108,12 @@ import { Component, Input, OnInit } from '@angular/core'
     </div>
 
   `,
-  styles: []
+  styles: [],
 })
 export class ProfileTimelineComponent implements OnInit {
-
   @Input() public timeline = []
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

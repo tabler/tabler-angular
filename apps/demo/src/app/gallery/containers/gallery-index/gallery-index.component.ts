@@ -11,18 +11,16 @@ import { DemoService } from '../../../demo/services/demo.service'
       <app-gallery-list [photos]="photos" [users]="users"></app-gallery-list>
     </ui-page>
   `,
-  styles: []
+  styles: [],
 })
 export class GalleryIndexComponent implements OnInit {
   public photos = []
   public users = []
 
-  constructor(public demoService: DemoService) {
-  }
+  constructor(public demoService: DemoService) {}
 
   ngOnInit() {
     this.photos = this.demoService.photos
     this.users = this.demoService.users
   }
-
 }

@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { MessagesReadComponent } from './messages-read.component';
+import { MessagesReadComponent } from './messages-read.component'
 
 describe('MessagesReadComponent', () => {
-  let component: MessagesReadComponent;
-  let fixture: ComponentFixture<MessagesReadComponent>;
+  let component: MessagesReadComponent
+  let fixture: ComponentFixture<MessagesReadComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MessagesReadComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [MessagesReadComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MessagesReadComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(MessagesReadComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

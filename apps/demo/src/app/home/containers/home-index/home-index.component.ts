@@ -37,8 +37,18 @@ import { DemoService } from '../../../demo/services/demo.service'
 
         <div class="col-md-6">
           <div class="alert alert-primary">
-            Are you in trouble? <a [routerLink]="['/docs']" class="alert-link">
+            Are you in trouble? <a href="https://tabler.github.io/tabler-angular/" class="alert-link">
             Read our documentation</a> with code samples.
+          </div>
+          <div class="alert alert-warning">
+            Angular-Tabler works great with Firebase!
+            <a href="https://tabler-angular-fire.firebaseapp.com/" class="alert-link">
+              Check the example
+            </a>
+            and the
+            <a href="https://github.com/tabler/tabler-angular-firebase" class="alert-link">
+              source code
+            </a>
           </div>
 
           <div class="row">
@@ -144,9 +154,8 @@ import { DemoService } from '../../../demo/services/demo.service'
 
     </ui-page>
   `,
-  styles: []
+  styles: [],
 })
 export class HomeIndexComponent {
-
   constructor(public demoService: DemoService) {}
 }

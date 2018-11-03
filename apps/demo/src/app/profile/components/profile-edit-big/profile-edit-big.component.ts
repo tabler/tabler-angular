@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-profile-edit-big',
@@ -80,13 +80,10 @@ But that's the difference in our opinions.</textarea>
       </div>
     </form>
   `,
-  styles: []
+  styles: [],
 })
 export class ProfileEditBigComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -253,5 +253,5 @@ export const flags = [
   'flag-yt',
   'flag-za',
   'flag-zm',
-  'flag-zw'
+  'flag-zw',
 ]

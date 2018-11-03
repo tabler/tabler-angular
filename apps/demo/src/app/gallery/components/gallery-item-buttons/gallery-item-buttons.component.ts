@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-gallery-item-buttons',
@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
       gallery-item-buttons works!
     </p>
   `,
-  styles: []
+  styles: [],
 })
 export class GalleryItemButtonsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

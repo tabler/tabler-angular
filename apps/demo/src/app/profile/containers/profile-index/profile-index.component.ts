@@ -31,16 +31,13 @@ export class ProfileIndexComponent implements OnInit {
   public user = []
   public timeline = []
 
-  constructor(public demoService: DemoService) {
-  }
-
+  constructor(public demoService: DemoService) {}
 
   ngOnInit() {
     this.users = this.demoService.users
     this.userId = 4
-    this.user = this.users[ this.userId ]
+    this.user = this.users[this.userId]
     this.user['backgroundImage'] = this.demoService.photos[18].small
     this.timeline = this.users
   }
-
 }

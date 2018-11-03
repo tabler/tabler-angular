@@ -41,7 +41,6 @@ import { Component } from '@angular/core'
       </table>
     </div>
   `,
-  styles: []
+  styles: [],
 })
-export class CardBrowserStatsComponent {
-}
+export class CardBrowserStatsComponent {}

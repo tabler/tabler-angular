@@ -47,7 +47,6 @@ import { Component } from '@angular/core'
       </table>
     </div>
   `,
-  styles: []
+  styles: [],
 })
-export class CardProjectsComponent {
-}
+export class CardProjectsComponent {}

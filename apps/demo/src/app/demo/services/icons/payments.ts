@@ -106,5 +106,5 @@ export const payments = [
   'payment-visa-dark',
   'payment-webmoney-dark',
   'payment-westernunion-dark',
-  'payment-worldpay-dark'
+  'payment-worldpay-dark',
 ]

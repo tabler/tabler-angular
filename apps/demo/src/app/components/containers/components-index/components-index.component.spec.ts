@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { ComponentsIndexComponent } from './components-index.component';
+import { ComponentsIndexComponent } from './components-index.component'
 
 describe('ComponentsIndexComponent', () => {
-  let component: ComponentsIndexComponent;
-  let fixture: ComponentFixture<ComponentsIndexComponent>;
+  let component: ComponentsIndexComponent
+  let fixture: ComponentFixture<ComponentsIndexComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ComponentsIndexComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [ComponentsIndexComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComponentsIndexComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(ComponentsIndexComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { TableInvoicesComponent } from './table-invoices.component';
+import { TableInvoicesComponent } from './table-invoices.component'
 
 describe('TableInvoicesComponent', () => {
-  let component: TableInvoicesComponent;
-  let fixture: ComponentFixture<TableInvoicesComponent>;
+  let component: TableInvoicesComponent
+  let fixture: ComponentFixture<TableInvoicesComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ TableInvoicesComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [TableInvoicesComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TableInvoicesComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(TableInvoicesComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

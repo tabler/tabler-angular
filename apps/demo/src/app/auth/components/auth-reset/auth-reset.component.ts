@@ -23,8 +23,7 @@ import { Router } from '@angular/router'
   `,
 })
 export class AuthResetComponent {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   submit() {
     this.router.navigate(['/'])

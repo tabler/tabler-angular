@@ -18,6 +18,18 @@
     "paths": {
       "@tabler/*": [
         "libs/*"
+      ],
+      "@@tabler/angular-core": [
+        "libs/angular-core/src/index.ts"
+      ],
+      "@@tabler/angular-forms": [
+        "libs/angular-forms/src/index.ts"
+      ],
+      "@@tabler/angular-styles": [
+        "libs/angular-styles/src/index.ts"
+      ],
+      "@@tabler/angular-ui": [
+        "libs/angular-ui/src/index.ts"
       ]
     },
     "baseUrl": "."

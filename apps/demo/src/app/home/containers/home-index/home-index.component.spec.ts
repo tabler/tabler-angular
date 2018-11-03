@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { HomeIndexComponent } from './home-index.component';
+import { HomeIndexComponent } from './home-index.component'
 
 describe('HomeIndexComponent', () => {
-  let component: HomeIndexComponent;
-  let fixture: ComponentFixture<HomeIndexComponent>;
+  let component: HomeIndexComponent
+  let fixture: ComponentFixture<HomeIndexComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HomeIndexComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [HomeIndexComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeIndexComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(HomeIndexComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

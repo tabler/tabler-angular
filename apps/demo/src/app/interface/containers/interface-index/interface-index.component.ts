@@ -8,5 +8,4 @@ import { Component } from '@angular/core'
     </ui-page>
   `,
 })
-export class InterfaceIndexComponent {
-}
+export class InterfaceIndexComponent {}

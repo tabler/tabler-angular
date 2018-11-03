@@ -1,0 +1,29 @@
+{
+  "npmScope": "@tabler",
+  "projects": {
+    "demo": {
+      "tags": []
+    },
+    "demo-e2e": {
+      "tags": []
+    },
+    "docs": {
+      "tags": []
+    },
+    "docs-e2e": {
+      "tags": []
+    },
+    "angular-core": {
+      "tags": []
+    },
+    "angular-forms": {
+      "tags": []
+    },
+    "angular-styles": {
+      "tags": []
+    },
+    "angular-ui": {
+      "tags": []
+    }
+  }
+}

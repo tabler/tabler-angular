@@ -37,14 +37,12 @@ import { Router } from '@angular/router'
       Already have account? <a [routerLink]="['/login']">Sign in here!</a>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class AuthRegisterComponent {
-
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 
   submit() {
-    this.router.navigate([ '/' ])
+    this.router.navigate(['/'])
   }
 }

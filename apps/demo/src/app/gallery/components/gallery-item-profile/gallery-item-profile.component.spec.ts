@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { GalleryItemProfileComponent } from './gallery-item-profile.component';
+import { GalleryItemProfileComponent } from './gallery-item-profile.component'
 
 describe('GalleryItemProfileComponent', () => {
-  let component: GalleryItemProfileComponent;
-  let fixture: ComponentFixture<GalleryItemProfileComponent>;
+  let component: GalleryItemProfileComponent
+  let fixture: ComponentFixture<GalleryItemProfileComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ GalleryItemProfileComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [GalleryItemProfileComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GalleryItemProfileComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(GalleryItemProfileComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

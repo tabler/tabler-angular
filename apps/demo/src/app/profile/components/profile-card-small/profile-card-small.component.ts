@@ -31,7 +31,7 @@ import { Component, Input } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class ProfileCardSmallComponent {
   @Input() public user
