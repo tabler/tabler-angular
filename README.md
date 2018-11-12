@@ -29,4 +29,21 @@ You can start one of the following applications:
 - Navigate to `http://localhost:4201/`.
 - Update code in `apps/docs`
 
+## Release to npm (deprecated)
+
+- Run `npm run release-it`
+
+## Publish to npm
+
+- Use the `np` utility:
+
+https://www.npmjs.com/package/np
+
+So the basic flow is:
+
+- make changes
+- create build
+- test build
+- publish build using `np`
+
 # License: MIT
