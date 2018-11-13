@@ -89,6 +89,7 @@ const getApps = () => {
 };
 
 const getLibs = () => {
+  /* 
   const angularCli = getAngularCli()
 
   // Get the array of apps defined in the Angular CLI
@@ -98,6 +99,13 @@ const getLibs = () => {
   return apps
     .filter(lib => lib.root.indexOf('libs/') === 0)
     .map(lib => lib.name);
+    */
+   return [
+    'angular-core',
+    'angular-forms',
+    'angular-styles',
+    'angular-ui'
+  ]
 };
 
 const getScope = () => {

@@ -1,3 +1,3 @@
-export { CoreModule } from './src/core.module'
-export { SharedModule } from './src/shared.module'
-export { CoreRoutes } from './src/core-routes.module'
+export { CoreModule } from './src/lib/core.module'
+export { SharedModule } from './src/lib/shared.module'
+export { CoreRoutes } from './src/lib/core-routes.module'

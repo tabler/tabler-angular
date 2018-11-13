@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CoreModule, SharedModule } from '@tabler/angular-core'
-import { UiService } from '@tabler/angular-ui'
+import { UiLayout } from '@tabler/angular-ui'
 import { environment } from '../environments/environment'
 
 import { AppRoutingModule } from './app-routing.module'
@@ -15,7 +15,7 @@ import { AppComponent } from './app.component'
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(ui: UiService) {
+  constructor(ui: UiLayout) {
     const sourceCode = {
       label: 'Source Code',
       link: environment.urls.repo,

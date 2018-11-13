@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core'
-import { UiService } from '@tabler/angular-ui'
+import { UiLayout, UiLink } from '@tabler/angular-ui'
 import { environment } from '../environments/environment'
 
-const sourceCode = {
+const sourceCode: UiLink = {
   label: 'Source Code',
   labelClass: 'd-none d-lg-inline',
   link: environment.urls.repo,
@@ -10,7 +10,7 @@ const sourceCode = {
   icon: 'fa fa-fw fa-github',
   external: true,
 }
-const documentation = {
+const documentation: UiLink = {
   label: 'Documentation',
   labelClass: 'd-none d-lg-inline',
   link: environment.urls.docs,
@@ -18,7 +18,7 @@ const documentation = {
   icon: 'fa fa-fw fa-info',
   external: true,
 }
-const fire = {
+const fire: UiLink = {
   label: 'Firebase Demo',
   labelClass: 'd-none d-lg-inline',
   link: 'https://tabler-angular-fire.firebaseapp.com/',
@@ -30,7 +30,7 @@ const fire = {
 
 @Injectable()
 export class AppService {
-  constructor(private ui: UiService) {
+  constructor(private ui: UiLayout) {
     this.init()
   }
   public init() {
@@ -242,7 +242,7 @@ export class AppService {
       },
     ]
 
-    this.ui.footerSubNav = [ [ documentation ], [ sourceCode ], [ fire ]]
+    this.ui.footerSubNav = [ [ documentation ], [ sourceCode ], [ fire ]];
     this.ui.footerSubText = `Premium and Open Source dashboard template with responsive and high quality UI. For Free!`
 
     this.ui.footerNav = [ documentation, sourceCode]

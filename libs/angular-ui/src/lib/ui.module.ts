@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common'
 
 import { ModulesModule } from './modules/modules.module'
 
-import { UiService } from './services/ui.service'
+import { UiLayout } from '@tabler/angular-ui'
 
 @NgModule({
   imports: [CommonModule, ModulesModule],
   exports: [ModulesModule],
-  providers: [UiService],
+  providers: [UiLayout],
 })
 export class UiModule {}
