@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "@tabler/angular-core",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "publishConfig": {
     "access": "public"
   },
