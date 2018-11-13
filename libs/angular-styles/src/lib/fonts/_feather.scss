@@ -1,12 +1,12 @@
-$fe-font-path: "./" !default;
+$fe-font-path: "" !default;
 
 @font-face {
 	font-family: "feather";
-	src: url('#{$fe-font-path}/feather/feather-webfont.eot?t=1501841394106'); /* IE9*/
-	src: url('#{$fe-font-path}/feather/feather-webfont.eot?t=1501841394106#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('#{$fe-font-path}/feather/feather-webfont.woff?t=1501841394106') format('woff'), /* chrome, firefox */
-	url('#{$fe-font-path}/feather/feather-webfont.ttf?t=1501841394106') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-	url('#{$fe-font-path}/feather/feather-webfont.svg?t=1501841394106#feather') format('svg'); /* iOS 4.1- */
+	src: url('#{$tabler-base}/lib/fonts/feather/feather-webfont.eot?t=1501841394106'); /* IE9*/
+	src: url('#{$tabler-base}/lib/fonts/feather/feather-webfont.eot?t=1501841394106#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('#{$tabler-base}/lib/fonts/feather/feather-webfont.woff?t=1501841394106') format('woff'), /* chrome, firefox */
+	url('#{$tabler-base}/lib/fonts/feather/feather-webfont.ttf?t=1501841394106') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+	url('#{$tabler-base}/lib/fonts/feather/feather-webfont.svg?t=1501841394106#feather') format('svg'); /* iOS 4.1- */
 }
 
 .fe {
