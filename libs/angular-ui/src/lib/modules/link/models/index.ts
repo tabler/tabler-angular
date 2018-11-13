@@ -1,4 +1,4 @@
-import { UiBadge } from '../../../services/ui.service'
+import { UiBadge } from '@tabler/angular-ui'
 
 export class UiLink {
   label?: string

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common'
 
 import { ModulesModule } from './modules/modules.module'
 
-import { UiLayout } from './services/ui.service'
+import { UiLayout } from '@tabler/angular-ui'
 
 @NgModule({
   imports: [CommonModule, ModulesModule],
