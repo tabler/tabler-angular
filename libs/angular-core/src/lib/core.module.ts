@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { CoreRoutes } from './core-routes.module'
-import { SharedModule } from '../src/shared.module'
+import { SharedModule } from './shared.module'
 
 import { ErrorPageComponent } from './components/error-page/error-page.component'
 import { PagesErrorComponent } from './containers/pages-error/pages-error.component'

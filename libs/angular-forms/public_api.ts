@@ -1,3 +1,3 @@
-export * from './src/helpers/buttons'
-export * from './src/helpers/fields'
-export { FormsModule } from './src/forms.module'
+export * from './src/lib/helpers/buttons'
+export * from './src/lib/helpers/fields'
+export { FormsModule } from './src/lib/forms.module'
