@@ -28,6 +28,10 @@ You can start one of the following applications:
 - Run `npm run docs`.
 - Navigate to `http://localhost:4201/`.
 - Update code in `apps/docs`
+- [Angular UI on npm](https://www.npmjs.com/package/@tabler/angular-ui)
+- [Angular Core on npm](https://www.npmjs.com/package/@tabler/angular-core)
+- [Angular Styles on npm](https://www.npmjs.com/package/@tabler/angular-styles)
+- [Angular Forms on npm](https://www.npmjs.com/package/@tabler/angular-forms)
 
 ## Release to npm (deprecated)
 
@@ -47,3 +51,14 @@ So the basic flow is:
 - publish build using `np`
 
 # License: MIT
+
+## Meta
+
+- Previously
+==> npm --version
+6.5.0
+
+- Currently
+==> npm --version
+6.9.0
+
