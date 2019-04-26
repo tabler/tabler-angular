@@ -65,7 +65,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "html-loader": "^0.5.5",
-    "jquery": "^1.9.1",
+    "jquery": ">=3.4.0",
     "json-formatter-js": "^2.2.0",
     "markdown-loader": "^2.0.2",
     "ng2-charts": "^1.6.0",
