@@ -1,8 +1,8 @@
 {
   "name": "@tabler/angular",
-  "version": "0.7.11",
+  "version": "0.7.12",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "ng": "ng",
     "dev": "npm run demo",
