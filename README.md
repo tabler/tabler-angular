@@ -49,6 +49,7 @@ So the basic flow is:
 - create build
 - test build
 - publish build using `np`
+- publish build using `np --yolo` to skip tests
 
 # License: MIT
 
