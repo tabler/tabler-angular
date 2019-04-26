@@ -2,7 +2,7 @@
   "name": "@tabler/angular",
   "version": "0.7.12",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "scripts": {
     "ng": "ng",
     "dev": "npm run demo",
