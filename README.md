@@ -51,3 +51,14 @@ So the basic flow is:
 - publish build using `np`
 
 # License: MIT
+
+## Meta
+
+- Previously
+==> npm --version
+6.5.0
+
+- Currently
+==> npm --version
+6.9.0
+
