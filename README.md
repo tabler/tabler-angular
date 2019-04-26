@@ -28,6 +28,10 @@ You can start one of the following applications:
 - Run `npm run docs`.
 - Navigate to `http://localhost:4201/`.
 - Update code in `apps/docs`
+- [Angular UI on npm](https://www.npmjs.com/package/@tabler/angular-ui)
+- [Angular Core on npm](https://www.npmjs.com/package/@tabler/angular-core)
+- [Angular Styles on npm](https://www.npmjs.com/package/@tabler/angular-styles)
+- [Angular Forms on npm](https://www.npmjs.com/package/@tabler/angular-forms)
 
 ## Release to npm (deprecated)
 
