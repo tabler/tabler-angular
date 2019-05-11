@@ -34,7 +34,8 @@
     "dep-graph": "./node_modules/.bin/nx dep-graph",
     "help": "./node_modules/.bin/nx help",
     "affected:test": "./node_modules/.bin/nx affected:test",
-    "release-it": "release-it"
+    "release-it": "release-it",
+    "postinstall": "opencollective-postinstall"
   },
   "standard-version": {
     "scripts": {
@@ -72,6 +73,7 @@
     "ngrx-store-freeze": "^0.2.1",
     "ngx-bootstrap": "^2.0.3",
     "np": "^5.0.0",
+    "opencollective-postinstall": "^2.0.2",
     "popper.js": "^1.12.9",
     "prismjs": "^1.14.0",
     "prismjs-loader": "0.0.4",
@@ -80,7 +82,8 @@
     "rxjs-compat": "6.0.0",
     "simple-line-icons": "^2.4.1",
     "viz": "^0.0.1",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "opencollective": "^1.0.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.1",
@@ -109,5 +112,9 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "2.7.2"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/dasmachinelabs"
   }
 }
