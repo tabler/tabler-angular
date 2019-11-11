@@ -51,6 +51,12 @@ So the basic flow is:
 - publish build using `np`
 - publish build using `np --yolo` to skip tests
 
+## Sample App
+
+Here are a few sample apps
+
+https://github.com/arunabhdas/fullstackapp
+
 # License: MIT
 
 ## Meta
