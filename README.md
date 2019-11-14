@@ -23,6 +23,26 @@ You can start one of the following applications:
 - Navigate to `http://localhost:4200/`.
 - Update code in `apps/demo`
 
+
+## Usage 
+
+~~~
+==> npm install @angular/cli -g
+
+==> ng new tabler-angular-demo
+
+==> ng add @tabler/tabler-angular
+
+==> npm install tabler-ui
+
+==> npm install @tabler/angular-ui
+
+==> npm install @tabler/angular-styles
+
+==> npm install @tabler/angular-core
+~~~
+
+
 ## Docs
 
 - Run `npm run docs`.
