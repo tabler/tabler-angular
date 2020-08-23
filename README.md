@@ -84,6 +84,11 @@ https://github.com/arunabhdas/fullstackapp
 
 # License: MIT
 
+# Maintainer
+
+- Arunabh Das
+- https://github.com/arunabhdas
+
 ## Meta
 
 - Previously
