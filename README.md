@@ -71,6 +71,37 @@ So the basic flow is:
 - publish build using `np`
 - publish build using `np --yolo` to skip tests
 
+## Prerequisite Steps
+
+==> npm install -g npm
+
+==> npm i -g @angular/cli
+
+==> ng new 
+
+## Usage Steps
+
+==> ng new MyApp --routing
+? Which stylesheet format would you like to use? CSS
+
+
+==> npm install tabler-ui
+
+==> npm install @tabler/angular-ui
+
+==> npm install @tabler/angular-styles
+
+==> npm install @tabler/angular-core
+
+
+==> ng g c home
+
+## Sample App
+
+Here are a few sample apps
+
+https://github.com/arunabhdas/fullstackapp
+
 # License: MIT
 
 ## Meta
