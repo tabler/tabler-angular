@@ -105,7 +105,7 @@
     "prettier": "1.10.2",
     "protractor": "~5.3.0",
     "release-it": "^7.6.2",
-    "standard-version": "^4.3.0",
+    "standard-version": "^8.0.1",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "2.7.2"
